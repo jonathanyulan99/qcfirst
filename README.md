@@ -9,3 +9,6 @@ For Deliverable 1, you will revisit your wireframes and fine-tune them to create
 ### mobileAcademics 
 ![mobileAcademicsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Mobile/PNG/mobileAcademics.PNG) 
 
+### mobileAnnoucements 
+
+### mobileEnrollment 
