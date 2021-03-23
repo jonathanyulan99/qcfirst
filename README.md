@@ -27,38 +27,38 @@ For Deliverable 1, you will revisit your wireframes and fine-tune them to create
 ## Deliverable 1 - Tablet RWD (8 Columns)
 
 ### tabletAcademics Page
-![]() 
+![tabletAcademicsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Tablet/PNG/tabletAcademics.PNG)  
 
 ### tabletAnnoucements Page
-![]() 
+![tabletAnnoucementsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Tablet/PNG/tabletAnnoucements.PNG)  
 
 ### tabletEnrollment Page
-![]() 
+![tabletEnrollmentRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Tablet/PNG/tabletEnrollment.PNG)  
 
 ### tabletFinacialAid Page
-![]() 
+![tabletFinacialAidRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Tablet/PNG/tabletFinacialAid.PNG)   
 
 ### tabletHomePage Page
-![]() 
+![tabletHomePageRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Tablet/PNG/tabletHomePage.PNG)   
 
 ### tabletImportantLinks Page
-![]() 
+![tabletImportantLinksRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Tablet/PNG/tabletImportantLinks.PNG)  
 
 ## Deliverable 1 - Desktop RWD (12 Columns)
 ### desktopAcademics Page
-![]() 
+![desktopAcademicsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Desktop/PNG/desktopAcademics.PNG)
 
 ### desktopAnnoucements Page
-![]() 
+![desktopAnnoucementsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Desktop/PNG/desktopAnnoucements.PNG)
 
 ### desktopEnrollment Page
-![]() 
+![desktopEnrollmentRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Desktop/PNG/desktopEnrollment.PNG) 
 
 ### desktopFinacialAid Page
-![]() 
+![desktopFinacialAidRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Desktop/PNG/desktopFinacialAid.PNG)
 
 ### desktopHomePage Page
-![]() 
+![desktopHomePageRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Desktop/PNG/desktopHomePage.PNG)
 
 ### desktopImportantLinks Page
-![]() 
+![desktopImportantLinksRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Desktop/PNG/desktopImportantLinks.PNG)
