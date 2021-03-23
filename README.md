@@ -26,7 +26,8 @@ For Deliverable 1, you will revisit your wireframes and fine-tune them to create
 
 ## Deliverable 1 - Tablet RWD (8 Columns)
 
-
+### tabletAcademics Page
+![tabletAcademicsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Tablet/PNG/tabletAcademics.PNG)
 
 ### tabletAnnoucements Page
 ![tabletAnnoucementsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Tablet/PNG/tabletAnnoucements.PNG)  
