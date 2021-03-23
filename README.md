@@ -10,19 +10,19 @@ For Deliverable 1, you will revisit your wireframes and fine-tune them to create
 ![mobileAcademicsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Mobile/PNG/mobileAcademics.PNG) 
 
 ### mobileAnnoucements Page
-![mobileAnnoucementsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/Wireframes/Deliverable1/Design_Mobile/PNG/mobileAnnoucements.PNG) 
+![mobileAnnoucementsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Mobile/PNG/mobileAnnouncements.PNG)
 
 ### mobileEnrollment Page
-![mobileEnrollmentRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/Wireframes/Deliverable1/Design_Mobile/PNG/mobileEnrollment.PNG) 
+![mobileEnrollmentRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Mobile/PNG/mobileEnrollment.PNG) 
 
 ### mobileFinacialAid Page
-![mobileFinacialAidRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/Wireframes/Deliverable1/Design_Mobile/PNG/mobileFinacialAid.PNG) 
+![mobileFinacialAidRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Mobile/PNG/mobileFinacialAid.PNG) 
 
 ### mobileHomePage Page
-![mobileHomePageRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/Wireframes/Deliverable1/Design_Mobile/PNG/mobileHomePage.PNG)  
+![mobileHomePageRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Mobile/PNG/mobileHomePage.PNG)  
 
 ### mobileImportantLinks Page
-![mobileImportantLinksRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/Wireframes/Deliverable1/Design_Mobile/PNG/mobileImportantLinks.PNG) 
+![mobileImportantLinksRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Mobile/PNG/mobileImportantLinks.PNG) 
 
 ## Deliverable 1 - Tablet RWD (8 Columns)
 
