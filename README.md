@@ -49,7 +49,7 @@ For Deliverable 1, you will revisit your wireframes and fine-tune them to create
 ![desktopAcademicsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Desktop/PNG/desktopAcademics.PNG)
 
 ### desktopAnnoucements Page
-![desktopAnnoucementsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Desktop/PNG/desktopAnnoucements.PNG)
+![desktopAnnoucementsRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Desktop/PNG/desktopAnnoucments.PNG)
 
 ### desktopEnrollment Page
 ![desktopEnrollmentRWD](https://raw.githubusercontent.com/jonathanyulan99/qcfirst/main/Wireframes/Deliverable1/Design_Desktop/PNG/desktopEnrollment.PNG) 
