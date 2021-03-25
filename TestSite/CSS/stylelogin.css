@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:900italic);
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #F5F3EE;
+}
+
+h2 {
+    text-align: center;
+}
+
+.test {
+    color: #7D1935;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+}
+
+.formonline {
+    color: #7D1935;
+    padding-right: 14px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding-top: 10%;
+    position: relative;
+}
+
+.wrapper{
+    color: #ECECEA;
+    margin: 0 auto;
+    width: 300px;
+    border: 15px solid #4A96AD;
+    padding: 20px;
+    padding-left: 25px;
+    margin: 25px;
+
+}
+
+a:link {
+   color:inherit;
+}
+
+a {color:#7D1935;}
+a:visited {color:#7D1935;}
+a:hover {color:#7D1935;}
+a:active {color:#7D1935;}
