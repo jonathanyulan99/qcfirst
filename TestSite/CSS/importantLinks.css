@@ -9,16 +9,15 @@
     grid-template-rows: 20% 80%;
     text-align: center; 
     padding: 25px 5px;
-} */
+}*/
 
 @media (max-width: 900px)
 {}.nav-bar {
     border-radius: 0!important;
 }
 
-
 .container {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -71,6 +70,11 @@
     text-decoration: none;
   }
 
+  .importantLinkTable{
+      display: flex;
+      flex-direction:column;
+      padding-top:100px; /* this may cause issues with reponsivness will have to implement some solution*/
+  }
 
   a:link {
     color:inherit;

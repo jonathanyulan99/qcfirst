@@ -1,41 +1,106 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>homePage.html</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<style type="text/css">
-.s0 { color: #e8bf6a;}
-.s1 { color: #a9b7c6;}
-.s2 { color: #bababa;}
-.s3 { color: #a5c261;}
-.s4 { color: #a9b7c6;}
-</style>
+    <link href="../CSS/homePage.css" rel="stylesheet">
+    <title>Student's Home Page</title>
 </head>
-<body bgcolor="#2b2b2b">
-<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
-<tr><td><center>
-<font face="Arial, Helvetica" color="#000000">
-homePage.html</font>
-</center></td></tr></table>
-<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
-<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
-<span class="s0">&lt;head&gt;</span>
-    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
-    <span class="s0">&lt;title&gt;</span><span class="s4">Queens College Website</span><span class="s0">&lt;/title&gt;</span>
-<span class="s0">&lt;/head&gt;</span>
-<span class="s0">&lt;body&gt;</span>
-<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;navbar&quot; </span><span class="s0">&gt;</span>
-    <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;qclogo1.jpg&quot; </span><span class="s2">alt</span><span class="s3">=&quot;logo1&quot; </span><span class="s2">id</span><span class="s3">=&quot;qcLogo1&quot;</span><span class="s0">&gt;</span>
-    <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;#studentCenter&quot;</span><span class="s0">&gt;</span><span class="s4">Student Center</span><span class="s0">&lt;/a&gt;</span>
-    <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;#academics&quot;</span><span class="s0">&gt;</span><span class="s4">Academics</span><span class="s0">&lt;/a&gt;</span>
-    <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;#enrollment&quot;</span><span class="s0">&gt;</span><span class="s4">Enrollment</span><span class="s0">&lt;/a&gt;</span>
-    <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;#financialAid&quot;</span><span class="s0">&gt;</span><span class="s4">Financial Aid</span><span class="s0">&lt;/a&gt;</span>
-    <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;#importantLinks&quot;</span><span class="s0">&gt;</span><span class="s4">Important Links</span><span class="s0">&lt;/a&gt;</span>
-    <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;qclogo2.jpg&quot; </span><span class="s2">alt</span><span class="s3">=&quot;logo2&quot; </span><span class="s2">id</span><span class="s3">=&quot;qcLogo2&quot;</span><span class="s0">&gt;</span>
-<span class="s0">&lt;/div&gt;</span>
 
+<body>
+<div class="container">
+    <nav class="nav-bar">
+        <h1 class="mainPage">Home Page</h1>
+        <nav class="nav-bar-inner">
+            <!-- <img src="qclogo1.jpg" alt="logo1" id="qcLogo1"> -->
+            <a href="../HTML/studentCenter.html">Student Center</a>
+            <a href="../HTML/academics.html">Academics</a>
+            <a href="../HTML/enrollment.html">Enrollment</a>
+            <a href="../HTML/financialAid.html">Financial Aid</a>
+            <a href="../HTML/importantLinks.html">Important Links</a>
+            <!-- <img src="qclogo2.jpg" alt="logo2" id="qcLogo2">-->
+        </nav>
+    </nav>
 
+    <div class="grid-container">
+        <div class="gridStudentInfo">
+            <div class="studentName">Full Name: </div>
+            <div class="studentID">ID#: </div>
+            <div class="studentTerm">Term: </div>
+            <div class="studentUni">University: </div>
+        </div>
 
-<span class="s0">&lt;/body&gt;</span>
-<span class="s0">&lt;/html&gt;</span></pre>
+        <div class="gridStudentInfo2">
+            <container class="studentContainer">
+                <container id="studentInfo1"> Student Specific Info1</container>
+                <container id="studentInfo2"> Student Specific Info2</container>
+                <contianer id="studentInfo3"> Student Specific Info3</contianer>
+            </container>
+        </div>
+    </div>
+
+<div class="grid-container table">
+    <div class="current-date">
+        <div class="currentDate">
+            <h1>Day, XXth</h1>
+            <h1>Month XXXX</h1>
+        </div>
+    <ul class="studentCalendar">
+        <li>SUN</li>
+        <li>MON</li>
+        <li>TUE</li>
+        <li>WED</li>
+        <li>THUR</li>
+        <li>FRI</li>
+        <li>SAT</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+        <div class="calendarButton">
+            <button type="addButton" class="addButton">ADD</button>
+            <button type="dropButton" class="dropButton">DROP</button>
+            <button type="searchButton" class="searchButton">SEARCH</button>
+        </div>
+    </div>
+</div>
+</div>
+
 </body>
+
+<footer>
+    Some Sort of Reference Material
+    <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
+    Some sort of Reference Material
+</footer>
 </html>

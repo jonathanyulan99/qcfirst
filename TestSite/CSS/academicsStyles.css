@@ -75,6 +75,25 @@
   a:link {
     color:inherit;
  }
+
+.textAcademics{
+    display:flex;
+    flex-direction:row;
+    column-gap:25%;
+    border: 3px solid black;
+}
+
+.containerAcademics{
+    display:flex;
+    flex-direction:column;
+    row-gap:25%;
+    column-gap:25%;
+
+}
+
+.courseHistory p, .transcripts p, .advisors p,.transferCredits p{
+    text-align: center;
+}
  
  a {color:#7D1935;}
  a:visited {color:#7D1935;}
