@@ -70,6 +70,11 @@
     text-decoration: none;
   }
 
+.nav-bar-inner a:hover {
+    background: rgb(255, 251, 2);
+    color: black;    
+}
+
   
 .textAcademics{
     display:flex;
@@ -133,9 +138,9 @@ tr:nth-child(odd) {
 
 a:link {
     color:inherit;
- }
+}
  
- a {color:#7D1935;}
- a:visited {color:#7D1935;}
- a:hover {color:#7D1935;}
- a:active {color:#7D1935;}
+a {color:#7D1935;}
+a:visited {color:#7D1935;}
+a:hover {color:#ff01c8;}
+a:active {color:#7D1935;}

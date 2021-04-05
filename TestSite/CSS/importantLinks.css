@@ -70,17 +70,22 @@
     text-decoration: none;
   }
 
+.nav-bar-inner a:hover {
+    background: rgb(255, 251, 2);
+    color: black;    
+}
+
   .importantLinkTable{
       display: flex;
       flex-direction:column;
       padding-top:100px; /* this may cause issues with reponsivness will have to implement some solution*/
   }
 
-  a:link {
+a:link {
     color:inherit;
- }
+}
  
- a {color:#7D1935;}
- a:visited {color:#7D1935;}
- a:hover {color:#7D1935;}
- a:active {color:#7D1935;}
+a {color:#7D1935;}
+a:visited {color:#7D1935;}
+a:hover {color:#ff01c8;}
+a:active {color:#7D1935;}

@@ -71,10 +71,11 @@
     text-decoration: none;
   }
 
+.nav-bar-inner a:hover {
+    background: rgb(255, 251, 2);
+    color: black;    
+}
 
-  a:link {
-    color:inherit;
- }
 
 .textAcademics{
     display:flex;
@@ -94,8 +95,12 @@
 .courseHistory p, .transcripts p, .advisors p,.transferCredits p{
     text-align: center;
 }
+
+a:link {
+    color:inherit;
+}
  
- a {color:#7D1935;}
- a:visited {color:#7D1935;}
- a:hover {color:#7D1935;}
- a:active {color:#7D1935;}
+a {color:#7D1935;}
+a:visited {color:#7D1935;}
+a:hover {color:#ff01c8;}
+a:active {color:#7D1935;}
