@@ -71,8 +71,45 @@
     text-decoration: none;
   }
 
+.textAcademics{
+    display:flex;
+    flex-direction:row;
+    column-gap:25%;
+    border: 3px solid black;
+    margin-bottom: 5%;
+}
 
-  a:link {
+.nextTermSchedule, .shoppingCart{
+    display:flex;
+    flex-direction:row;
+    column-gap:25%;
+    border: 3px solid black;
+    padding-top: 3%;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    margin-bottom: 3%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+
+a:link {
     color:inherit;
  }
  
