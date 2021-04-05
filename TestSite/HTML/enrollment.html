@@ -2,19 +2,8 @@
 <html lang="en">
     <head>
         <link href="../CSS/enrollmentStyles.css" rel="stylesheet">
-        <title>Cuny First</title>
-
-        <script>
-            $(document).ready(function () {
-      
-                $('ul.navbar-nav > li')
-                        .click(function (e) {
-                    $('ul.navbar-nav > li')
-                        .removeClass('active');
-                    $(this).addClass('active');
-                });
-            });
-        </script>
+        <title>Enrollment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
@@ -42,18 +31,18 @@
                     <section>
                         <div class="maincontent">
                             <div class="leftcontent">
-                                <a><img src="../Images/campus1.jpg" alt="student" style="width:100%"/></a>
-                                <div><a>Add/Drop</a></div>
+                                <a><img src="../Images/student.jpg" alt="student" style="width:100%"/></a>
+                                <div><a  class="btn" href="../HTML/studentCenter.html" title="Click here to add/drop classes">Add/Drop</a></div>
                             </div>
 
                             <div class="centercontent">
-                                <a><img src="../Images/campus2.jpg" alt="student" style="width:100%"/></a>
-                                <div><a>Swap</a></div>
+                                <a><img src="../Images/student4.jpg" alt="student" style="width:100%"/></a>
+                                <div><a class="btn" href="../HTML/studentCenter.html" title="Click here to swap classes">Swap</a></div>
                             </div>
 
                             <div class="rightcontent">
-                                <a><img src="../Images/campus3.jpg" alt="student" style="width:100%"/></a>
-                                <div><a>Search</a></div>
+                                <a><img src="../Images/student5.jpg" alt="student" style="width:100%"/></a>
+                                <div><a class="btn" href="../HTML/studentCenter.html" title="Click here to search for classes">Search</a></div>
                             </div>
                         </div>
                     </section>
@@ -84,7 +73,7 @@
 
                 <div class="nextTermSchedule">
                     <table style="width:100%">
-                        <caption>Next Semester schedule:</caption>
+                        <caption>Summer 2021 Schedule:</caption>
                         <tr>
                             <th>Class</th>
                             <th>Description</th>
