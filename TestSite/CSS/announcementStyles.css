@@ -49,10 +49,9 @@
 
 .grid-container{
     padding-top: 7%;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-gap: 20px;
+    display:flex;
+    flex-direction:column;
+    grid-gap: 0;
 }
 
 .current-date{
@@ -68,8 +67,15 @@
     display:grid;
 }
 
+.gridStudentInfo{
+    display:inline-flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
 #grid-container table{
-    position: absolute;
+    position: center;
+    display:flex;
     margin: 0;
     padding: 0;
     left: 0;
@@ -117,11 +123,16 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     padding-top:25px;
     display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
     margin-right:auto;
 }
 
 .addButton .dropButton .searchButton{
     margin-right:auto;
+}
+
+#studentInfo1, #studentInfo2{
+    display:flex;
+    flex-direction:column;
+    padding-top:20px;
+    padding-bottom:20px;
 }
