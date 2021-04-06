@@ -47,10 +47,10 @@
 }
 
 .nav-bar-inner a:hover {
-    /* background: rgb(255, 251, 2); or maroon or olive*/
     background: #153983;
-    color:white;
+    color:white;    
 }
+
 thead tr{
     border:none;
 
