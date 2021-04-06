@@ -1,21 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
 
-/* .container {
-    max-width: 550px;
-    height: 100vh;
-    border: 1px solid black;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: 20% 80%;
-    text-align: center;
-    padding: 25px 5px;
-} */
-
 @media (max-width: 900px)
 {}.nav-bar {
     border-radius: 0!important;
 }
-
 
 .container {
     position: relative;
@@ -35,46 +23,35 @@
     padding-bottom: 5%;
 }
 
-.nav-bar{
-    /* background: #F5F3EE; */
-    /* margin: 0 auto;
-    width: auto;
-    border: 10px solid #4A96AD;
-    padding: 20px;
-    padding-left: 25px;
-    margin: 25px; */
-    color: #6e7072;
-    background: #232323;
-    transition: ease-in .15s all;
-
+.navbarlogo {
+    float: left;
 }
 
 .nav-bar-inner {
     overflow: hidden;
-    color: #7D1935;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    top: 0;
+    width: 100%;
     font-family: 'Lato', sans-serif;
-    padding-top: 1%;
-    padding-left: 25%;
     background: #F5F3EE;
 }
 
 .nav-bar-inner a {
     float: left;
     display: block;
-    /* color: #f2f2f2; */
-    color: #7D1935;
+    color: darkblue;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 33px;
     text-decoration: none;
+    margin-top: 15px;
 }
 
 .nav-bar-inner a:hover {
-    background: rgb(255, 251, 2);
-    color: black;
+    /* background: rgb(255, 251, 2); or maroon or olive*/
+    background: #153983;
+    color:white;    
 }
+
 .addClassTable{
     display:flex;
 }

@@ -33,11 +33,8 @@
     top: 0;
     width: 100%;
     font-family: 'Lato', sans-serif;
-    /* padding-top: 1%; */
-    /* padding-left: 5%;  */
     background: #F5F3EE;
 }
-
 
 .nav-bar-inner a {
     float: left;
@@ -47,17 +44,13 @@
     padding: 5px 33px;
     text-decoration: none;
     margin-top: 15px;
-    /* margin-bottom: 4px; */
-    /*font-size: 18px; */
-    /* opacity: 0.8; */
-  }
+}
 
 .nav-bar-inner a:hover {
     /* background: rgb(255, 251, 2); or maroon or olive*/
     background: #153983;
     color:white;    
 }
-
 
 .textAcademics{
     display:flex;
