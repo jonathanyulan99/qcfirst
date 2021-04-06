@@ -1,104 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Add/Search</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="../CSS/enrollmentAddSearchStyles.css" rel="stylesheet">
-</head>
-<body>
-<div class="container">
-    <nav class="nav-bar">
-        <nav class="nav-bar-inner">
-            <!-- <img src="qclogo1.jpg" alt="logo1" id="qcLogo1"> -->
-            <a href="../HTML/announcements.html">Announcements</a>
-            <a href="../HTML/studentCenter.html">Student Center</a>
-            <a href="../HTML/academics.html">Academics</a>
-            <a href="../HTML/enrollment.html">Enrollment</a>
-            <a href="../HTML/financialAid.html">Financial Aid</a>
-            <a href="../HTML/importantLinks.html">Important Links</a>
-            <!-- <img src="qclogo2.jpg" alt="logo2" id="qcLogo2">-->
-        </nav>
-    </nav>
-</div>
+    <head>
+        <meta charset="UTF-8">
+        <title>Add/Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="../CSS/enrollmentAddSearchStyles.css" rel="stylesheet">
+    </head>
 
-    <div id="addClassHeader">
-        <h1><u>ADD CLASSES</u></h1>
-        <h2>1.Search and Select Classes to Add</h2>
-        <p> To select classes for another term, select the term and select 'Change Term'.<br>
-            When you are satisfied with your class selections, proceed forward.</p>
-
-        <h3> 2021 Summer Term | Undergraduate | Queens College </h3>
-        <button type="input" id="changeTerm">Change Term</button>
-    </div>
-
-    <div id="addClassTable"> <!-- need to add display:grid and place both tables in this class side by side template-rows:400px 400px-->
-        <div id="addTable1">
-            <table id="addClass1"><!-- need to add display:grid -->
-                <tbody>
-                    <tr>
-                        <th>Add to Cart:</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            Enter Class Number
-                            <input type="text">
-                            <input type="submit" placeholder="Enter">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table id="addClass2">
-                <tbody>
-                    <tr id="addClass2Header1">
-                        <th>Find Classes</th>
-                    </tr>
-                    <tr id="addClass2Header2">
-                        <td> <input type="radio"> Class Search</td>
-                        <td> <input type="radio"> My Schedule</td>
-                    </tr>
-                </tbody>
-            </table>
+    <body>
+        <div class="container">
+            <nav class="nav-bar">
+                <nav class="nav-bar-inner">
+                    <!-- <img src="qclogo1.jpg" alt="logo1" id="qcLogo1"> -->
+                    <a href="../HTML/announcements.html">Announcements</a>
+                    <a href="../HTML/studentCenter.html">Student Center</a>
+                    <a href="../HTML/academics.html">Academics</a>
+                    <a href="../HTML/enrollment.html">Enrollment</a>
+                    <a href="../HTML/financialAid.html">Financial Aid</a>
+                    <a href="../HTML/importantLinks.html">Important Links</a>
+                    <!-- <img src="qclogo2.jpg" alt="logo2" id="qcLogo2">-->
+                </nav>
+            </nav>
         </div>
 
-        <div id="addTable2">
-            <table id="displayAddTable">
-                <tr>
-                    <th> 2021 Semester_Shown Shopping Cart</th>
-                </tr>
-                <tr>
-                    <td>Class</td>
-                    <td>Days/Times</td>
-                    <td>Room</td>
-                    <td>Instructor</td>
-                    <td>Credits</td>
-                </tr>
-                <tbody>
-                <tr>
-                        <td> CSCI 355 - 40 (9649)</td>
-                        <td>
-                            MoTuWeTh <br>
-                             7:00pm - <br>
-                             9:40pm
-                        </td>
-                        <td>
-                            Online- <br>
-                            Synchronous
-                        </td>
-                        <td> To Be Determined</td>
-                        <td> 3.00 Credits</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</body>
+            <div id="addClassHeader">
+                <h1><u>ADD CLASSES</u></h1>
+                <h2>1.Search and Select Classes to Add</h2>
+                <p> To select classes for another term, select the term and select 'Change Term'.<br>
+                    When you are satisfied with your class selections, proceed forward.</p>
 
-<footer>
-    Some Sort of Reference Material
-    <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
-    Some sort of Reference Material
-</footer>
+                <h3> 2021 Summer Term | Undergraduate | Queens College </h3>
+                <button type="input" id="changeTerm">Change Term</button>
+            </div>
+
+            <div id="addClassTable"> <!-- need to add display:grid and place both tables in this class side by side template-rows:400px 400px-->
+                <div id="addTable1">
+                    <table id="addClass1"><!-- need to add display:grid -->
+                        <tbody>
+                            <tr>
+                                <th>Add to Cart:</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Enter Class Number
+                                    <input type="text">
+                                    <input type="submit" placeholder="Enter">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table id="addClass2">
+                        <tbody>
+                            <tr id="addClass2Header1">
+                                <th>Find Classes</th>
+                            </tr>
+                            <tr id="addClass2Header2">
+                                <td> <input type="radio"> Class Search</td>
+                                <td> <input type="radio"> My Schedule</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="addTable2">
+                    <table id="displayAddTable">
+                        <tr>
+                            <th> 2021 Semester_Shown Shopping Cart</th>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Days/Times</td>
+                            <td>Room</td>
+                            <td>Instructor</td>
+                            <td>Credits</td>
+                        </tr>
+                        <tbody>
+                        <tr>
+                                <td> CSCI 355 - 40 (9649)</td>
+                                <td>
+                                    MoTuWeTh <br>
+                                    7:00pm - <br>
+                                    9:40pm
+                                </td>
+                                <td>
+                                    Online- <br>
+                                    Synchronous
+                                </td>
+                                <td> To Be Determined</td>
+                                <td> 3.00 Credits</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </body>
+
+    <footer>
+        Some Sort of Reference Material
+        <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
+        Some sort of Reference Material
+    </footer>
 
 </html>

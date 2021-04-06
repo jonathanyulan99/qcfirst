@@ -16,7 +16,6 @@
     border-radius: 0!important;
 }
 
-
 .container {
     position: relative;
     display: flex;
@@ -33,6 +32,10 @@
 
 .schedule{
     padding-bottom: 5%;
+}
+
+.navbarlogo {
+    float: left;
 }
 
 .nav-bar{
@@ -61,14 +64,19 @@
     background: #F5F3EE;
   }
 
-  .nav-bar-inner a {
+
+.nav-bar-inner a {
     float: left;
     display: block;
     /* color: #f2f2f2; */
     color: #7D1935;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 8px;
     text-decoration: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    /* opacity: 0.8; */
   }
 
 .nav-bar-inner a:hover {
@@ -76,12 +84,19 @@
     color: black;    
 }
 
+
 .textAcademics{
     display:flex;
     flex-direction:row;
     column-gap:25%;
     border: 3px solid black;
     margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.logo-img{
+    float: left;
+    position: relative;
 }
 
 .overview{
