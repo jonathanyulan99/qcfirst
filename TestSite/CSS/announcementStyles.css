@@ -67,7 +67,7 @@
     display:grid;
 }
 
-.gridStudentInfo{
+.gridStudentInfo, .gridTeacherInfo{
     display:inline-flex;
     flex-wrap:wrap;
     justify-content:space-around;
@@ -130,9 +130,11 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     margin-right:auto;
 }
 
-#studentInfo1, #studentInfo2{
+#studentInfo1, #studentInfo2, #teacherInfo1, #teacherInfo2{
     display:flex;
     flex-direction:column;
     padding-top:20px;
     padding-bottom:20px;
 }
+
+
