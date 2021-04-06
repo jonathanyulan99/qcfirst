@@ -28,7 +28,7 @@
                     When you are satisfied with your class selections, proceed forward.</p>
 
                 <h3> 2021 Summer Term | Undergraduate | Queens College </h3>
-                <button type="input" id="changeTerm">Change Term</button>
+                <button type="submit" id="changeTerm">Change Term</button>
             </div>
 
             <div id="addClassTable"> <!-- need to add display:grid and place both tables in this class side by side template-rows:400px 400px-->
@@ -40,8 +40,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    Enter Class Number
-                                    <input type="text">
+                                    <label for="classNumber"> Enter Class Number: </label>
+                                    <input type="text" id="classNumber">
                                     <input type="submit" placeholder="Enter">
                                 </td>
                             </tr>
@@ -62,19 +62,19 @@
                 </div>
 
                 <div id="addTable2">
-                    <table id="displayAddTable">
+                    <table id="displayAddTable" border="3">
                         <tr>
-                            <th> 2021 Semester_Shown Shopping Cart</th>
+                            <th><h3>2021 Semester Shown Shopping Cart</h3></th>
                         </tr>
                         <tr>
-                            <td>Class</td>
-                            <td>Days/Times</td>
-                            <td>Room</td>
-                            <td>Instructor</td>
-                            <td>Credits</td>
+                            <td><h4>Class</h4></td>
+                            <td><h4>Days/Times</h4></td>
+                            <td><h4>Room</h4></td>
+                            <td><h4>Instructor</h4></td>
+                            <td><h4>Credits</h4></td>
                         </tr>
                         <tbody>
-                        <tr>
+                            <tr>
                                 <td> CSCI 355 - 40 (9649)</td>
                                 <td>
                                     MoTuWeTh <br>
@@ -92,6 +92,7 @@
                     </table>
                 </div>
             </div>
+
     </body>
 
     <footer>
