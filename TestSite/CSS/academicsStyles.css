@@ -51,10 +51,37 @@
     color:white;    
 }
 
-.textAcademics{
+.courseHistory{
     display:flex;
     flex-direction:row;
     column-gap:25%;
+    border: 3px solid black;
+    padding-top: 3%;
+    border-spacing: 5px;
+    margin-bottom: 3%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.containerAcademics{
+    display:flex;
+    flex-direction:row;
     border: 3px solid black;
 }
 
@@ -66,9 +93,16 @@
 
 }
 
+.courseHistory{
+    text-align:center;
+}
+
 .courseHistory p, .transcripts p, .advisors p,.transferCredits p{
     text-align: center;
 }
+
+
+
 
 /* a:link {
     color:inherit;
