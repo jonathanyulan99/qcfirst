@@ -52,16 +52,36 @@
     color:white;    
 }
 
-.addClassTable{
+#addClassTable{
     display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-content: space-between;
 }
 
-.addTable1{
+#addTable1{
     display:flex;
-    flex:2;
+    flex-direction:row;
+    flex-wrap: wrap;
 }
 
-.addTable2{
+#addTable2{
     display:flex;
-    flex:2;
+    flex-direction: column;
+}
+
+td{
+    align-content:center;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+tr th{
+    border:none;
+    text-align:center;
+    justify-content:center;
+}
+
+footer{
+    padding-top:50px;
 }
