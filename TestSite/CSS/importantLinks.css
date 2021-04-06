@@ -47,8 +47,20 @@
     color:white;    
 }
 
-.importantLinkTable{
-    display: flex;
+.flex-container link{
+    display:flex;
     flex-direction:column;
+}
+
+.flex-item table{
+    flex:1;
+    flex-direction:row;
     padding-top:100px;
 }
+
+.flex-items image{
+    flex-direction:row;
+    flex:1;
+}
+
+
