@@ -42,20 +42,6 @@
 }
 
 .flex-containerLink{
-    display:flex;
-    flex-direction:column;
-}
-
-.flex-itemTable, .flex-itemsImage{
-    float: left;
-    flex: 33.33%;
-    display: flex;
-    padding-top: 5%;
+    padding-top: 30%;
     margin-left: 5%;
 }
-
-.importantLinkTable{
-    padding-top: 15%;
-    margin-left: 5%;
-}
-
