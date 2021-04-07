@@ -41,14 +41,13 @@
     color:white;
 }
 
-#dropClassHeader{
+#dropClassHeader, #containerDrop1, #buttonDrop, #containerDrop2{
     padding-top: 5%;
     margin-left: 5%;
 }
 
 thead tr{
     border:none;
-
 }
 
 #buttonDrop{

@@ -40,14 +40,13 @@
     color:white;    
 }
 
-#dropClassHeader{
+#dropClassHeader, #swapClassHeader, #containerDrop1, #buttonSwap, #containerDrop2{
     padding-top: 5%;
     margin-left: 5%;
 }
 
 thead tr{
     border:none;
-
 }
 
 #buttonSwap{
