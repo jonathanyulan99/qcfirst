@@ -13,16 +13,6 @@
     flex-grow: 1;
 }
 
-.container-inner {
-    padding-top: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-.schedule{
-    padding-bottom: 5%;
-}
-
 .navbarlogo {
     float: left;
 }
@@ -51,34 +41,30 @@
     color:white;    
 }
 
+#addClassHeader{
+    padding-top: 5%;
+    margin-left: 5%;
+}
+
 #addClassTable{
     display:flex;
     flex-wrap:wrap;
     flex-direction: column;
     align-content: space-between;
+    margin-left: 5%;
+    padding-top: 5%;
 }
 
 #addTable1{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
+    margin-right: 5%;
 }
 
 #addTable2{
     display:flex;
     flex-direction: column;
-}
-
-td{
-    align-content:center;
-    align-items:center;
-    justify-content:space-evenly;
-}
-
-tr th{
-    border:none;
-    text-align:center;
-    justify-content:center;
 }
 
 footer{

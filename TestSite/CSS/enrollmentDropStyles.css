@@ -13,16 +13,6 @@
     flex-grow: 1;
 }
 
-.container-inner {
-    padding-top: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-.schedule{
-    padding-bottom: 5%;
-}
-
 .navbarlogo {
     float: left;
 }
@@ -47,9 +37,13 @@
 }
 
 .nav-bar-inner a:hover {
-    /* background: rgb(255, 251, 2); or maroon or olive*/
     background: #153983;
     color:white;
+}
+
+#dropClassHeader{
+    padding-top: 5%;
+    margin-left: 5%;
 }
 
 thead tr{
