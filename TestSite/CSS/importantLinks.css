@@ -13,12 +13,6 @@
     flex-grow: 1;
 }
 
-.container-inner {
-    padding-top: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
 .navbarlogo {
     float: left;
 }
@@ -47,20 +41,27 @@
     color:white;    
 }
 
-.flex-container link{
+.flex-containerLink{
     display:flex;
     flex-direction:column;
 }
 
-.flex-item table{
-    flex:1;
-    flex-direction:row;
-    padding-top:100px;
+.flex-itemTable{
+    float: left;
+    flex: 33.33%;
+    padding: 5px;
+    display: flex;
 }
 
-.flex-items image{
-    flex-direction:row;
-    flex:1;
+.flex-itemsImage{
+    float: right;
+    flex: 33.33%;
+    padding: 5px;
+    display: flex;
 }
 
+.importantLinkTable{
+    padding-top: 5%;
+    margin-left: 5%;
+}
 

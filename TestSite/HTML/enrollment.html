@@ -7,8 +7,8 @@
     </head>
 
     <body>
-        <div class="container">
-            <nav class="nav-bar-inner">
+        <div class="container" id="container">
+            <nav class="nav-bar-inner" id="nav-bar-inner">
                 <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125" weight="25">
                 <a href="announcementsStudent.html">Announcements</a>
                 <a href="../HTML/studentCenter.html">Student Center</a>
@@ -19,37 +19,36 @@
                 <a href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
             </nav>
             
-            <div class="container-inner">
-                <container class="textAcademics">
-                    <div class="fullName">Full Name: Francisco Lindor</div>
-                    <div class="standing">Semester: Summer 2021</div>
-                    <div class="school">Queens College</div>
+            <div class="container-inner" id="container-inner">
+                <container class="studentDetails" id="studentDetails">
+                    <div class="fullName" id="studentFullName">Full Name: Francisco Lindor</div>
+                    <div class="currentSemester" id="currentSemester">Semester: Summer 2021</div>
+                    <div class="currentSchool" id="currentSchool">Queens College</div>
                 </container>
 
-                <div class="overview">
+                <div class="overview" id="overview">
                     <section>
-                        <div class="maincontent">
-                            <div class="leftcontent">
-                                <a><img src="../Images/student.jpg" alt="student" style="width:100%"/></a>
-                                <a  class="btn" href="../HTML/enrollmentAddSearch.html" title="Click here to add/search classes">Add/Search courses</a>
+                        <div class="mainContent" id="mainContent">
+                            <div class="leftContent" id="leftContent">
+                                <a><img src="../Images/student.jpg" alt="studentimage1" id="studentimage1" style="width:100%"/></a>
+                                <a class="btn" href="../HTML/enrollmentAddSearch.html" title="Click here to add/search classes">Add/Search courses</a>
                             </div>
 
-                            <div class="centercontent">
-                                <a><img src="../Images/student4.jpg" alt="student" style="width:100%"/></a>
+                            <div class="centerContent" id="centerContent">
+                                <a><img src="../Images/student4.jpg" alt="studentimage2" id="studentimage2" style="width:100%"/></a>
                                 <div><a class="btn" href="../HTML/enrollmentSwap.html" title="Click here to swap classes">Swap courses</a></div>
                             </div>
 
-                            <div class="rightcontent">
-                                <a><img src="../Images/student5.jpg" alt="student" style="width:100%"/></a>
+                            <div class="rightContent" id="rightContent">
+                                <a><img src="../Images/student5.jpg" alt="studentimage3" id="studentimage3" style="width:100%"/></a>
                                 <div><a class="btn" href="../HTML/enrollmentDrop.html" title="Click here to drop classes">Drop courses</a></div>
                             </div>
                         </div>
                     </section>
                 </div>
 
-
-                <div class="shoppingCart">
-                    <table style="width:100%">
+                <div class="shoppingCart" id="shoppingCart">
+                    <table id="shoppingCart" style="width:100%">
                         <caption>Summer 2021 Shopping Cart:</caption>
                         <tr>
                             <th>Class</th>
@@ -70,8 +69,8 @@
                     </table>
                 </div>
 
-                <div class="nextTermSchedule">
-                    <table style="width:100%">
+                <div class="nextTermSchedule" id="nextTermSchedule">
+                    <table id="currentSchedule" style="width:100%">
                         <caption>Summer 2021 Schedule:</caption>
                         <tr>
                             <th>Class</th>
@@ -93,13 +92,11 @@
                         </tr>
                     </table>
                 </div>
-
                 <footer>
                     Some Sort of Reference Material
                     <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
                     Some sort of Reference Material
                 </footer>
-
             </div>
         </div>
     </body>
