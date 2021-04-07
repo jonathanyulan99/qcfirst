@@ -31,7 +31,7 @@ Before you begin, ensure you have met the following requriments:
 ## Authors
 ### David Acqui
 ### Email: reydavid@gmail.com
-###Jonathan Yulan
+### Jonathan Yulan
 ### Email: jzy50@gmail.com
 
 
