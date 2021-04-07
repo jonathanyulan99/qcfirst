@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:900italic);
+
+@media (max-width: 900px)
+{}.nav-bar {
+    border-radius: 0!important;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-grow: 1;
+}
+
+.navbarlogo {
+    float: left;
+}
+
+.nav-bar-inner {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background: #F5F3EE;
+}
+
+.nav-bar-inner a {
+    float: left;
+    display: block;
+    color: darkblue;
+    text-align: center;
+    padding: 5px 33px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.nav-bar-inner a:hover {
+    background: #153983;
+    color:white;    
+}
+
+.flex-containerLink{
+    display:flex;
+    flex-direction:column;
+}
+
+.flex-itemTable, .flex-itemsImage{
+    float: left;
+    flex: 33.33%;
+    display: flex;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+
+.importantLinkTable{
+    padding-top: 15%;
+    margin-left: 5%;
+}
+
