@@ -47,13 +47,6 @@
     color:white;    
 }
 
-.grid-container{
-    padding-top: 7%;
-    display:flex;
-    flex-direction:column;
-    grid-gap: 0;
-}
-
 .current-date{
     display:grid;
 }
@@ -142,8 +135,14 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     flex-direction:row;
     column-gap:10%;
     border: 3px solid black;
-    margin-top: 3%;
+    margin-top: 10%;
     margin-bottom: 5%;
+}
+
+.gridStudentInfo2{
+    display:flex;
+    flex-direction:column;
+    margin-top:4%;
 }
 
 
