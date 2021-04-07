@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Professor Create Courses</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="../CSS/professorCreateCourseStyles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container" id="container">            
+            <nav class="nav-bar-inner" id="nav-bar-inner">
+                <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125" weight="25">
+                <a id="announcementProfNavLink" href="announcementsTeacher.html">Announcements</a>
+                <a id="profCenterNavLink" href="../HTML/professorCenter.html">Professor Center</a>
+                <a id="importantLinksNavLink" href="../HTML/importantLinksTeacher.html">Important Links</a>
+                <a id="profAccountNavLink" href="../HTML/loginpage.html" class="dropdown-toggle">Professor Account</a>
+            </nav>
+
+            <div id="addClassHeader">
+                <h2><u>ADD CLASSES</u></h2>
+                <h3>1.Search and Select Classes to Add</h3>
+                <p> To select classes for another term, select the term and select 'Change Term'.<br>
+                    When you are satisfied with your class selections, proceed forward.</p>
+
+                <h3> 2021 Summer Term | Undergraduate | Queens College </h3>
+                <button type="submit" id="changeTerm">Change Term</button>
+            </div>
+
+            <div id="addClassTable"> <!-- need to add display:grid and place both tables in this class side by side template-rows:400px 400px-->
+                <div id="addTable1">
+                    <table id="addClass1"><!-- need to add display:grid -->
+                        <tbody>
+                            <tr>
+                                <th>Add to Cart:</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="classNumber"> Enter Class Number: </label>
+                                    <input type="text" id="classNumber">
+                                    <input type="submit" placeholder="Enter">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table id="addClass2">
+                        <tbody>
+                            <tr id="addClass2Header1">
+                                <th>Find Classes</th>
+                            </tr>
+                            <tr id="addClass2Header2">
+                                <td> <input type="radio"> Class Search</td>
+                                <td> <input type="radio"> My Schedule</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="addTable2">
+                    <table id="displayAddTable" border="3">
+                        <tr>
+                            <th><h3>2021 Semester Shown Shopping Cart</h3></th>
+                        </tr>
+                        <tr>
+                            <td><h4>Class</h4></td>
+                            <td><h4>Days/Times</h4></td>
+                            <td><h4>Room</h4></td>
+                            <td><h4>Instructor</h4></td>
+                            <td><h4>Credits</h4></td>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td> CSCI 355 - 40 (9649)</td>
+                                <td>
+                                    MoTuWeTh <br>
+                                    7:00pm - <br>
+                                    9:40pm
+                                </td>
+                                <td>
+                                    Online- <br>
+                                    Synchronous
+                                </td>
+                                <td> To Be Determined</td>
+                                <td> 3.00 Credits</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <footer>
+        Some Sort of Reference Material
+        <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
+        Some sort of Reference Material
+    </footer>
+
+</html>

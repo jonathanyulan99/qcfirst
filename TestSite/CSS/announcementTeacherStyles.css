@@ -13,6 +13,12 @@
     flex-grow: 1;
 }
 
+.grid-container{
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
 .nav-bar-logo {
     float: left;
 }
@@ -50,17 +56,24 @@
     grid-template-columns:1fr 1fr;
 }
 
-.studentContainer{
-    display:grid;
-}
-
-.gridStudentInfo, .gridTeacherInfo{
+.gridTeacherInfo2{
     display:inline-flex;
     flex-wrap:wrap;
     justify-content:space-around;
 }
 
-#grid-container table{
+.gridTeacherInfo{
+    display:flex;
+    flex-direction:row;
+    column-gap:25%;
+    border: 3px solid black;
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+
+
+#grid-containerTable{
     position: center;
     display:flex;
     margin: 0;
@@ -72,12 +85,12 @@
     overflow: hidden;
 }
 
-ul {
+ul{
     margin: 0;
     padding: 0;
 }
 
-li {
+li{
     float: left;
     display: block;
     width: 14.2857%;
@@ -113,21 +126,21 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     margin-right:auto;
 }
 
-#studentInfo1, #studentInfo2, #teacherInfo1, #teacherInfo2{
+/* #studentInfo1, #studentInfo2, #teacherInfo1, #teacherInfo2{
     display:flex;
     flex-direction:column;
     padding-top:20px;
     padding-bottom:20px;
-}
+} */
 
-.gridTeacherInfo{
+/* .gridTeacherInfo{
     display:flex;
     flex-direction:row;
     column-gap:10%;
     border: 3px solid black;
     margin-top: 10%;
     margin-bottom: 5%;
-}
+} */
 
 .gridTeacherInfo2{
     display:flex;
@@ -141,7 +154,7 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     margin-left: 5%;
 }
 
-.studentDetails{
+.gridTeacherInfo{
     display:flex;
     flex-direction:row;
     column-gap:25%;
