@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:900italic);
+
+@media (max-width: 900px)
+{}.nav-bar {
+    border-radius: 0!important;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-grow: 1;
+}
+
+.nav-bar-logo {
+    float: left;
+}
+
+.nav-bar-inner {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background: #F5F3EE;
+}
+
+.nav-bar-inner a {
+    float: left;
+    display: block;
+    color: darkblue;
+    text-align: center;
+    padding: 5px 33px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.nav-bar-inner a:hover {
+    background: #153983;
+    color:white;    
+}
+
+.current-date{
+    display:grid;
+}
+
+.currentDate{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.studentContainer{
+    display:grid;
+}
+
+.gridStudentInfo, .gridTeacherInfo{
+    display:inline-flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+#grid-container table{
+    position: center;
+    display:flex;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    display: block;
+    width: 14.2857%;
+    text-align: center;
+    list-style-type: none;
+}
+
+li:nth-child(n+1):nth-child(-n+7) {
+    font-weight: 900;
+    color: #e67e22;
+}
+
+li:nth-child(n+39), li:nth-child(n+8):nth-child(-n+16) {
+    font-weight: 900;
+    color: rgba(0,0,0,.3);
+}
+
+li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
+    border-radius: 5px;
+    background-color: #1abc9c;
+    color: #ecf0f1;
+}
+
+.calendarButton{
+    flex-direction:row;
+    padding-top:25px;
+    display: -webkit-flex;
+    display: flex;
+    margin-right:auto;
+}
+
+.addButton, .dropButton, .searchButton{
+    margin-right:auto;
+}
+
+#studentInfo1, #studentInfo2, #teacherInfo1, #teacherInfo2{
+    display:flex;
+    flex-direction:column;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.gridTeacherInfo{
+    display:flex;
+    flex-direction:row;
+    column-gap:10%;
+    border: 3px solid black;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.gridTeacherInfo2{
+    display:flex;
+    flex-direction:column;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+
+.grid-container{
+    padding-top: 5%;
+    margin-left: 5%;
+}
+
+.studentDetails{
+    display:flex;
+    flex-direction:row;
+    column-gap:25%;
+    border: 3px solid black;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-family: 'Lato', sans-serif;
+    color:darkblue;
+}
+
