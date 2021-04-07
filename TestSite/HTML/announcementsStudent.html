@@ -2,26 +2,25 @@
 <html lang="en">
     <head>
         <link href="../CSS/announcementStyles.css" rel="stylesheet">
-        <title>Student's Home Page</title>
+        <title>Announcements</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
-
-        <div class="container">
-            <nav class="nav-bar-inner">
+        <div class="container" id="container">
+            <nav class="nav-bar-inner" id="nav-bar-inner">
                 <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125" weight="25">
-                <a href="../HTML/announcementsStudent.html">Announcements</a>
-                <a href="../HTML/studentCenter.html">Student Center</a>
-                <a href="../HTML/academics.html">Academics</a>
-                <a href="../HTML/enrollment.html">Enrollment</a>
+                <a id="announcementsNavLink" href="announcementsStudent.html">Announcements</a>
+                <a id="studentCenterNavLink" href="../HTML/studentCenter.html">Student Center</a>
+                <a id="academicsNavLink" href="../HTML/academics.html">Academics</a>
+                <a id="enrollmentNavLink" href="../HTML/enrollment.html">Enrollment</a>
                 <a href="../HTML/financialAid.html">Financial Aid</a>
                 <a href="../HTML/importantLinks.html">Important Links</a>
                 <a href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
             </nav>
 
-            <div class="grid-container">
-                <container class="gridStudentInfo">
+            <div class="grid-container" id="grid-container">
+                <container class="gridStudentInfo" id="gridStudentInfo">
                     <div class="studentName"><b>Full Name:</b> Francisco Lindor</div>
                     <div class="studentID"><b>ID#:</b> 23341538</div>
                     <div class="studentTerm"><b>Term:</b> Spring '21</div>
@@ -86,7 +85,7 @@
                                 </div>
                             </container>
                             <container id="studentInfo2"> Student Specific Info2</container>
-                            <contianer id="studentInfo3"> Student Specific Info3</contianer>
+                            <container id="studentInfo3"> Student Specific Info3</container>
                         </container>
                     </container>
                 </div>
