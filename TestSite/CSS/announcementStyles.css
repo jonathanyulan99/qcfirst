@@ -137,4 +137,13 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     padding-bottom:20px;
 }
 
+.gridStudentInfo{
+    display:flex;
+    flex-direction:row;
+    column-gap:10%;
+    border: 3px solid black;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
 
