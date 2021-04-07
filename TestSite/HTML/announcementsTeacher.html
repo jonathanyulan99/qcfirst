@@ -2,36 +2,35 @@
 <html lang="en">
     <head>
         <link href="../CSS/announcementStyles.css" rel="stylesheet">
-        <title>Announcements</title>
+        <title>Teacher's Home Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
-        <div class="container" id="container">
-            <nav class="nav-bar-inner" id="nav-bar-inner">
+        <div class="container">
+            <nav class="nav-bar-inner">
                 <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125" weight="25">
-                <a id="announcementsNavLink" href="announcementsStudent.html">Announcements</a>
-                <a id="studentCenterNavLink" href="../HTML/studentCenter.html">Student Center</a>
-                <a id="academicsNavLink" href="../HTML/academics.html">Academics</a>
-                <a id="enrollmentNavLink" href="../HTML/enrollment.html">Enrollment</a>
-                <a id="financialAidNavLink" href="../HTML/financialAid.html">Financial Aid</a>
-                <a id="importantLinksNavlink" href="../HTML/importantLinks.html">Important Links</a>
-                <a id="myaccountNavLink" href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
+                <a href="../HTML/announcementsStudent.html">Announcements</a>
+                <a href="../HTML/studentCenter.html">Student Center</a>
+                <a href="../HTML/academics.html">Academics</a>
+                <a href="../HTML/enrollment.html">Enrollment</a>
+                <a href="../HTML/financialAid.html">Financial Aid</a>
+                <a href="../HTML/importantLinks.html">Important Links</a>
+                <a href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
             </nav>
 
-            <div class="grid-container" id="grid-container">
-                <container class="studentDetails" id="studentDetails">
-                    <div class="studentName"><b>Full Name:</b> Francisco Lindor</div>
-                    <div class="studentID"><b>ID#:</b> 23341538</div>
-                    <div class="studentTerm"><b>Term:</b> Spring '21</div>
-                    <div class="studentUni"><b>University:</b> Queens College</div>
-                </container>
+            <div class="grid-container">
+                <div class="gridTeacherInfo">
+                    <div class="teacherName"><b>Full Name:</b> Professor. Professor LongName</div>
+                    <div class="teacherID"><b>ID#:</b> 23341538</div>
+                    <div class="teacherTerm"><b>Term:</b> Spring '21</div>
+                    <div class="teacherUni"><b>University:</b> Queens College</div>
+                </div>
 
-                <div class="gridStudentInfo2" id="gridStudentInfo2">
-                    <container class="studentContainer" id="studentContainer">
-                        <container id="studentInfo1" id="studentInfo1">
+                <div class="gridTeacherInfo2">
+                    <container class="teacherContainer">
+                        <container id="teacherInfo1">
                             <container class="grid-container table">
-
                                 <div class="current-date">
                                     <div class="currentDate">
                                         <h1>Day, XXth</h1>
@@ -84,25 +83,23 @@
                                     </ul>
                                 </div>
                             </container>
-                            <container id="studentInfo2"> Student Specific Info2</container>
-                            <container id="studentInfo3"> Student Specific Info3</container>
 
-                            <container id="studentInfo2">
-                                <table border="1" class="studentInfo2Table" width="50%">
-                                <h3>Student Specific Information3</h3>
-                                    <thead>
-                                        <tr><td>Sample Info Head:</td></tr>
-                                        <tr><td><div>1</div></td></tr>
-                                        <tr><td><div>1</div></td></tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr><td>Sample Info Body:</td></tr>
-                                        <tr><td><div>1</div></td></tr>
-                                        <tr><td><div>1</div></td></tr>
-                                    </tbody>
-                                </table>
-                                <container id="studentInfo3"> Student Specific Info3</container>
-                            </container>
+                                <container id="teacherInfo2">
+                                    <container> <h3> Teacher Specific Information2 </h3> </container>
+                                    <table class="teacherInfo2Table"  border="1">
+                                        <h3>Teacher Specific Information3</h3>
+                                            <thead>
+                                                <tr><td>Sample Info Head:</td></tr>
+                                                <tr><td><div>1</div></td></tr>
+                                                <tr><td><div>1</div></td></tr>
+                                            </thead>
+                                        <tbody>
+                                            <tr><td>Sample Info Body:</td></tr>
+                                            <tr><td><div>1</div></td></tr>
+                                            <tr><td><div>1</div></td></tr>
+                                        </tbody>
+                                    </table>
+                                </container>
                         </container>
                     </container>
                 </div>
@@ -115,7 +112,7 @@
                             <tr>
                                 <td><h4>Class</h4></td>
                                 <td><h4>Days/Times</h4></td>
-                                <td><h4>Instructor</h4></td>
+                                <td><h4>Room Number</h4></td>
                                 <td><h4>Credits</h4></td>
                             </tr>
                             </thead>
@@ -132,7 +129,6 @@
                                     Online- <br>
                                     Synchronous
                                 </td>
-                                <td> To Be Determined</td>
                                 <td> 3.00 Credits</td>
                             </tr>
                             </tbody>

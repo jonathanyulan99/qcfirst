@@ -7,20 +7,20 @@
     </head>
 
     <body>
-        <div class="container">
-            <nav class="nav-bar-inner">
+        <div class="container" id="container">            
+            <nav class="nav-bar-inner" id="nav-bar-inner">
                 <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125" weight="25">
-                <a href="">Announcements</a>
-                <a href="">Professor Center</a>
-                <a href="../HTML/importantLinks.html">Important Links</a>
-                <a href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
+                <a id="announcementProfNavLink" href="announcementsTeacher.html">Announcements</a>
+                <a id="profCenterNavLink" href="../HTML/professorCenter.html">Professor Center</a>
+                <a id="importantLinksNavLink" href="../HTML/importantLinks.html">Important Links</a>
+                <a id="profAccountNavLink" href="../HTML/loginpage.html" class="dropdown-toggle">Professor Account</a>
             </nav>
             
             <div class="container-inner">
-                <container class="textAcademics">
-                    <div class="fullName">Insturctor Name: Marky Mark</div>
-                    <div class="standing">Semester: Summer 2021</div>
-                    <div class="school">Queens College</div>
+                <container class="profDetails" id="profDetails">
+                    <div class="profFullName">Insturctor Name: Marky Mark</div>
+                    <div class="currentSemester">Semester: Summer 2021</div>
+                    <div class="currentSchool">Queens College</div>
                 </container>
 
                 <div class="overview">
@@ -74,7 +74,6 @@
                     Some sort of Reference Material
                 </footer>
 
-            </div>
         </div>
     </body>
 </html>

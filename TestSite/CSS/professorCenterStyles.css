@@ -51,7 +51,7 @@
     color:white;    
 }
 
-.textAcademics{
+.profDetails{
     display:flex;
     flex-direction:row;
     column-gap:25%;
