@@ -5,7 +5,7 @@
     border-radius: 0!important;
 }
 
-.container {
+.important-links-main-container{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -13,11 +13,18 @@
     flex-grow: 1;
 }
 
-.navbarlogo {
+.important-links-inner-container{
+    padding-top: 7%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display:flex;
+    flex-direction:column;
+}
+.nav-bar-logo{
     float: left;
 }
 
-.nav-bar-inner {
+.nav-bar{
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -26,7 +33,7 @@
     background: #F5F3EE;
 }
 
-.nav-bar-inner a {
+.nav-bar a{
     float: left;
     display: block;
     color: darkblue;
@@ -36,32 +43,49 @@
     margin-top: 15px;
 }
 
-.nav-bar-inner a:hover {
+.nav-bar a:hover{
     background: #153983;
     color:white;    
 }
 
-.flex-containerLink{
-    display:flex;
-    flex-direction:column;
-}
-
-.flex-itemTable{
+.important-links-main-content{
     float: left;
     flex: 33.33%;
     padding: 5px;
     display: flex;
 }
 
-.flex-itemsImage{
-    float: right;
-    flex: 33.33%;
-    padding: 5px;
-    display: flex;
+#url-links-table{
+    padding-top: 3%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.importantLinkTable{
+#capHeader{
+    text-decoration: underline;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+th, td{
+    padding: 8px;
+    text-align: left;
+}
+
+#url-links-table a{
     padding-top: 5%;
     margin-left: 5%;
+    text-decoration: none;
+    color: #153983;
+    font-family: 'Lato', sans-serif;
 }
 
+#url-links-table a:hover{
+    background: #153983;
+    color:white;    
+}
+
+.flex-itemImage{
+    padding-top: 7%;
+}
