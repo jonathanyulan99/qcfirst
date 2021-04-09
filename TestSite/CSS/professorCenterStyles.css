@@ -32,7 +32,7 @@
     background: #F5F3EE;
 }
 
-.nav-bar-inner a{
+.nav-bar a{
     float: left;
     display: block;
     color: darkblue;
@@ -56,13 +56,10 @@
     margin-top: 3%;
 }
 
-.overview{
-    box-sizing: border-box;
-    padding-bottom: 5%;
-}
-
 .prof-ctr-main-content{
     display: flex;
+    padding-bottom: 5%;
+    box-sizing: border-box;
 }
 
 #prof-left-panel, #prof-middle-panel, #prof-right-panel{
