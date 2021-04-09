@@ -66,21 +66,25 @@
     border-spacing: 5px;
 }
 
-th, td {
+#stud-ctr-schedule-table{
+    width: 100%;
+}
+
+th, td{
     padding: 15px;
     text-align: left;
 }
 
-th {
+th{
     background-color: black;
     color: white;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even){
     background-color: #eee;
 }
 
-tr:nth-child(odd) {
+tr:nth-child(odd){
     background-color: #fff;
 }
 
