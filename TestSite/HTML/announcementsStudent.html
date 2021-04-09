@@ -7,9 +7,9 @@
     </head>
 
     <body>
-        <div class="announcementsMainContainer">
-            <nav class="nav-bar-inner" id="nav-bar-inner">
-                <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125" weight="25">
+        <div class="announcement-main-container">
+            <nav class="nav-bar-inner">
+                <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125">
                 <a id="announcementsNavLink" href="announcementsStudent.html">Announcements</a>
                 <a id="studentCenterNavLink" href="../HTML/studentCenter.html">Student Center</a>
                 <a id="academicsNavLink" href="../HTML/academics.html">Academics</a>
@@ -17,144 +17,129 @@
                 <a id="financialAidNavLink" href="../HTML/financialAid.html">Financial Aid</a>
                 <a id="importantLinksNavlink" href="../HTML/importantLinks.html">Important Links</a>
                 <a id="myaccountNavLink" href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
-            </nav>
+            </nav> <!-- end of the nav-bar-inner-->
 
-            <div class="announcementsInnerContainer">
-                <div class="announcementDisplay">
-                        <div id="studentName"><b>Full Name:</b> Francisco Lindor</div>
-                        <div id="studentID"><b>ID#:</b> 23341538</div>
-                        <div id="studentTerm"><b>Term:</b> Spring '21</div>
-                        <div id="studentUni"><b>University:</b> Queens College</div>
-                </div>
+            <div class="announcement-inner-container">
+                <div class="announcement-display">
+                    <div id="student-name"><b>Full Name:</b> Francisco Lindor</div>
+                    <div id="student-id"><b>ID#:</b> 23341538</div>
+                    <div id="student-term"><b>Term:</b> Spring '21</div>
+                    <div id="student-uni"><b>University:</b> Queens College</div>
+                </div> <!-- end of announcement-display-->
+                <div class="announcement-stud-calendar">
+                        <div class="current-date">
+                            <div class="currentDate">
+                                <h1>Day, XXth</h1>
+                                <h1>Month XXXX</h1>
+                            </div>
+                                <ul class="studentCalendar">
+                                            <li>SUN</li>
+                                            <li>MON</li>
+                                            <li>TUE</li>
+                                            <li>WED</li>
+                                            <li>THUR</li>
+                                            <li>FRI</li>
+                                            <li>SAT</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                            <li>10</li>
+                                            <li>11</li>
+                                            <li>12</li>
+                                            <li>13</li>
+                                            <li>14</li>
+                                            <li>15</li>
+                                            <li>16</li>
+                                            <li>17</li>
+                                            <li>18</li>
+                                            <li>19</li>
+                                            <li>20</li>
+                                            <li>21</li>
+                                            <li>22</li>
+                                            <li>23</li>
+                                            <li>24</li>
+                                            <li>25</li>
+                                            <li>26</li>
+                                            <li>27</li>
+                                            <li>28</li>
+                                            <li>29</li>
+                                            <li>30</li>
+                                            <li>31</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                </ul> <!-- end of the calendar-->
+                            </div>
 
-                    <div class="gridStudentInfo2" id="gridStudentInfo2">
-                        <container class="studentContainer" id="studentContainer">
-                            <container id="studentInfo1" id="studentInfo1">
-                                <container class="grid-container table">
-
-                                    <div class="current-date">
-                                        <div class="currentDate">
-                                            <h1>Day, XXth</h1>
-                                            <h1>Month XXXX</h1>
-                                        </div>
-
-                                    <ul class="studentCalendar">
-                                        <li>SUN</li>
-                                        <li>MON</li>
-                                        <li>TUE</li>
-                                        <li>WED</li>
-                                        <li>THUR</li>
-                                        <li>FRI</li>
-                                        <li>SAT</li>
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>3</li>
-                                        <li>4</li>
-                                        <li>5</li>
-                                        <li>6</li>
-                                        <li>7</li>
-                                        <li>8</li>
-                                        <li>9</li>
-                                        <li>10</li>
-                                        <li>11</li>
-                                        <li>12</li>
-                                        <li>13</li>
-                                        <li>14</li>
-                                        <li>15</li>
-                                        <li>16</li>
-                                        <li>17</li>
-                                        <li>18</li>
-                                        <li>19</li>
-                                        <li>20</li>
-                                        <li>21</li>
-                                        <li>22</li>
-                                        <li>23</li>
-                                        <li>24</li>
-                                        <li>25</li>
-                                        <li>26</li>
-                                        <li>27</li>
-                                        <li>28</li>
-                                        <li>29</li>
-                                        <li>30</li>
-                                        <li>31</li>
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>3</li>
-                                        <li>4</li>
-                                    </ul>
-                                </div>
-                            </container>
-                            <container id="studentInfo2"> Student Specific Info2</container>
-                            <container id="studentInfo3"> Student Specific Info3</container>
-
-                            <container id="studentInfo2">
-                                <table border="1" class="studentInfo2Table" width="50%">
-                                <h3>Student Specific Information3</h3>
-                                    <thead>
-                                        <tr><td>Sample Info Head:</td></tr>
-                                        <tr><td><div>1</div></td></tr>
-                                        <tr><td><div>1</div></td></tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr><td>Sample Info Body:</td></tr>
-                                        <tr><td><div>1</div></td></tr>
-                                        <tr><td><div>1</div></td></tr>
-                                    </tbody>
-                                </table>
-                                <container id="studentInfo3"> Student Specific Info3</container>
-                            </container>
-                        </container>
-                    </container>
-                </div>
-
-                <div id="containerGeneral">
-                    <div id="containerGeneral1">
+                            <div class="announcement-student-specific-info2" id="announcement-student-specific-info2"> Student Specific Info2</div> <!-- end of the container for announcement-stud-specific2 div-->
+                            <div class="announcement-student-specific-info3" id="announcement-student-specific-info3"> Student Specific Info3</div> <!-- end of the container for announcement-stud-specific3 div-->
+                        </div>
+                </div> <!-- end of the announcement-student-calendar-->
+                <div class="announcement-student-inner-container">
+                    <div class="announcement-student-info2">
+                    <h3>Student Specific Information2</h3>
+                    <table border="1" class="student-info-table" width="50%">
+                        <thead class="announcement-table-student-info2">
+                            <tr><td>Sample Info Head:</td></tr>
+                            <tr><td><div>1</div></td></tr>
+                            <tr><td><div>1</div></td></tr>
+                        </thead>
+                        <tbody class="announcement-table-student-info3">
+                            <tr><td>Sample Info Body:</td></tr>
+                            <tr><td><div>1</div></td></tr>
+                            <tr><td><div>1</div></td></tr>
+                        </tbody>
+                    </table>
+                </div> <!-- end of the announcement-student-info2 -->
+                    <div class="announcement-stud-schedule-table">
                         <h3>Classes</h3>
                         <table border="1">
-                            <thead>
-                            <tr>
-                                <td><h4>Class</h4></td>
-                                <td><h4>Days/Times</h4></td>
-                                <td><h4>Instructor</h4></td>
-                                <td><h4>Credits</h4></td>
-                            </tr>
+                            <thead id="announcement-stud-schedule-table-header">
+                                <tr>
+                                    <td>Class</td>
+                                    <td>Days/Times</td>
+                                    <td>Instructor</td>
+                                    <td>Credits</td>
+                                </tr>
                             </thead>
 
-                            <tbody>
-                            <tr>
-                                <td> CSCI 355 - 40 (9649)</td>
-                                <td>
-                                    MoTuWeTh <br>
-                                    7:00pm - <br>
-                                    9:40pm
-                                </td>
-                                <td>
-                                    Online- <br>
-                                    Synchronous
-                                </td>
-                                <td> To Be Determined</td>
-                                <td> 3.00 Credits</td>
-                            </tr>
+                            <tbody id="announcement-stud-schedule-table-body">
+                                <tr>
+                                    <td> CSCI 355 - 40 (9649)</td>
+                                    <td>
+                                        MoTuWeTh <br>
+                                        7:00pm - <br>
+                                        9:40pm
+                                    </td>
+                                    <td>
+                                        Online- <br>
+                                        Synchronous
+                                    </td>
+                                    <td> To Be Determined</td>
+                                    <td> 3.00 Credits</td>
+                                </tr>
                             </tbody>
                         </table>
-                    </div>
-
-                    <div class="calendarButton">
-                        <button type="addButton" class="addButton">ADD</button>
-                        <button type="dropButton" class="dropButton">DROP</button>
-                        <button type="searchButton" class="searchButton">SEARCH</button>
-                    </div>
-                </div>
-            </div>
-            </div>
-
-
-            <footer>
-                Some Sort of Reference Material
-                <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
-                Some sort of Reference Material
-            </footer>
-
-        </div> <!-- end of main container -->
+                </div> <!-- end of announcement-stud-schedule-table-courses -->
+                    <div class="announcement-stud-schedule-button">
+                        <button type="addButton" id="stud-addButton">ADD</button>
+                        <button type="dropButton" id="stud-dropButton">DROP</button>
+                        <button type="searchButton" id="stud-searchButton">SEARCH</button>
+                </div> <!-- end of the announcement-stud-schedule-button-->
+                </div> <!-- end of the announcement-student-inner-container-->
+            </div> <!--end of the announcement-inner-container-->
+        <footer>
+            Some Sort of Reference Material
+            <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
+            Some sort of Reference Material
+        </footer> <!-- end of the footer -->
+        </div> <!-- end of announcement-main-container -->
     </body>
 </html>

@@ -19,6 +19,32 @@
     padding-left: 5%;
 }
 
+.announcement-display{
+    padding:1%;
+    border:solid purple 5px;
+    display:flex;
+    justify-content:space-between;
+    margin-top:5%;
+}
+
+.announcement-stud-calendar{
+    display:flex;
+}
+
+.announcement-student-specific-info2{
+    flex: 30%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.announcement-student-specific-info3{
+    flex: 30%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #cunyLogo {
     float: left;
 }
@@ -166,3 +192,9 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     color:darkblue;
 }
 
+footer{
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
