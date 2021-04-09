@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <div class="container" id="container">
+        <div class="announcementsMainContainer">
             <nav class="nav-bar-inner" id="nav-bar-inner">
                 <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125" weight="25">
                 <a id="announcementsNavLink" href="announcementsStudent.html">Announcements</a>
@@ -19,24 +19,24 @@
                 <a id="myaccountNavLink" href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
             </nav>
 
-            <div class="grid-container" id="grid-container">
-                <container class="studentDetails" id="studentDetails">
-                    <div class="studentName"><b>Full Name:</b> Francisco Lindor</div>
-                    <div class="studentID"><b>ID#:</b> 23341538</div>
-                    <div class="studentTerm"><b>Term:</b> Spring '21</div>
-                    <div class="studentUni"><b>University:</b> Queens College</div>
-                </container>
+            <div class="announcementsInnerContainer">
+                <div class="announcementDisplay">
+                        <div id="studentName"><b>Full Name:</b> Francisco Lindor</div>
+                        <div id="studentID"><b>ID#:</b> 23341538</div>
+                        <div id="studentTerm"><b>Term:</b> Spring '21</div>
+                        <div id="studentUni"><b>University:</b> Queens College</div>
+                </div>
 
-                <div class="gridStudentInfo2" id="gridStudentInfo2">
-                    <container class="studentContainer" id="studentContainer">
-                        <container id="studentInfo1" id="studentInfo1">
-                            <container class="grid-container table">
+                    <div class="gridStudentInfo2" id="gridStudentInfo2">
+                        <container class="studentContainer" id="studentContainer">
+                            <container id="studentInfo1" id="studentInfo1">
+                                <container class="grid-container table">
 
-                                <div class="current-date">
-                                    <div class="currentDate">
-                                        <h1>Day, XXth</h1>
-                                        <h1>Month XXXX</h1>
-                                    </div>
+                                    <div class="current-date">
+                                        <div class="currentDate">
+                                            <h1>Day, XXth</h1>
+                                            <h1>Month XXXX</h1>
+                                        </div>
 
                                     <ul class="studentCalendar">
                                         <li>SUN</li>
@@ -146,12 +146,15 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </body>
+            </div>
 
-    <footer>
-        Some Sort of Reference Material
-        <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
-        Some sort of Reference Material
-    </footer>
+
+            <footer>
+                Some Sort of Reference Material
+                <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
+                Some sort of Reference Material
+            </footer>
+
+        </div> <!-- end of main container -->
+    </body>
 </html>
