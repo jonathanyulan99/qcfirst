@@ -7,9 +7,9 @@
     </head>
 
     <body>
-        <div class="container">
-            <nav class="nav-bar-inner">
-                <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125" weight="25">
+        <div class="fin-aid-main-container">
+            <nav class="nav-bar">
+                <img class="nav-bar-logo" src="../Images/CUNYfirst.png" alt="cunyFirstLogo" id="cunyFirstLogo" width="125">
                 <a href="announcementsStudent.html">Announcements</a>
                 <a href="../HTML/studentCenter.html">Student Center</a>
                 <a href="../HTML/academics.html">Academics</a>
@@ -19,108 +19,119 @@
                 <a href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
             </nav>
             
-            <div class="container-inner">
-                <container class="textAcademics">
-                    <div class="fullName">Full Name: Francisco Lindor</div>
-                    <div class="standing">Semester: Spring '21</div>
-                    <div class="cumGPA">CumGPA: 3.7</div>
-                    <div class="credits">Credits: 53</div>
-                </container>
-
-                <div class="financialAid">
-                    <table style="width:100%">
-                        <caption>Term: Spring 2021</caption>
-                        <tr>
-                            <th>Award Description</th>
-                            <th>Category</th>
-                            <th>Offered	</th>
-                            <th>Accepted</th>
-                        </tr>
-                        <tr>
-                            <td>Federal PELL Grant Spring 2</td>
-                            <td>Grant</td>
-                            <td>3,097.50</td>
-                            <td>3,097.50</td>
-                        </tr>
-                        <tr>
-                            <td>TAP Fall</td>
-                            <td>Grant</td>
-                            <td>2,582.50</td>
-                            <td>2,582.50</td>
-                        </tr>
-                        <tr>
-                            <td>TAP Waiver Fall</td>
-                            <td>Grant</td>
-                            <td>960.50</td>
-                            <td>960.50</td>
-                        </tr>
-                    </table>
+            <div class="fin-aid-inner-container">
+                <div id="fin-aid-stud-details">
+                    <div id="fin-aid-stud-fullname">Full Name: Francisco Lindor</div>
+                    <div id="fin-aid-semester">Semester: Spring '21</div>
+                    <div id="fin-aid-cumGPA">CumGPA: 3.7</div>
+                    <div id="fin-aid-credits">Credits: 53</div>
                 </div>
 
-                <div class="financialAid2">
-                    <table style="width:100%">
-                        <caption>Term: Fall 2020</caption>
-                        <tr>
-                            <th>Award Description</th>
-                            <th>Category</th>
-                            <th>Offered	</th>
-                            <th>Accepted</th>
-                        </tr>
-                        <tr>
-                            <td>Federal PELL Grant Spring 2</td>
-                            <td>Grant</td>
-                            <td>3,097.50</td>
-                            <td>3,097.50</td>
-                        </tr>
-                        <tr>
-                            <td>TAP Fall</td>
-                            <td>Grant</td>
-                            <td>2,582.50</td>
-                            <td>2,582.50</td>
-                        </tr>
-                        <tr>
-                            <td>TAP Waiver Fall</td>
-                            <td>Grant</td>
-                            <td>960.50</td>
-                            <td>960.50</td>
-                        </tr>
+                <div class="fin-aid-current-term">
+                    <table id="current-semester-aid" style="width:100%">
+                        <thead>
+                            <caption>Term: Spring 2021</caption>
+                            <tr>
+                                <th>Award Description</th>
+                                <th>Category</th>
+                                <th>Offered	</th>
+                                <th>Accepted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Federal PELL Grant Spring 2</td>
+                                <td>Grant</td>
+                                <td>3,097.50</td>
+                                <td>3,097.50</td>
+                            </tr>
+                            <tr>
+                                <td>TAP Fall</td>
+                                <td>Grant</td>
+                                <td>2,582.50</td>
+                                <td>2,582.50</td>
+                            </tr>
+                            <tr>
+                                <td>TAP Waiver Fall</td>
+                                <td>Grant</td>
+                                <td>960.50</td>
+                                <td>960.50</td>
+                            </tr>
+                        </tbody>
                     </table>
-                </div>
+                </div><!-- end of fin-aid-current-term -->
 
-                <div class="charges">
-                    <table style="width:100%">
-                        <caption>Charges Breakdown</caption>
-                        <tr>
-                            <th>Term</th>
-                            <th>Outstanding</th>
-                            <th>Pending Payments</th>
-                            <th>Pending Financial Aid</th>
-                            <th>Total Due</th>
-                        </tr>
-                        <tr>
-                            <td>2021 Summer</td>
-                            <td>1,071.35</td>
-                            <td></td>
-                            <td></td>
-                            <td>1,071.35</td>
-                        </tr>
-                        <tr>
-                            <td><b>Total</b></td>
-                            <td><b>1,071.35</b></td>
-                            <td><b></b></td>
-                            <td><b></b></td>
-                            <td><b>1,071.35</b></td>
-                        </tr>
+                <div class="fin-aid-last-term">
+                    <table id="last-semester-aid" style="width:100%">
+                        <thead>
+                            <caption>Term: Fall 2020</caption>
+                            <tr>
+                                <th>Award Description</th>
+                                <th>Category</th>
+                                <th>Offered	</th>
+                                <th>Accepted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Federal PELL Grant Spring 2</td>
+                                <td>Grant</td>
+                                <td>3,097.50</td>
+                                <td>3,097.50</td>
+                            </tr>
+                            <tr>
+                                <td>TAP Fall</td>
+                                <td>Grant</td>
+                                <td>2,582.50</td>
+                                <td>2,582.50</td>
+                            </tr>
+                            <tr>
+                                <td>TAP Waiver Fall</td>
+                                <td>Grant</td>
+                                <td>960.50</td>
+                                <td>960.50</td>
+                            </tr>
+                        </tbody>
                     </table>
-                </div>
+                </div><!-- end of fin-aid-last-term -->
 
+                <div class="tuition-charges-breakdown">
+                    <table id="charges-breakdown-table" style="width:100%">
+                        <thead>
+                            <caption>Charges Breakdown</caption>
+                            <tr>
+                                <th>Term</th>
+                                <th>Outstanding</th>
+                                <th>Pending Payments</th>
+                                <th>Pending Financial Aid</th>
+                                <th>Total Due</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2021 Summer</td>
+                                <td>1,071.35</td>
+                                <td></td>
+                                <td></td>
+                                <td>1,071.35</td>
+                            </tr>
+                            <tr>
+                                <td><b>Total</b></td>
+                                <td><b>1,071.35</b></td>
+                                <td><b></b></td>
+                                <td><b></b></td>
+                                <td><b>1,071.35</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- end of tuition-charges-breakdown -->
 
                 <footer>
                     Some Sort of Reference Material
                     <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
                     Some sort of Reference Material
                 </footer>
-            </div>
-        </div>
+            </div><!-- end of fin-aid-inner-container -->
+        </div><!-- end of fin-aid-main-container -->
     </body>
 </html>
