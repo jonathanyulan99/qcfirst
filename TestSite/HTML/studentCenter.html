@@ -1,115 +1,95 @@
 <!DOCTYPE html>
-<!-- -->
 <!-- Project code by: Jonathan Yulan and David Acuqui -->
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <link href="../CSS/studentCenterStyles.css" rel="stylesheet">
         <title>Student Center</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-
     <body>
-        <div class="container">
-            <nav class="nav-bar-inner">
-                <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125" weight="25">
-                <a href="announcementsStudent.html">Announcements</a>
+        <div class="stud-ctr-main-container">
+            <nav class="nav-bar">
+                <img class="nav-bar-logo" id="cunyFirstLogo" src="../Images/CUNYfirst.png" alt="cunyFirstLogo" width="125">
+                <a class="active-page" href="announcementsStudent.html">Announcements</a>
                 <a href="../HTML/studentCenter.html">Student Center</a>
                 <a href="../HTML/academics.html">Academics</a>
                 <a href="../HTML/enrollment.html">Enrollment</a>
                 <a href="../HTML/financialAid.html">Financial Aid</a>
                 <a href="../HTML/importantLinks.html">Important Links</a>
-                <a href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
+                <a class="dropdown-toggle" id="loginStudentNavLink" href="../HTML/loginpage.html">My Account</a>
             </nav>
 
-            <div class="container-inner">
-                <container class="textAcademics">
-                    <div class="fullName">Full Name: Francisco Lindor</div>
-                    <div class="standing">Semester: Spring '21</div>
-                    <div class="cumGPA">CumGPA: 3.7</div>
-                    <div class="credits">Credits: 53</div>
-                </container>
-
-                <div class="schedule">
-                    <table style="width:100%">
-                        <caption>Name: Francisco Lindor ID: 34867901 School: Queens College</caption>
-                        <tr>
-                            <th>Class</th>
-                            <th>Days</th>
-                            <th>Time</th>
-                            <th>Format</th>
-                        </tr>
-                        <tr>
-                            <td>CSCI 370-34</td>
-                            <td>Monday/Wednesday</td>
-                            <td>8:00PM - 9:15PM</td>
-                            <td>Online-Synchronous</td>
-                        </tr>
-                        <tr>
-                            <td>CSCI 355-54</td>
-                            <td>Tuesday</td>
-                            <td>8:00PM - 10:50PM</td>
-                            <td>Online-Synchronous</td>
-                        </tr>
-                        <tr>
-                            <td>CSCI 381-03</td>
-                            <td>Tuesday/Friday</td>
-                            <td>12:15PM - 1:30PM</td>
-                            <td>Online-Synchronous</td>
-                        </tr>
-                        <tr>
-                            <td>Mat 200-24</td>
-                            <td>Monday/Wednesday</td>
-                            <td>10:05AM - 11:55AM</td>
-                            <td>Online-Synchronous</td>
-                        </tr>
-                    </table>
+            <div class="stud-ctr-inner-container">
+                <div id="stud-ctr-details">
+                    <div id="stud-ctr-fullname">Full Name: Francisco Lindor</div>
+                    <div id="stud-ctr-semster">Semester: Spring '21</div>
+                    <div id="stud-ctr-cumGPA">CumGPA: 3.7</div>
+                    <div id="stud-ctr-credits">Credits: 53</div>
                 </div>
 
-                <div id="flex-container">
-                    <div class="flex-item">
-                        <h4 style="text-decoration: underline;">Enrollment Appointment</h4>
+                <div class="student-schedule">
+                    <table id="studentCenterSchedule" style="width:100%">
+                        <thead>
+                            <caption>Name: Francisco Lindor ID: 34867901 School: Queens College</caption>
+                            <tr>
+                                <th>Class</th>
+                                <th>Days</th>
+                                <th>Time</th>
+                                <th>Format</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CSCI 370-34</td>
+                                <td>Monday/Wednesday</td>
+                                <td>8:00PM - 9:15PM</td>
+                                <td>Online-Synchronous</td>
+                            </tr>
+                            <tr>
+                                <td>CSCI 355-54</td>
+                                <td>Tuesday</td>
+                                <td>8:00PM - 10:50PM</td>
+                                <td>Online-Synchronous</td>
+                            </tr>
+                            <tr>
+                                <td>CSCI 381-03</td>
+                                <td>Tuesday/Friday</td>
+                                <td>12:15PM - 1:30PM</td>
+                                <td>Online-Synchronous</td>
+                            </tr>
+                            <tr>
+                                <td>Mat 200-24</td>
+                                <td>Monday/Wednesday</td>
+                                <td>10:05AM - 11:55AM</td>
+                                <td>Online-Synchronous</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- end of student-schedule -->
+
+                <div class="stud-urgent-info-container">
+                    <div id="urgent-info-panel1">
+                        <h4>Enrollment Appointment</h4>
                         <p>You may begin enrolling for the 2021 Fall Term Regular Academic Session on April 12, 2021.</p>
                     </div>
 
-                    <div class="flex-item">
-                        <h4 style="text-decoration: underline;">To-Do List</h4>
+                    <div id="urgent-info-panel2">
+                        <h4>To-Do List</h4>
                         <p>File Your 2021-2022 FAFSA Now!</p>
                     </div>
 
-                    <div class="flex-item">
-                        <h4 style="text-decoration: underline;">Holds</h4>
+                    <div id="urgent-info-panel3">
+                        <h4>Holds</h4>
                         <p>Bursar hold.</p>
                     </div>
                 </div>
-
-                <!-- <div class="my alerts"> 
-                    <section class="alert container">
-                        <div class="left alert">
-
-                        </div>
-
-                        <div class="center alert">
-
-                        </div>
-
-                        <div class="right alert">
-
-                        </div>
-                    </section>
-                </div> -->
-
-    
-
-            </div>     
-        </div>
+                <footer>
+                    Some Sort of Reference Material
+                    <img src="../Images/qcLogo3.png" alt="student-college-logo"/>
+                    Some sort of Reference Material
+                </footer>
+            </div><!--  End of stud-ctr-inner-container -->
+        </div><!-- End of stud-ctr-main-container -->
     </body>
-
-    <footer>
-        Some Sort of Reference Material
-        <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
-        Some sort of Reference Material
-    </footer>
-
 </html>
