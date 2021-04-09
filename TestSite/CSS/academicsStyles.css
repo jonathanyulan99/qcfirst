@@ -66,12 +66,17 @@
     display:flex;
     flex-direction:row;
     column-gap:25%;
-    border: 3px solid black;
+    border: 3px solid olive;
     padding-top: 3%;
     border-spacing: 5px;
     margin-bottom: 3%;
     row-gap:25%;
     column-gap:25%;
+}
+
+#test{
+    background-color: orangered;
+    padding-top: 3%;
 }
 
 #course-history-table{
