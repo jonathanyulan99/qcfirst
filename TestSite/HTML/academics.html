@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <link href="../CSS/academicsStyles.css" rel="stylesheet">
         <title>Academics</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="../Javascript/jquery-3.0.0.min.js"></script>
+        <script src="../Javascript/infiniteScroll.js"></script>
     </head>
 
     <body>
@@ -21,16 +24,26 @@
 
             <div class="academics-inner-container">
                 <div class="academics-stud-details">
-                    <div id="academics-fullName">Full Name: Francisco Lindor</div>
-                    <div id="academics-standing">Standing: Junior</div>
-                    <div id="academics-cumGPA">CumGPA: 3.7</div>
-                    <div id="academics-credits">Credits: 78</div>
+                    <div><p id="acad-name-header">Full Name:</p><p id="academics-fullName">Francisco Lindor</p></div>
+                    <div><p id="acad-standing-header">Standing:</p><p id="academics-standing">Junior</p></div>
+                    <div><p id="acad-cumGPA-header">CumGPA:</p><p id="acad-current-college">3.7</p></div>
+                    <div><p id="acad-credits-header">Credits:</p><p id="acad-current-credits">52</p></div>
                 </div>
+
+                <div><p></p></div>
+                
+                <div class="special-content1">
+                    <div class="fade-in-block">
+                        <p id="special-p1">Your course history</p>
+                    </div>
+                </div>
+
+                <div><p></p></div>
 
                 <div class="stud-course-history">
                     <table id="course-history-table">
                         <thead>
-                            <caption id="test">Student's course history:</caption>
+                            <caption class="stud-info-display">Student's course history:</caption>
                             <tr>
                                 <th>Class</th>
                                 <th>ClassNumber</th>
