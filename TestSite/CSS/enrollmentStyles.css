@@ -5,6 +5,22 @@
     border-radius: 0!important;
 }
 
+/* color schemes: 
+blue - #0074e1 
+
+One set of blues:
+teal blueish - #31708e
+lighter than prev - #5085a5
+lighter than prev - #8fc1e3
+
+Another set of colorful (37) current ones being used:
+light orange - #fbe8a6
+pastel orange - #f4976c
+dark blue - #303c6c
+cyan ish - #b4dfe5
+cyan - #d2fdff
+*/
+
 .enrollment-main-container{
     position: relative;
     display: flex;
@@ -52,20 +68,29 @@
     flex-direction:row;
     column-gap:25%;
     border: 3px solid black;
-    margin-bottom: 5%;
     margin-top: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
+    /* padding-top: 1%; */
+    padding-left: 12%;
+    /* padding-right: 1.5%; */
     font-family: 'Lato', sans-serif;
-    color:darkblue;
+    color:white;
+    background-color: #303c6c;
+}
+
+#stud-p-sems, #stud-p-name, #stud-college{
+    color: #fbe8a6;
+    text-decoration-line: underline;
+    font-size: 20px;
 }
 
 .enroll-main-content{
     display: flex;
     box-sizing: border-box;
     padding-bottom: 5%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #b4dfe5;
 }
 
 #enroll-left-panel, #enroll-center-panel, #enroll-right-panel{
@@ -102,6 +127,46 @@
     border-spacing: 5px;
     margin-bottom: 3%;
 }
+
+.enroll-shopping-cart caption{
+    /* background-color: darkblue; */
+    color: #303c6c;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+} 
+
+.enroll-shopping-cart{
+    background: linear-gradient(
+    to bottom,
+    #fbe8a6,
+    #fbe8a6 3.5rem,
+    transparent 1rem,
+    transparent 100%
+  );
+  background-color: oldlace;
+}
+
+.enroll-next-term-cart caption{
+    color: #303c6c;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.enroll-next-term-cart{
+    background: linear-gradient(
+        to bottom,
+        #d2fdff,
+        #d2fdff 3.5rem,
+        transparent 1rem,
+        transparent 100%
+      );
+      background-color: oldlace;
+}
+
+
+/* .row{
+    background-color: mediumvioletred;
+} */
 
 th, td{
     padding: 15px;
