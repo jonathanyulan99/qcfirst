@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <link href="../CSS/financialAidStyles.css" rel="stylesheet">
         <title>Financial Aid</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="../Javascript/jquery-3.0.0.min.js"></script>
+        <script src="../Javascript/infiniteScroll.js"></script>
     </head>
 
     <body>
@@ -21,11 +24,21 @@
             
             <div class="fin-aid-inner-container">
                 <div id="fin-aid-stud-details">
-                    <div id="fin-aid-stud-fullname">Full Name: Francisco Lindor</div>
-                    <div id="fin-aid-semester">Semester: Spring '21</div>
-                    <div id="fin-aid-cumGPA">CumGPA: 3.7</div>
-                    <div id="fin-aid-credits">Credits: 53</div>
+                    <div><p id="fin-aid-name-header">Full Name:</p><p id="fin-aid-stud-fullname">Francisco Lindor</p></div>
+                    <div><p id="fin-aid-sems-header">Semester:</p><p id="fin-aid-semester">Spring 2021</p></div>
+                    <div><p id="fin-aid-cumGPA-header">CumGPA:</p><p id="fin-aid-cumGPA">3.7</p></div>
+                    <div><p id="fin-aid-credits-header">Credits:</p><p id="fin-aid-credits">53</p></div>
                 </div>
+
+                <div><p></p></div>
+                
+                <div class="special-content1">
+                    <div class="fade-in-block">
+                        <p class="special-p1">Contact the Financial Aid office to find out how to graduate from college debt free!</p>
+                    </div>
+                </div>
+
+                <div><p></p></div>
 
                 <div class="fin-aid-current-term">
                     <table id="current-semester-aid" style="width:100%">
