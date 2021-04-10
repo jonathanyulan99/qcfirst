@@ -21,6 +21,8 @@ cyan ish - #b4dfe5
 cyan - #d2fdff
 */
 
+/* Styling for body */
+
 .enrollment-main-container{
     position: relative;
     display: flex;
@@ -34,6 +36,8 @@ cyan - #d2fdff
     padding-right: 5%;
     padding-left: 5%;
 }
+
+/* Styling for nav bar */
 
 .nav-bar-logo{
     float: left;
@@ -64,15 +68,15 @@ cyan - #d2fdff
     color:white;    
 }
 
+/* Styling for student details div at top of page*/
+
 .enroll-stud-details{
     display:flex;
     flex-direction:row;
     column-gap:25%;
     border: 3px solid black;
     margin-top: 3%;
-    /* padding-top: 1%; */
     padding-left: 12%;
-    /* padding-right: 1.5%; */
     font-family: 'Lato', sans-serif;
     color:white;
     background-color: #303c6c;
@@ -84,10 +88,11 @@ cyan - #d2fdff
     font-size: 20px;
 }
 
+/* Styling for main content and buttons */
+
 .enroll-main-content{
     display: flex;
     box-sizing: border-box;
-    /* border: 3px solid black; */
     padding-bottom: 5%;
     padding-top: 3%;
     padding-left: 2%;
@@ -157,6 +162,8 @@ cyan - #d2fdff
     color:white;
 }
 
+/* Styling for tables */
+
 .enroll-shopping-cart, .enroll-next-term-cart{
     display:flex;
     flex-direction:row;
@@ -168,14 +175,14 @@ cyan - #d2fdff
     margin-bottom: 3%;
 }
 
-.enroll-shopping-cart caption{
+caption{
     color: #303c6c;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     padding-bottom: 2%;
 } 
 
-.enroll-shopping-cart{
+.enroll-shopping-cart, .enroll-next-term-cart{
     background: linear-gradient(
     to bottom,
     #fbe8a6,
@@ -184,24 +191,6 @@ cyan - #d2fdff
     transparent 100%
   );
   background-color: oldlace;
-}
-
-.enroll-next-term-cart caption{
-    color: #303c6c;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    padding-bottom: 2%;
-}
-
-.enroll-next-term-cart{
-    background: linear-gradient(
-    to bottom,
-    #fbe8a6,
-    #fbe8a6 5rem,
-    transparent 1rem,
-    transparent 100%
-    );
-    /* background-color: oldlace; */
 }
 
 #shopping-cart-table, #next-term-shopping-cart{
@@ -214,8 +203,6 @@ th, td{
 }
 
 th{
-    /* background-color: black; */
-    /* background-color: #f4976c; */
     background-color: #303c6c;
     color: white;
 }
@@ -226,5 +213,4 @@ tr:nth-child(even){
 
 tr:nth-child(odd){
     background-color: #fff;
-    /* background-color: #f4976c; */
 }
