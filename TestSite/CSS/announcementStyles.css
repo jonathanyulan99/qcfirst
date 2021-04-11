@@ -51,7 +51,7 @@
     background: #153983;
     color:white;
 }
-
+/* Main div that contains the display that controls the display of the user-specific information */
 .announcement-display{
     display:flex;
     flex-direction:row;
@@ -62,6 +62,7 @@
     font-family: 'Lato', sans-serif;
     color:white;
     background-color: #303c6c;
+    justify-content:center;
 }
 
 /* CSS to apply to the display main selector on the academics page */
@@ -167,8 +168,6 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
  .announcement-display p{
     display:flex;
     flex-direction:column;
-    padding-top:20px;
-    padding-bottom:20px;
     text-decoration-line:none;
 }
 
