@@ -5,14 +5,72 @@
     border-radius: 0!important;
 }
 
-.announcement-display{
-    padding:1%;
-    border:solid purple 5px;
-    display:flex;
-    justify-content:space-between;
-    margin-top:5%;
+/* Styling for body */
+
+.announcement-main-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-grow: 1;
 }
 
+.announcement-inner-container{
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/* Styling for nav bar */
+
+.nav-bar-logo{
+    float: left;
+    width:125px;
+}
+
+.nav-bar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background: #F5F3EE;
+}
+
+.nav-bar a{
+    float: left;
+    display: block;
+    color: darkblue;
+    text-align: center;
+    padding: 1px 33px;
+    text-decoration: none;
+    line-height: 65px;
+}
+
+.nav-bar a:hover{
+    background: #153983;
+    color:white;
+}
+
+.announcement-display{
+    display:flex;
+    flex-direction:row;
+    column-gap:20%;
+    border: 3px solid black;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding-left: 2%;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    background-color: #303c6c;
+}
+
+/* CSS to apply to the display main selector on the academics page */
+#student-name, #student-id, #student-term, #student-uni{
+    color: #fbe8a6;
+    text-decoration-line: underline;
+    font-size: 20px;
+}
 .announcement-stud-calendar{
     display:flex;
 }
@@ -29,34 +87,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-}
-
-#cunyLogo {
-    float: left;
-}
-
-.nav-bar-inner {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    font-family: 'Lato', sans-serif;
-    background: #F5F3EE;
-}
-
-.nav-bar-inner a {
-    float: left;
-    display: block;
-    color: darkblue;
-    text-align: center;
-    padding: 5px 33px;
-    text-decoration: none;
-    margin-top: 15px;
-}
-
-.nav-bar-inner a:hover {
-    background: #153983;
-    color:white;    
 }
 
 .current-date{
@@ -124,21 +154,6 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     padding-bottom:20px;
 }
 
-.studentDetails{
-    display:flex;
-    flex-direction:row;
-    column-gap:25%;
-    border: 3px solid black;
-    margin-bottom: 5%;
-    margin-top: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    font-family: 'Lato', sans-serif;
-    color:darkblue;
-}
-
 footer{
     padding: 5%;
     justify-content: center;
@@ -157,7 +172,7 @@ footer{
     text-align:center;
 }
 
-/*CSS to fix the student inner container container first half section containg two tables*/
+/*CSS to fix the student inner container container first half section containing two tables*/
 .announcement-student-info2{
     flex:50%;
     text-align:center;
