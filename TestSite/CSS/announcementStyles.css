@@ -109,10 +109,6 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     color: #ecf0f1;
 }
 
-.schedule{
-    padding-bottom: 5%;
-}
-
 .calendarButton{
     flex-direction:row;
     padding-top:25px;
