@@ -6,6 +6,8 @@
         <link href="../CSS/studentCenterStyles.css" rel="stylesheet">
         <title>Student Center</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="../Javascript/jquery-3.0.0.min.js"></script>
+        <script src="../Javascript/infiniteScroll.js"></script>
     </head>
 
     <body>
@@ -23,16 +25,26 @@
 
             <div class="stud-ctr-inner-container">
                 <div id="stud-ctr-details">
-                    <div id="stud-ctr-fullname">Full Name: Francisco Lindor</div>
-                    <div id="stud-ctr-semster">Semester: Spring '21</div>
-                    <div id="stud-ctr-cumGPA">CumGPA: 3.7</div>
-                    <div id="stud-ctr-credits">Credits: 53</div>
+                    <div><p id="stud-ctr-name-header">Full Name:</p><p id="stud-ctr-fullname">Francisco Lindor</p></div>
+                    <div><p id="stud-ctr-sems-header">Semester:</p><p id="stud-ctr-semester">Spring 2021</p></div>
+                    <div><p id="stud-ctr-college-header">College:</p><p id="stud-ctr-current-college">Queens College</p></div>
+                    <div><p id="stud-ctr-credits-header">Credits:</p><p id="stud-ctr-credits">52</p></div>
                 </div>
+
+                <div><p></p></div>
+                
+                <div class="special-content1">
+                    <div class="fade-in-block">
+                        <p class="special-p1">The Greatest Urban University In The World. One University. 25 Colleges. Endless Opportunities.</p>
+                    </div>
+                </div>
+
+                <div><p></p></div>
 
                 <div class="student-schedule">
                     <table id="stud-ctr-schedule-table">
                         <thead>
-                            <caption>Name: Francisco Lindor ID: 34867901 School: Queens College</caption>
+                            <caption class="stud-info-display">Name: Francisco Lindor | ID: 34867901 | School: Queens College</caption>
                             <tr>
                                 <th>Class</th>
                                 <th>Days</th>
@@ -67,7 +79,17 @@
                             </tr>
                         </tbody>
                     </table>
-                </div><!-- end of student-schedule -->
+                </div><!-- End of student-schedule -->
+
+                <div><p></p></div>
+                
+                <div class="special-content2">
+                    <div class="fade-in-block">
+                        <p class="special-p2">Your personalized CUNY alerts at a:</p>
+                    </div>
+                </div>
+
+                <div><p></p></div>
 
                 <div class="stud-urgent-info-container">
                     <div id="urgent-info-panel1">
@@ -90,7 +112,7 @@
                     <img src="../Images/qcLogo3.png" alt="student-college-logo"/>
                     Some sort of Reference Material
                 </footer>
-            </div><!--  End of stud-ctr-inner-container -->
+            </div><!-- End of stud-ctr-inner-container -->
         </div><!-- End of stud-ctr-main-container -->
     </body>
 </html>

@@ -5,6 +5,24 @@
     border-radius: 0!important;
 }
 
+/* color schemes: 
+blue - #0074e1 
+
+One set of blues:
+teal blueish - #31708e
+lighter than prev - #5085a5
+lighter than prev - #8fc1e3
+
+Another set of colorful (37) current ones being used:
+light orange - #fbe8a6
+pastel orange - #f4976c
+dark blue - #303c6c
+cyan ish - #b4dfe5
+cyan - #d2fdff
+*/
+
+/* Styling for body */
+
 .enrollment-main-container{
     position: relative;
     display: flex;
@@ -19,8 +37,11 @@
     padding-left: 5%;
 }
 
+/* Styling for nav bar */
+
 .nav-bar-logo{
     float: left;
+    line-height: 55px;
 }
 
 .nav-bar{
@@ -37,9 +58,9 @@
     display: block;
     color: darkblue;
     text-align: center;
-    padding: 5px 33px;
+    padding: 1px 33px;
     text-decoration: none;
-    margin-top: 15px;
+    line-height: 65px;
 }
 
 .nav-bar a:hover{
@@ -47,25 +68,36 @@
     color:white;    
 }
 
+/* Styling for student details div at top of page*/
+
 .enroll-stud-details{
     display:flex;
     flex-direction:row;
     column-gap:25%;
     border: 3px solid black;
-    margin-bottom: 5%;
     margin-top: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
+    padding-left: 12%;
     font-family: 'Lato', sans-serif;
-    color:darkblue;
+    color:white;
+    background-color: #303c6c;
 }
+
+#enroll-stud-name-header, #enroll-sems-header, #enroll-college-header{
+    color: #fbe8a6;
+    text-decoration-line: underline;
+    font-size: 20px;
+}
+
+/* Styling for main content and buttons */
 
 .enroll-main-content{
     display: flex;
     box-sizing: border-box;
     padding-bottom: 5%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 3%;
 }
 
 #enroll-left-panel, #enroll-center-panel, #enroll-right-panel{
@@ -73,7 +105,7 @@
     padding: 5px;
 }
 
-.btn{
+.btn1{
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -92,6 +124,46 @@
     color:white;
 }
 
+.btn2{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    background-color:#153983;
+    border-color: #153983;
+    border-width: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    line-height: 1.5;
+    text-decoration: none;
+    color:white;
+}
+
+.btn3{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    background-color:#153983;
+    border-color: #153983;
+    border-width: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 115px;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    line-height: 1.5;
+    text-decoration: none;
+    color:white;
+}
+
+/* Styling for tables */
+
 .enroll-shopping-cart, .enroll-next-term-cart{
     display:flex;
     flex-direction:row;
@@ -103,13 +175,35 @@
     margin-bottom: 3%;
 }
 
+caption{
+    color: #303c6c;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding-bottom: 2%;
+} 
+
+.enroll-shopping-cart, .enroll-next-term-cart{
+    background: linear-gradient(
+    to bottom,
+    #fbe8a6,
+    #fbe8a6 5rem,
+    transparent 1rem,
+    transparent 100%
+  );
+  background-color: oldlace;
+}
+
+#shopping-cart-table, #next-term-shopping-cart{
+    width: 100%;
+}
+
 th, td{
     padding: 15px;
     text-align: left;
 }
 
 th{
-    background-color: black;
+    background-color: #303c6c;
     color: white;
 }
 

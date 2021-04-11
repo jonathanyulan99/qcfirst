@@ -5,6 +5,8 @@
     border-radius: 0!important;
 }
 
+/* Styling for body */
+
 .stud-ctr-main-container{
     position: relative;
     display: flex;
@@ -18,6 +20,8 @@
     padding-right: 5%;
     padding-left: 5%;
 }
+
+/* Styling for nav bar */
 
 .nav-bar-logo{
     float: left;
@@ -37,9 +41,9 @@
     display: block;
     color: darkblue;
     text-align: center;
-    padding: 5px 33px;
+    padding: 1px 33px;
     text-decoration: none;
-    margin-top: 15px;
+    line-height: 65px;
 }
 
 .nav-bar a:hover{
@@ -47,13 +51,73 @@
     color:white;    
 }
 
+/* Styling for Student details div at top of page */
+
 #stud-ctr-details{
     display:flex;
     flex-direction:row;
-    column-gap:25%;
+    column-gap:20%;
     border: 3px solid black;
-    margin-bottom: 5%;
+    margin-top: .2%;
+    padding-left: 2%;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    background-color: #303c6c;
 }
+
+#stud-ctr-name-header, #stud-ctr-sems-header, #stud-ctr-college-header, #stud-ctr-credits-header{
+    color: #fbe8a6;
+    text-decoration-line: underline;
+    font-size: 20px;
+}
+
+/* Styling for infinit scroll/special content */
+
+.fade-in-block{
+    opacity: 0;
+    font-family: 'Lato', sans-serif;
+    color: orangered;
+}
+
+.special-content1{
+    background-image: url("../Images/college5.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+p.special-p1{
+    font-family: 'Lato', sans-serif;
+    padding-top: 10%;
+    padding-left: 35%;
+    font-size: 20px;
+    color: #303c6c;
+}
+
+.special-content2{
+    background-image: url("../Images/college6.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+p.special-p2{
+    font-family: 'Lato', sans-serif;
+    padding-top: 10%;
+    padding-left: 60%;
+    font-size: 20px;
+    color: black;
+}
+
+/* Styling for table */
 
 .student-schedule{
     display:flex;
@@ -61,10 +125,24 @@
     column-gap:25%;
     border: 3px solid black;
     padding-top: 3%;
-    padding-bottom: 5%;
     border-collapse: collapse;
     border-spacing: 5px;
+    background: linear-gradient(
+        to bottom,
+        #fbe8a6,
+        #fbe8a6 5rem,
+        transparent 1rem,
+        transparent 100%
+      );
+      background-color: oldlace;
 }
+
+.student-schedule caption{
+    color: #303c6c;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding-bottom: 2%;
+} 
 
 #stud-ctr-schedule-table{
     width: 100%;
@@ -76,7 +154,7 @@ th, td{
 }
 
 th{
-    background-color: black;
+    background-color: #303c6c;
     color: white;
 }
 
@@ -87,6 +165,8 @@ tr:nth-child(even){
 tr:nth-child(odd){
     background-color: #fff;
 }
+
+/* Styling for personalized cuny alerts */
 
 .stud-urgent-info-container{
     display: flex;

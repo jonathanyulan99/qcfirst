@@ -21,81 +21,100 @@
             
             <div class="enrollment-inner-container">
                 <div class="enroll-stud-details">
-                    <div id="enroll-stud-fullname">Full Name: Francisco Lindor</div>
-                    <div id="enroll-semester">Semester: Summer 2021</div>
-                    <div id="enroll-current-college">Queens College</div>
+                    <div><p id="enroll-stud-name-header">Full Name:</p><p id="enroll-stud-fullname">Francisco Lindor</p></div>
+                    <div><p id="enroll-sems-header">Semester:</p><p id="enroll-semester">Summer 2021</p></div>
+                    <div><p id="enroll-college-header">College:</p><p id="enroll-current-college">Queens College</p></div>
                 </div>
                         
                 <div class="enroll-main-content">
                     <div id="enroll-left-panel">
                         <a href="../HTML/enrollmentAddSearch.html"><img src="../Images/student.jpg" alt="enroll-stud-img1" id="enroll-stud-img1" style="width:100%"/></a>
-                        <a class="btn" href="../HTML/enrollmentAddSearch.html" title="Click here to add/search classes">Add/Search courses</a>
+                        <a class="btn1" href="../HTML/enrollmentAddSearch.html" title="Click here to add/search classes">Add/Search courses</a>
                     </div>
                     
                     <div id="enroll-center-panel">
                         <a href="../HTML/enrollmentSwap.html"><img src="../Images/student4.jpg" alt="enroll-stud-img2" id="enroll-stud-img2" style="width:100%"/></a>
-                        <a class="btn" href="../HTML/enrollmentSwap.html" title="Click here to swap classes">Swap courses</a>
+                        <a class="btn2" href="../HTML/enrollmentSwap.html" title="Click here to swap classes">Swap courses</a>
                     </div>
                     
                     <div id="enroll-right-panel">
                         <a href="../HTML/enrollmentDrop.html"><img src="../Images/student5.jpg" alt="enroll-stud-img3" id="enroll-stud-img3" style="width:100%"/></a>
-                        <a class="btn" href="../HTML/enrollmentDrop.html" title="Click here to drop classes">Drop courses</a>
+                        <a class="btn3" href="../HTML/enrollmentDrop.html" title="Click here to drop classes">Drop courses</a>
                     </div>
                 </div> <!--End of enroll-main-content-->
 
-                <div class="enroll-shopping-cart">
-                    <table id="shopping-cart-table" style="width:100%">
-                        <thead>
-                            <caption>Summer 2021 Shopping Cart:</caption>
-                            <tr>
-                                <th>Class</th>
-                                <th>Day/Times</th>
-                                <th>Room</th>
-                                <th>Instructor</th>
-                                <th>Units</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>CSCI 343-32</td>
-                                <td>MoTuWeTh 7:00PM - 9:40PM</td>
-                                <td>Online-Synchronous</td>
-                                <td>V. Upadhyay</td>
-                                <td>3.00</td>
-                                <td>Closed</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div> <!--End of enroll-shopping-cart-->
-
-                <div class="enroll-next-term-cart">
-                    <table id="next-term-shopping-cart" style="width:100%">
-                        <thead>
-                            <caption>Summer 2021 Schedule:</caption>
-                            <tr>
-                                <th>Class</th>
-                                <th>Description</th>
-                                <th>Day and Times</th>
-                                <th>Room</th>
-                                <th>Instructor</th>
-                                <th>Units</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>CSCI 361-37</td>
-                                <td>Numerical Methods (Lecture)</td>
-                                <td>MoTuWeTh 4:00PM - 5:34PM</td>
-                                <td>Online-Synchronous</td>
-                                <td>A. Smith-Thompson</td>
-                                <td>3.00</td>
-                                <td>Open</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div> <!--End of enroll-next-term-cart-->
+                <div class="row">
+                    <div class="enroll-shopping-cart">
+                        <table id="shopping-cart-table">
+                            <thead>
+                                <caption>Summer 2021 Shopping Cart:</caption>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Day/Times</th>
+                                    <th>Room</th>
+                                    <th>Instructor</th>
+                                    <th>Units</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CSCI 343-32</td>
+                                    <td>MoTuWeTh 7:00PM - 9:40PM</td>
+                                    <td>Online-Synchronous</td>
+                                    <td>V. Upadhyay</td>
+                                    <td>3.00</td>
+                                    <td>Closed</td>
+                                </tr>
+                                <tr>
+                                    <td>MAT 202-12</td>
+                                    <td>MoTu 7:00PM - 9:40PM</td>
+                                    <td>Online-Synchronous</td>
+                                    <td>M. Joseph</td>
+                                    <td>3.00</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> <!--End of enroll-shopping-cart-->
+                </div> <!--End of ROW-->
+                    <div class="enroll-next-term-cart">
+                        <table id="next-term-shopping-cart">
+                            <thead>
+                                <caption>Summer 2021 Schedule:</caption>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Description</th>
+                                    <th>Day and Times</th>
+                                    <th>Room</th>
+                                    <th>Instructor</th>
+                                    <th>Units</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CSCI 361-37</td>
+                                    <td>Numerical Methods (Lecture)</td>
+                                    <td>MoTuWeTh 4:00PM - 5:34PM</td>
+                                    <td>Online-Synchronous</td>
+                                    <td>A. Smith-Thompson</td>
+                                    <td>3.00</td>
+                                    <td>Open</td>
+                                </tr>
+                                <tr>
+                                    <td>ARTH 102-01 (5307)</td>
+                                    <td>History of Western Art II </td>
+                                    <td>MoTuWeTh 1:00PM - 4:30PM</td>
+                                    <td>Online-Synchronous</td>
+                                    <td>Herbert Hartel Jr</td>
+                                    <td>3.00</td>
+                                    <td>Open</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> <!--End of enroll-next-term-cart-->
+                
                 <footer>
                     Some Sort of Reference Material
                     <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>

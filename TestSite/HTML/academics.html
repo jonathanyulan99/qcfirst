@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <link href="../CSS/academicsStyles.css" rel="stylesheet">
         <title>Academics</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="../Javascript/jquery-3.0.0.min.js"></script>
+        <script src="../Javascript/infiniteScroll.js"></script>
     </head>
 
     <body>
-        <div class="container" id="container">
-            <nav class="nav-bar-inner" id="nav-bar-inner">
-                <img class="navBarLogo" id="navBarLogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125">
+        <div class="academics-main-container">
+            <nav class="nav-bar">
+                <img class="nav-bar-logo" src="../Images/CUNYfirst.png" alt="cunyFirstLogo" width="125">
                 <a href="announcementsStudent.html">Announcements</a>
                 <a href="../HTML/studentCenter.html">Student Center</a>
                 <a href="../HTML/academics.html">Academics</a>
@@ -19,47 +22,64 @@
                 <a href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
             </nav>
 
-            <div class="container-inner" id="container-inner">
-                <container class="studentDetails" id="studentDetails">
-                    <div class="studentfullName" id="studentfullName">Full Name: Francisco Lindor</div>
-                    <div class="standing" id="standing">Standing: Junior</div>
-                    <div class="cumGPA" id="cumGPA">CumGPA: 3.7</div>
-                    <div class="credits" id="credits">Credits: 78</div>
-                </container>
+            <div class="academics-inner-container">
+                <div class="academics-stud-details">
+                    <div><p id="acad-name-header">Full Name:</p><p id="academics-fullName">Francisco Lindor</p></div>
+                    <div><p id="acad-standing-header">Standing:</p><p id="academics-standing">Junior</p></div>
+                    <div><p id="acad-cumGPA-header">CumGPA:</p><p id="acad-current-college">3.7</p></div>
+                    <div><p id="acad-credits-header">Credits:</p><p id="acad-current-credits">52</p></div>
+                </div>
 
-                <container class="containerAcademics">
-                            <table id="courseHistory">
-                                <tr>
-                                    <th><h3>Student Course Summary</h3></th>
-                                </tr>
-                                <tr>
-                                    <td><h4>Class</h4></td>
-                                    <td><h4>ClassNumber</h4></td>
-                                    <td><h4>Instructor</h4></td>
-                                    <td><h4>Credits</h4></td>
-                                </tr>
-                                <tbody>
-                                <tr>
-                                    <td> CSCI 355 - 40 (9649)</td>
-                                    <td> 96492021 </td>
-                                    <td> To Be Determined</td>
-                                    <td> 3.00 Credits</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                    </container>
-                    <container class="transcripts"> <p>ABCDEFGHIJLMNOPQRSTUVWXYZ</p></container>
-                    <container class="advisors"> <p>ABCDEFGHIJLMNOPQRSTUVWXYZ</p></container>
-                    <container class="transferCredits"> <p>ABCDEFGHIJLMNOPQRSTUVWXYZ</p></container>
-                </container>
-            </div>
-        </div>
+                <div><p></p></div>
+                
+                <div class="special-content1">
+                    <div class="fade-in-block">
+                        <p class="special-p1">Your course history</p>
+                    </div>
+                </div>
+
+                <div><p></p></div>
+
+                <div class="stud-course-history">
+                    <table id="course-history-table">
+                        <thead>
+                            <caption class="stud-info-display">Student's course history:</caption>
+                            <tr>
+                                <th>Class</th>
+                                <th>ClassNumber</th>
+                                <th>Instructor</th>
+                                <th>Credits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CSCI 355 - 40 (9649)</td>
+                                <td>96492021 </td>
+                                <td>To Be Determined</td>
+                                <td>3.00 Credits</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="stud-transcripts">
+                    <p>stud-transcripts</p>
+                </div>
+
+                <div class="stud-transfer-credits">
+                    <p>stud-transfer-credits</p>
+                </div>
+
+                <div class="stud-advisors">
+                    <p>student advisors</p>
+                </div>
+
+                <footer>
+                    Some Sort of Reference Material
+                    <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
+                    Some sort of Reference Material
+                </footer>
+            </div><!-- end of academics-inner-container -->
+        </div><!-- end of academics-main-container -->
     </body>
-
-    <footer>
-        Some Sort of Reference Material
-        <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
-        Some sort of Reference Material
-    </footer>
-
 </html>
