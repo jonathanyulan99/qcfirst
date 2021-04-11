@@ -82,16 +82,6 @@
     grid-template-columns:1fr 1fr;
 }
 
-.studentContainer{
-    display:grid;
-}
-
-.gridStudentInfo, .gridTeacherInfo{
-    display:inline-flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
-}
-
 #grid-container table{
     position: center;
     display:flex;
@@ -145,36 +135,11 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     margin-right:auto;
 }
 
-.addButton, .dropButton, .searchButton{
-    margin-right:auto;
-}
-
 #studentInfo1, #studentInfo2, #teacherInfo1, #teacherInfo2{
     display:flex;
     flex-direction:column;
     padding-top:20px;
     padding-bottom:20px;
-}
-
-.gridStudentInfo{
-    display:flex;
-    flex-direction:row;
-    column-gap:10%;
-    border: 3px solid black;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
-
-.gridStudentInfo2{
-    display:flex;
-    flex-direction:column;
-    padding-top: 5%;
-    margin-left: 5%;
-}
-
-.grid-container{
-    padding-top: 5%;
-    margin-left: 5%;
 }
 
 .studentDetails{
