@@ -75,22 +75,36 @@
     display:flex;
 }
 
-.announcement-student-specific-info2{
+#announcement-student-specific-info2, #announcement-student-specific-info3{
     flex: 30%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    background-image: url("../Images/student8.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content:center;
+    align-items:center;
+}
+
+.announcement-student-specific-info2{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    text-align:center;
+    color: #303c6c;
 }
 
 .announcement-student-specific-info3{
-    flex: 30%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    color: #303c6c;
+    text-align:center;
 }
 
 .current-date{
     display:grid;
+    flex:50%;
 }
 
 .currentDate{
@@ -164,6 +178,9 @@ footer{
 /*Main CSS that controls that controls the inner-container of the student announcement page */
 .announcement-student-inner-container{
     display:flex;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 /* CSS to fix the table in the second inner container on the page */
@@ -183,6 +200,7 @@ footer{
 .announcement-stud-schedule-table{
     flex:50%;
     text-align:center;
+    padding-top:10px;
 }
 
 /*CSS to apply to the div that contains the buttons under the graph*/
