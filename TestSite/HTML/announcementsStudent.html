@@ -21,16 +21,16 @@
 
             <div class="announcement-inner-container">
                 <div class="announcement-display">
-                    <div id="student-name"><b>Full Name:</b> Francisco Lindor</div>
-                    <div id="student-id"><b>ID#:</b> 23341538</div>
-                    <div id="student-term"><b>Term:</b> Spring '21</div>
-                    <div id="student-uni"><b>University:</b> Queens College</div>
+                    <div><p id="student-name"><b>Full Name:</b></p><p id="student-name-display">Francisco Lindor</p></div>
+                    <div><p id="student-id"><b>ID#:</b></p><p id="student-id-display">23341538</p></div>
+                    <div><p id="student-term"><b>Term:</b></p><p id="student-term-display"> Spring '21</p></div>
+                    <div><p id="student-uni"><b>University:</b></p><p id="student-uni-display">Queens College</p></div>
                 </div> <!-- end of announcement-display-->
                 <div class="announcement-stud-calendar">
                         <div class="current-date">
                             <div class="currentDate">
-                                <h1>Day, XXth</h1>
-                                <h1>Month XXXX</h1>
+                                <p id="current-date-caption-day">Day, XXth</p>
+                                <p id="current-date-caption-month">Month XXXX</p>
                             </div>
                                 <ul class="studentCalendar">
                                             <li>SUN</li>
@@ -83,34 +83,33 @@
                         </div> <!-- end of the announcement-stud-calendar -->
             </div> <!-- end of the announcement-inner-container-->
             <div class="announcement-student-inner-container">
-                    <div class="announcement-student-info2">
-                    <h3>Student Specific Information2</h3>
-                    <table border="1" class="student-info-table">
-                        <thead class="announcement-table-student-info2">
-                            <tr><td>Sample Info Head:</td></tr>
+                <div class="announcement-student-info2">
+                    <table class="student-info-table">
+                        <caption id="announcement-table-student-info2">CUNYFIRST ALERTS</caption>
+                        <thead>
+                            <tr><th>Sample Info Head:</th></tr>
                             <tr><td><div>1</div></td></tr>
                             <tr><td><div>1</div></td></tr>
                         </thead>
-                        <tbody class="announcement-table-student-info3">
-                            <tr><td>Sample Info Body:</td></tr>
+                        <tbody id="announcement-table-student-info3">
                             <tr><td><div>1</div></td></tr>
                             <tr><td><div>1</div></td></tr>
                         </tbody>
                     </table>
-                    </div> <!-- end of the announcement-student-info2 -->
-                    <div class="announcement-stud-schedule-table">
-                        <h3>Classes</h3>
-                        <table class="announcement-stud-schedule-table table" border="1">
-                            <thead id="announcement-stud-schedule-table-header">
+                </div> <!-- end of the announcement-student-info2 -->
+                <div class="announcement-stud-schedule-table">
+                        <table class="announcement-stud-schedule-table table">
+                            <caption id="announcement-stud-schedule-table-header"> Placeholder</caption>
+                            <thead  id="announcement-stud-schedule-table-thead">
                                 <tr>
-                                    <td>Class</td>
-                                    <td>Days/Times</td>
-                                    <td>Instructor</td>
-                                    <td>Credits</td>
+                                    <th>Class</th>
+                                    <th>Days/Times</th>
+                                    <th>Room Number</th>
+                                    <th>Instructor</th>
+                                    <th>Credits</th>
                                 </tr>
                             </thead>
-
-                            <tbody id="announcement-stud-schedule-table-body">
+                            <tbody>
                                 <tr>
                                     <td> CSCI 355 - 40 (9649)</td>
                                     <td>
@@ -133,7 +132,7 @@
                             <button type="button" id="stud-searchButton">SEARCH</button>
                         </div> <!-- end of the announcement-stud-schedule-button-->
                     </div> <!-- end of announcement-stud-schedule-table -->
-                </div> <!-- end of the announcement-student-inner-container-->
+            </div> <!-- end of the announcement-student-inner-container-->
             <footer>
             Some Sort of Reference Material
             <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
