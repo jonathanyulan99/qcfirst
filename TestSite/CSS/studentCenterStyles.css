@@ -5,7 +5,7 @@
     border-radius: 0!important;
 }
 
-.container {
+.stud-ctr-main-container{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,21 +13,17 @@
     flex-grow: 1;
 }
 
-.container-inner {
+.stud-ctr-inner-container{
     padding-top: 7%;
     padding-right: 5%;
     padding-left: 5%;
 }
 
-.schedule{
-    padding-bottom: 5%;
-}
-
-.navbarlogo {
+.nav-bar-logo{
     float: left;
 }
 
-.nav-bar-inner {
+.nav-bar{
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -36,7 +32,7 @@
     background: #F5F3EE;
 }
 
-.nav-bar-inner a {
+.nav-bar a{
     float: left;
     display: block;
     color: darkblue;
@@ -46,13 +42,12 @@
     margin-top: 15px;
 }
 
-.nav-bar-inner a:hover {
-    /* background: rgb(255, 251, 2); or maroon or olive*/
+.nav-bar a:hover{
     background: #153983;
     color:white;    
 }
 
-.textAcademics{
+#stud-ctr-details{
     display:flex;
     flex-direction:row;
     column-gap:25%;
@@ -60,35 +55,40 @@
     margin-bottom: 5%;
 }
 
-.schedule{
+.student-schedule{
     display:flex;
     flex-direction:row;
     column-gap:25%;
     border: 3px solid black;
     padding-top: 3%;
+    padding-bottom: 5%;
     border-collapse: collapse;
     border-spacing: 5px;
 }
 
-th, td {
+#stud-ctr-schedule-table{
+    width: 100%;
+}
+
+th, td{
     padding: 15px;
     text-align: left;
 }
 
-th {
+th{
     background-color: black;
     color: white;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even){
     background-color: #eee;
 }
 
-tr:nth-child(odd) {
+tr:nth-child(odd){
     background-color: #fff;
 }
 
-#flex-container {
+.stud-urgent-info-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -98,16 +98,18 @@ tr:nth-child(odd) {
     padding: 2%;
     margin-top: 5%;
     margin-bottom: 3%;
-    /* background: #6e7072; */
     background: #369;
 }
 
-.flex-item {
+#urgent-info-panel1, #urgent-info-panel2, #urgent-info-panel3{
     width: 100px;
     height: 200px;
     border: 1px black solid;
     background: #eee;
     padding: 2%;
     margin: 2%;
-    text-decoration-color: #7D1935;
+}
+
+#urgent-info-panel1 > h4, #urgent-info-panel2 > h4, #urgent-info-panel3 > h4{
+    text-decoration: underline;
 }

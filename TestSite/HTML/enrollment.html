@@ -7,97 +7,101 @@
     </head>
 
     <body>
-        <div class="container" id="container">
-            <nav class="nav-bar-inner" id="nav-bar-inner">
-                <img class="navbarlogo" src="../Images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125" weight="25">
-                <a href="announcementsStudent.html">Announcements</a>
+        <div class="enrollment-main-container">
+            <nav class="nav-bar">
+                <img class="nav-bar-logo" id="cunyFirstLogo" src="../Images/CUNYfirst.png" alt="cunyFirstLogo" width="125">
+                <a  href="announcementsStudent.html">Announcements</a>
                 <a href="../HTML/studentCenter.html">Student Center</a>
                 <a href="../HTML/academics.html">Academics</a>
                 <a href="../HTML/enrollment.html">Enrollment</a>
                 <a href="../HTML/financialAid.html">Financial Aid</a>
                 <a href="../HTML/importantLinks.html">Important Links</a>
-                <a href="../HTML/loginpage.html" class="dropdown-toggle">My Account</a>
+                <a class="dropdown-toggle" href="../HTML/loginpage.html">My Account</a>
             </nav>
             
-            <div class="container-inner" id="container-inner">
-                <container class="studentDetails" id="studentDetails">
-                    <div class="fullName" id="studentFullName">Full Name: Francisco Lindor</div>
-                    <div class="currentSemester" id="currentSemester">Semester: Summer 2021</div>
-                    <div class="currentSchool" id="currentSchool">Queens College</div>
-                </container>
-
-                <div class="overview" id="overview">
-                    <section id="contentSection">
-                        <div class="mainContent" id="mainContent">
-                            <div class="leftContent" id="leftContent">
-                                <a><img src="../Images/student.jpg" alt="studentimage1" id="studentimage1" style="width:100%"/></a>
-                                <a class="btn" href="../HTML/enrollmentAddSearch.html" title="Click here to add/search classes">Add/Search courses</a>
-                            </div>
-
-                            <div class="centerContent" id="centerContent">
-                                <a><img src="../Images/student4.jpg" alt="studentimage2" id="studentimage2" style="width:100%"/></a>
-                                <div><a class="btn" href="../HTML/enrollmentSwap.html" title="Click here to swap classes">Swap courses</a></div>
-                            </div>
-
-                            <div class="rightContent" id="rightContent">
-                                <a><img src="../Images/student5.jpg" alt="studentimage3" id="studentimage3" style="width:100%"/></a>
-                                <div><a class="btn" href="../HTML/enrollmentDrop.html" title="Click here to drop classes">Drop courses</a></div>
-                            </div>
-                        </div>
-                    </section>
+            <div class="enrollment-inner-container">
+                <div class="enroll-stud-details">
+                    <div id="enroll-stud-fullname">Full Name: Francisco Lindor</div>
+                    <div id="enroll-semester">Semester: Summer 2021</div>
+                    <div id="enroll-current-college">Queens College</div>
                 </div>
+                        
+                <div class="enroll-main-content">
+                    <div id="enroll-left-panel">
+                        <a href="../HTML/enrollmentAddSearch.html"><img src="../Images/student.jpg" alt="enroll-stud-img1" id="enroll-stud-img1" style="width:100%"/></a>
+                        <a class="btn" href="../HTML/enrollmentAddSearch.html" title="Click here to add/search classes">Add/Search courses</a>
+                    </div>
+                    
+                    <div id="enroll-center-panel">
+                        <a href="../HTML/enrollmentSwap.html"><img src="../Images/student4.jpg" alt="enroll-stud-img2" id="enroll-stud-img2" style="width:100%"/></a>
+                        <a class="btn" href="../HTML/enrollmentSwap.html" title="Click here to swap classes">Swap courses</a>
+                    </div>
+                    
+                    <div id="enroll-right-panel">
+                        <a href="../HTML/enrollmentDrop.html"><img src="../Images/student5.jpg" alt="enroll-stud-img3" id="enroll-stud-img3" style="width:100%"/></a>
+                        <a class="btn" href="../HTML/enrollmentDrop.html" title="Click here to drop classes">Drop courses</a>
+                    </div>
+                </div> <!--End of enroll-main-content-->
 
-                <div class="shoppingCart" id="shoppingCart">
-                    <table id="shoppingCart" style="width:100%">
-                        <caption>Summer 2021 Shopping Cart:</caption>
-                        <tr>
-                            <th>Class</th>
-                            <th>Day/Times</th>
-                            <th>Room</th>
-                            <th>Instructor</th>
-                            <th>Units</th>
-                            <th>Status</th>
-                        </tr>
-                        <tr>
-                            <td>CSCI 343-32</td>
-                            <td>MoTuWeTh 7:00PM - 9:40PM</td>
-                            <td>Online-Synchronous</td>
-                            <td>V. Upadhyay</td>
-                            <td>3.00</td>
-                            <td>Closed</td>
-                        </tr>
+                <div class="enroll-shopping-cart">
+                    <table id="shopping-cart-table" style="width:100%">
+                        <thead>
+                            <caption>Summer 2021 Shopping Cart:</caption>
+                            <tr>
+                                <th>Class</th>
+                                <th>Day/Times</th>
+                                <th>Room</th>
+                                <th>Instructor</th>
+                                <th>Units</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CSCI 343-32</td>
+                                <td>MoTuWeTh 7:00PM - 9:40PM</td>
+                                <td>Online-Synchronous</td>
+                                <td>V. Upadhyay</td>
+                                <td>3.00</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
                     </table>
-                </div>
+                </div> <!--End of enroll-shopping-cart-->
 
-                <div class="nextTermSchedule" id="nextTermSchedule">
-                    <table id="currentSchedule" style="width:100%">
-                        <caption>Summer 2021 Schedule:</caption>
-                        <tr>
-                            <th>Class</th>
-                            <th>Description</th>
-                            <th>Day and Times</th>
-                            <th>Room</th>
-                            <th>Instructor</th>
-                            <th>Units</th>
-                            <th>Status</th>
-                        </tr>
-                        <tr>
-                            <td>CSCI 361-37</td>
-                            <td>Numerical Methods (Lecture)</td>
-                            <td>MoTuWeTh 4:00PM - 5:34PM</td>
-                            <td>Online-Synchronous</td>
-                            <td>A. Smith-Thompson</td>
-                            <td>3.00</td>
-                            <td>Open</td>
-                        </tr>
+                <div class="enroll-next-term-cart">
+                    <table id="next-term-shopping-cart" style="width:100%">
+                        <thead>
+                            <caption>Summer 2021 Schedule:</caption>
+                            <tr>
+                                <th>Class</th>
+                                <th>Description</th>
+                                <th>Day and Times</th>
+                                <th>Room</th>
+                                <th>Instructor</th>
+                                <th>Units</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CSCI 361-37</td>
+                                <td>Numerical Methods (Lecture)</td>
+                                <td>MoTuWeTh 4:00PM - 5:34PM</td>
+                                <td>Online-Synchronous</td>
+                                <td>A. Smith-Thompson</td>
+                                <td>3.00</td>
+                                <td>Open</td>
+                            </tr>
+                        </tbody>
                     </table>
-                </div>
+                </div> <!--End of enroll-next-term-cart-->
                 <footer>
                     Some Sort of Reference Material
                     <img src="../Images/qcLogo3.png" alt="vintageQcLogo"/>
                     Some sort of Reference Material
                 </footer>
-            </div>
-        </div>
+            </div> <!--End of enrollment-inner-container-->
+        </div><!--End of enrollment-main-container-->
     </body>
 </html>

@@ -5,7 +5,7 @@
     border-radius: 0!important;
 }
 
-.container {
+.fin-aid-main-container{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,21 +13,17 @@
     flex-grow: 1;
 }
 
-.container-inner {
+.fin-aid-inner-container{
     padding-top: 3%;
     padding-right: 5%;
     padding-left: 5%;
 }
 
-.schedule{
-    padding-bottom: 5%;
-}
-
-.navbarlogo {
+.nav-bar-logo {
     float: left;
 }
 
-.nav-bar-inner {
+.nav-bar{
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -36,7 +32,7 @@
     background: #F5F3EE;
 }
 
-.nav-bar-inner a {
+.nav-bar a{
     float: left;
     display: block;
     color: darkblue;
@@ -46,22 +42,21 @@
     margin-top: 15px;
 }
 
-.nav-bar-inner a:hover {
-    /* background: rgb(255, 251, 2); or maroon or olive*/
+.nav-bar a:hover{
     background: #153983;
     color:white;    
 }
 
-.textAcademics{
+#fin-aid-stud-details{
     display:flex;
     flex-direction:row;
     column-gap:25%;
     border: 3px solid black;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.financialAid, .financialAid2, .charges{
+.fin-aid-current-term, .fin-aid-last-term, .tuition-charges-breakdown{
     display:flex;
     flex-direction:row;
     column-gap:25%;
@@ -72,12 +67,12 @@
     margin-bottom: 3%;
 }
 
-th, td {
+th, td{
     padding: 15px;
     text-align: left;
 }
 
-th {
+th{
     background-color: black;
     color: white;
 }
@@ -86,15 +81,6 @@ tr:nth-child(even) {
     background-color: #eee;
 }
 
-tr:nth-child(odd) {
+tr:nth-child(odd){
     background-color: #fff;
 }
-
-/* a:link {
-    color:inherit;
-}
- 
-a {color:#7D1935;}
-a:visited {color:#7D1935;}
-a:hover {color:#ff01c8;}
-a:active {color:#7D1935;} */
