@@ -198,3 +198,39 @@ footer{
     align-items: center;
     display: flex;
 }
+
+/*Main CSS that controls that controls the inner-container of the student announcement page */
+.announcement-student-inner-container{
+    display:flex;
+}
+
+/* CSS to fix the table in the second inner container on the page */
+.student-info-table{
+    width:90%;
+    text-align:center;
+}
+
+/*CSS to fix the student inner container container first half section containg two tables*/
+.announcement-student-info2{
+    flex:50%;
+    text-align:center;
+}
+
+
+/*CSS to fix the student database generated table on the second inner-container page*/
+.announcement-stud-schedule-table{
+    flex:50%;
+    text-align:center;
+}
+
+/*CSS to apply to the div that contains the buttons under the graph*/
+.announcement-stud-schedule-button{
+    padding:5px;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+/*CSS to apply to the table specifically working table in the second inner container*/
+.announcement-stud-schedule-table table{
+    width:90%;
+}
