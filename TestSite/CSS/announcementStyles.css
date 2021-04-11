@@ -5,20 +5,6 @@
     border-radius: 0!important;
 }
 
-.container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    flex-grow: 1;
-}
-
-.container-inner {
-    padding-top: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
 .announcement-display{
     padding:1%;
     border:solid purple 5px;
