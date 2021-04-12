@@ -100,6 +100,10 @@
     margin-bottom: 3%;
 }
 
+#prof-next-term-table{
+    width: 100%;
+}   
+
 th, td{
     padding: 15px;
     text-align: left;
