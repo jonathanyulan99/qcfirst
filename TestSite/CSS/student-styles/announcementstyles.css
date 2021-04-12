@@ -78,7 +78,7 @@
 #announcement-student-specific-info2, #announcement-student-specific-info3{
     flex: 30%;
     display: flex;
-    background-image: url("../Images/student8.jpg");
+    background-image: url("../../images/student8.jpg");
     height: 100%;
     background-attachment: fixed;
     background-position: center;

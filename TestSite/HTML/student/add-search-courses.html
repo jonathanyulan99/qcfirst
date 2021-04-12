@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Add or Search classes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="../../css/student-styles/addsearchstyles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="add-search-main-container">
+            <nav class="nav-bar">
+                <img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="cunyFirstLogo" width="125">
+                <a href="../student/cuny-announcements.html">Announcements</a>
+                <a href="../student/student-center.html">Student Center</a>
+                <a href="../student/academics.html">Academics</a>
+                <a href="../student/enrollment-overview.html">Enrollment</a>
+                <a href="../student/financial-aid.html">Financial Aid</a>
+                <a href="../student/important-links.html">Important Links</a>
+                <a href="../loginpage.html" class="dropdown-toggle">My Account</a>
+            </nav>
+
+            <div class="add-search-inner-container">
+                <div id="add-class-header">
+                    <h2><u>Add Courses</u></h2>
+                    <h3>1.Search and select the courses you want to add</h3>
+                    <p>To select classes for another term, select the term and select 'Change Term'.<br>
+                        When you are satisfied with your class selections, proceed forward.</p>
+
+                    <h3> 2021 Summer Term | Undergraduate | Queens College </h3>
+                    <button type="submit" id="changeTerm">Change Term</button>
+                </div>
+
+                <div class="tables-container">
+                    <div class="add-table1">
+                        <table id="header-table-info">
+                            <tbody>
+                                <tr>
+                                    <th>Add to Cart:</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="classNumber"> Enter Class Number: </label>
+                                        <input type="text" id="classNumber">
+                                        <input type="submit" placeholder="Enter">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table id="search-by-coursenum-table">
+                            <tbody>
+                                <tr id="add-class2-header1">
+                                    <th>Find Classes</th>
+                                </tr>
+                                <tr id="add-class2-header2">
+                                    <td> <input type="radio"> Class Search</td>
+                                    <td> <input type="radio"> My Schedule</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- End of add-table1 -->
+
+                    <div class="add-table2">
+                        <table id="course-in-cart">
+                            <thead>
+                                <tr>
+                                    <caption>2021 Semester Shown Shopping Cart</caption>
+                                </tr>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Days/Times</th>
+                                    <th>Room</th>
+                                    <th>Instructor</th>
+                                    <th>Credits</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CSCI 355 - 40 (9649)</td>
+                                    <td>
+                                        MoTuWeTh <br>
+                                        7:00pm - <br>
+                                        9:40pm
+                                    </td>
+                                    <td>
+                                        Online- <br>
+                                        Synchronous
+                                    </td>
+                                    <td>To Be Determined</td>
+                                    <td>3.00 Credits</td>
+                                </tr>
+                                <tr>
+                                    <td>CSCI 343 (9649)</td>
+                                    <td>
+                                        TuTh <br>
+                                        3:00pm - <br>
+                                        4:15pm
+                                    </td>
+                                    <td>
+                                        Online- <br>
+                                        Synchronous
+                                    </td>
+                                    <td>To Be Determined</td>
+                                    <td>3.00 Credits</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- End of add-table2 -->
+                </div><!-- End of tables-container -->
+                <footer>
+                    Some Sort of Reference Material
+                    <img src="../../images/qcLogo3.png" alt="vintageQcLogo"/>
+                    Some sort of Reference Material
+                </footer>
+            </div><!-- End of add-search-inner-container -->
+        </div><!-- End of add-search-main-container -->
+    </body>
+</html>
