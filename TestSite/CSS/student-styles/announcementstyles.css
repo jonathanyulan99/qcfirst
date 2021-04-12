@@ -150,14 +150,6 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     color: #ecf0f1;
 }
 
-.calendarButton{
-    flex-direction:row;
-    padding-top:25px;
-    display: -webkit-flex;
-    display: flex;
-    margin-right:auto;
-}
-
  .announcement-display p{
     display:flex;
     flex-direction:column;
@@ -204,13 +196,6 @@ footer{
     text-align:center;
     padding-top:10px;
     border:solid;
-}
-
-/*CSS to apply to the div that contains the buttons under the graph*/
-.announcement-stud-schedule-button{
-    padding:5px;
-    display:flex;
-    justify-content:space-evenly;
 }
 
 /*CSS to apply to the table specifically working table in the second inner container*/

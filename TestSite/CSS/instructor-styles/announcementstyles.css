@@ -75,6 +75,21 @@
     padding-bottom: 2%;
 }
 
+th{
+    background-color: #303c6c;
+    color: white;
+    font-size:20px;
+    justify-content:space-between;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:nth-child(odd){
+    background-color: #fff;
+}
+
 /* This css selector work on the div teacher-specific heading display */
 .teacher-announcement-display{
     display:flex;
@@ -115,7 +130,7 @@
 
 /* CSS to fix the table in the second inner container on the page */
 .teacher-info-table{
-    width:90%;
+    width:100%;
     text-align:center;
     border:solid;
 }
@@ -132,6 +147,7 @@
     text-align:center;
     padding-top:10px;
     border:solid;
+
 }
 
 /*CSS to apply to the table specifically working table in the second inner container*/
@@ -140,8 +156,23 @@
     border-collapse:collapse;
 }
 
+#announcement-teacher-schedule-table-thead {
+    border:1px solid #303c6c;
+    text-align:center;
+    padding:2%;
+}
+
+caption{
+    color: #303c6c;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    padding-bottom: 2%;
+}
+
+
 /* Styling for the table headers */
 .announcement-teacher-schedule-table{
+    height:100%;
     column-gap:25%;
     border: 3px solid black;
     border-collapse: collapse;
@@ -153,35 +184,6 @@
             transparent 1rem,
             transparent 100%
     );
-}
-
-.gridTeacherInfo2{
-    display:inline-flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
-}
-
-.gridTeacherInfo{
-    display:flex;
-    flex-direction:row;
-    column-gap:25%;
-    border: 3px solid black;
-    margin-bottom: 3%;
-    margin-top: 1%;
-}
-
-
-
-#grid-containerTable{
-    position: center;
-    display:flex;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
 }
 
 ul{
@@ -225,46 +227,55 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     margin-right:auto;
 }
 
-/* #studentInfo1, #studentInfo2, #teacherInfo1, #teacherInfo2{
-    display:flex;
-    flex-direction:column;
-    padding-top:20px;
-    padding-bottom:20px;
-} */
-
-/* .gridTeacherInfo{
-    display:flex;
-    flex-direction:row;
-    column-gap:10%;
-    border: 3px solid black;
-    margin-top: 10%;
-    margin-bottom: 5%;
-} */
-
-.gridTeacherInfo2{
-    display:flex;
-    flex-direction:column;
-    padding-top: 5%;
-    margin-left: 5%;
+/* css selector that works on the first table under the calendar*/
+.announcement-teacher-info-table{
+    width:100%;
+    border:solid;
 }
 
-.grid-container{
+.teacher-announcement-inner-container-div2{
+    display:flex;
     padding-top: 5%;
-    margin-left: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
-.gridTeacherInfo{
+footer{
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/*formatting for the <p> tags for after the first display teacher generated information*/
+.teacher-announcement-display p{
     display:flex;
-    flex-direction:row;
-    column-gap:25%;
-    border: 3px solid black;
-    margin-bottom: 5%;
-    margin-top: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
+    flex-direction:column;
+    text-decoration-line:none;
+}
+
+/* change the div containing the schedule buttons */
+.announcement-stud-schedule-button{
+    padding:2%;
+ }
+
+.announcement-student-specific-info2, .announcement-student-specific-info3{
+    flex: 30%;
+    display: flex;
+    background-image: url("../../images/student8.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content:center;
+    align-items:center;
+}
+
+.announcement-teacher-specific-info2{
     font-family: 'Lato', sans-serif;
-    color:darkblue;
+    font-size: 25px;
+    text-align:center;
+    color: #303c6c;
+    width:30%;
 }
-
