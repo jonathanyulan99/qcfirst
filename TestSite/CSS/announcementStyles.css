@@ -190,6 +190,7 @@ footer{
 .student-info-table{
     width:90%;
     text-align:center;
+    border:solid;
 }
 
 /*CSS to fix the student inner container container first half section containing two tables*/
@@ -198,12 +199,17 @@ footer{
     text-align:center;
 }
 
+#announcement-table-student-info2{
+    border:solid;
+    background-color: #fbe8a6;
+}
 
 /*CSS to fix the student database generated table on the second inner-container page*/
 .announcement-stud-schedule-table{
     flex:50%;
     text-align:center;
     padding-top:10px;
+    border:solid;
 }
 
 /*CSS to apply to the div that contains the buttons under the graph*/
