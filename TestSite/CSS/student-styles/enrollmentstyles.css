@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
 
-@media (max-width: 900px)
-{}.nav-bar {
-    border-radius: 0!important;
-}
-
 /* color schemes: 
 blue - #0074e1 
 
@@ -173,6 +168,14 @@ cyan - #d2fdff
     border-collapse: collapse;
     border-spacing: 5px;
     margin-bottom: 3%;
+    background: linear-gradient(
+        to bottom,
+        #fbe8a6,
+        #fbe8a6 5rem,
+        transparent 1rem,
+        transparent 100%
+      );
+      background-color: oldlace;
 }
 
 caption{
@@ -181,17 +184,6 @@ caption{
     font-size: 18px;
     padding-bottom: 2%;
 } 
-
-.enroll-shopping-cart, .enroll-next-term-cart{
-    background: linear-gradient(
-    to bottom,
-    #fbe8a6,
-    #fbe8a6 5rem,
-    transparent 1rem,
-    transparent 100%
-  );
-  background-color: oldlace;
-}
 
 #shopping-cart-table, #next-term-shopping-cart{
     width: 100%;
