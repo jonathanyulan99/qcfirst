@@ -71,7 +71,7 @@
     font-size: 20px;
 }
 
-/* Styling for infinit scroll/special content */
+/* Styling for infinite scroll/special content */
 
 .fade-in-block{
     opacity: 0;
@@ -172,7 +172,7 @@ tr:nth-child(odd){
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 500px;
+    width: 700px;
     border: 3px black solid;
     margin: 0 auto;
     padding: 2%;
@@ -182,7 +182,7 @@ tr:nth-child(odd){
 }
 
 #urgent-info-panel1, #urgent-info-panel2, #urgent-info-panel3{
-    width: 100px;
+    width: 150px;
     height: 200px;
     border: 1px black solid;
     background: #eee;

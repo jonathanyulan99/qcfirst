@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <!-- Project code by: Jonathan Yulan and David Acuqui -->
+<!--
+  Name: David Acuqui and Jonathan Yulan 
+  Date: 04.17.2021
+  Section: CS 355-
+
+  This is the student center page where a student user can see their current schedule 
+  and their student-related announcements.
+-->
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link href="../../css/student-styles/studentcenterstyles.css" rel="stylesheet">
-        <title>Student Center</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Student Center</title>
+        <link href="../../css/student-styles/studentcenterstyles.css" rel="stylesheet">
         <script src="../../javascript/jquery-3.0.0.min.js"></script>
         <script src="../../javascript/infiniteScroll.js"></script>
     </head>
@@ -44,7 +53,7 @@
                 <div class="student-schedule">
                     <table id="stud-ctr-schedule-table">
                         <thead>
-                            <caption>Name: Francisco Lindor | ID: 34867901</caption>
+                            <caption>Name: Francisco Lindor | CUNY ID: 34867901</caption>
                             <tr>
                                 <th>Class</th>
                                 <th>Days</th>
@@ -99,12 +108,16 @@
 
                     <div id="urgent-info-panel2">
                         <h4>To-Do List</h4>
-                        <p>File Your 2021-2022 FAFSA Now!</p>
+                        <ul>
+                            <li>File Your 2021-2022 FAFSA Now!</li>
+                        </ul>
                     </div>
 
                     <div id="urgent-info-panel3">
                         <h4>Holds</h4>
-                        <p>Bursar hold.</p>
+                        <ul>
+                            <li>Bursar hold.</li>
+                        </ul>
                     </div>
                 </div>
                 
