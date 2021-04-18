@@ -67,6 +67,52 @@
     font-size: 20px;
 }
 
+/* Styling for infinit scroll/special content */
+
+.fade-in-block{
+    opacity: 0;
+    font-family: 'Lato', sans-serif;
+    color: orangered;
+}
+
+.special-content1{
+    background-image: url("../../images/professor2.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+p.special-p1{
+    font-family: 'Lato', sans-serif;
+    padding-top: 10%;
+    padding-left: 35%;
+    font-size: 50px;
+    color: #303c6c;
+}
+
+.special-content2{
+    background-image: url("../../images/professor3.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+p.special-p2{
+    font-family: 'Lato', sans-serif;
+    padding-top: 10%;
+    padding-left: 60%;
+    font-size: 20px;
+    color: black;
+}
+
 /* Styling for main content and buttons */
 
 .prof-ctr-main-content{
