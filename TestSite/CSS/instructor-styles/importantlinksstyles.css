@@ -1,11 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
 
-@media (max-width: 900px)
-{}.nav-bar {
-    border-radius: 0!important;
-}
+/* Styling for body */
 
-.container {
+.prof-links-main-container{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -13,11 +10,22 @@
     flex-grow: 1;
 }
 
-.navbarlogo {
-    float: left;
+.prof-links-inner-container{
+    padding-top: 7%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display:flex;
+    flex-direction:column;
 }
 
-.nav-bar-inner {
+/* Styling for nav bar */
+
+.nav-bar-logo{
+    float: left;
+    line-height: 55px;
+}
+
+.nav-bar{
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -26,22 +34,65 @@
     background: #F5F3EE;
 }
 
-.nav-bar-inner a {
+.nav-bar a{
     float: left;
     display: block;
     color: darkblue;
     text-align: center;
-    padding: 5px 33px;
+    padding: 1px 80px;
     text-decoration: none;
-    margin-top: 15px;
+    line-height: 65px;
 }
 
-.nav-bar-inner a:hover {
+.nav-bar a:hover{
     background: #153983;
     color:white;    
 }
 
-.flex-containerLink{
-    padding-top: 30%;
+/* Styling for main content div */
+
+.prof-links-main-content{
+    float: left;
+    flex: 33.33%;
+    padding: 5px;
+    display: flex;
+}
+
+/* Styling for table */
+
+#prof-links-table{
+    padding-right: 2%;
+    padding-bottom: 1.5%;
     margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+    border: 3px solid black;
+}
+
+#capHeader{
+    text-decoration: underline;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+th, td{
+    padding: 8px;
+    text-align: left;
+}
+
+#prof-links-table a{
+    padding-top: 5%;
+    margin-left: 5%;
+    text-decoration: none;
+    color: #153983;
+    font-family: 'Lato', sans-serif;
+}
+
+#prof-links-table a:hover{
+    background: #153983;
+    color:white;    
+}
+
+.flex-itemImage{
+    padding-top: 4%;
 }
