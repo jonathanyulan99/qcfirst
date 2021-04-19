@@ -32,20 +32,22 @@
             <div class="prof-create-courses-inner-container">
                 <div id="create-class-header">
                     <form id="create-form">
-                        <label for="lname">Pick semester</label><br>
-                        <input type="text" id="lname" name="lname"><br>
+                        <select id="term-selection" name="term-selection">
+                            <option value="current-term-option">Summer 2021</option>
+                            <option value="next-term-option">Fall 2021</option>
+                        </select>
 
-                        <label for="fname">Course name:</label><br>
-                        <input type="text" id="fname" name="fname" placeholder=""><br>
+                        <label for="course-name">Course name:</label><br>
+                        <input type="text" id="course-name" name="course-name" required><br>
 
-                        <label for="lname">Course ID:</label><br>
-                        <input type="text" id="lname" name="lname"><br>
+                        <label for="course-id">Course ID:</label><br>
+                        <input type="text" id="course-id" name="course-id" required><br>
 
-                        <label for="lname">Department:</label><br>
-                        <input type="text" id="lname" name="lname"><br>
+                        <label for="dept">Department:</label><br>
+                        <input type="text" id="dept" name="dept"><br>
 
-                        <label for="lname">Size of class:</label><br>
-                        <input type="text" id="lname" name="lname"><br>
+                        <label for="class-size">Class size:</label><br>
+                        <input type="text" id="class-size" name="class-size"><br>
 
                         <input type="submit" value="Create course"></button>
                     </form>

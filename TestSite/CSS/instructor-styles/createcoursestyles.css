@@ -75,6 +75,20 @@ input[type=text] {
     background-color: lightblue;
 }  
 
+#term-selection{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #31708e;
+    border-radius: 4px;
+    background-color: #8fc1e3;
+}
+
+#term-selection:focus{
+    background-color: lightblue;
+}
+
 #create-course-table{
     display:flex;
     flex-wrap:wrap;
