@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<!-- Project code by: Jonathan Yulan and David Acuqui -->
+<!--
+  Name: David Acuqui and Jonathan Yulan 
+  Date: 04.17.2021
+  Section: CS 355-54
+
+  This is main professor page where the professor can add or delete courses.  As well as 
+  see an overview of their courses for the current semester and the next semester.
+
+  Photos taken from https://unsplash.com/ (search keywords: college, professor, student)
+-->
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -8,6 +20,10 @@
         <script src="../../javascript/jquery-3.0.0.min.js"></script>
         <script src="../../javascript/infiniteScroll.js"></script>
 
+        <!-- Following JavaScript code was taken from here: https://jqueryui.com/accordion/#collapsible 
+            However, CSS is our own.
+        -->
+        
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
@@ -31,7 +47,7 @@
             
             <div class="prof-ctr-inner-container">
                 <div class="prof-ctr-details">
-                    <div><p id="prof-ctr-fullname-header">Instructor's Name:</p><p id="prof-fullname">Mark</p></div>
+                    <div><p id="prof-ctr-fullname-header">Instructor's Name:</p><p id="prof-fullname">Mark Abramov</p></div>
                     <div><p id="prof-ctr-semester-header">Semester:</p><p id="prof-term">Summer 2021</p></div>
                     <div><p id="prof-ctr-college-header">College:</p><p id="prof-college">Queens College</p></div>
                 </div>
@@ -73,12 +89,14 @@
 
                 <div><p></p></div>
 
+                <!-- Beginning of CURRENT semester course information and tables -->
+
                 <div class="accordion">
-                    <h3 id="overview-of-courses">Summer 2021 courses (click here to expand)</h3>
-                    <div id="test-div">
-                        <table id="test-table">
+                    <h3 class="display-info-h3" id="overview-curr-sems-info">Summer 2021 courses (click here to expand)</h3>
+                    <div class="curr-semester-container">
+                        <table class="prof-courses-table" id="prof-curr-courses-table">
                             <thead>
-                                <caption class="test-caption">Summer 2021 Schedule:</caption>
+                                <caption class="table-caption">Your courses:</caption>
                                 <tr>
                                     <th>Class ID</th>
                                     <th>Course Name</th>
@@ -86,37 +104,40 @@
                                     <th>Days</th>
                                     <th>Class Time</th>
                                     <th>Units</th>
+                                    <th>Instruction Mode</th>
                                     <th>Num. of Students</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>361-37</td>
-                                    <td>Numerical Methods (Lecture)</td>
+                                    <td>355-01</td>
+                                    <td>Internet and Web Technologies (Lecture)</td>
                                     <td>Summer 2021</td>
-                                    <td>Monday/Friday</td>
+                                    <td>Mon/Wed/Fri</td>
                                     <td>12:15PM - 1:30PM</td>
                                     <td>3.00</td>
+                                    <td>Online-Synchronous</td>
                                     <td>25/32</td>
                                 </tr>
                                 <tr>
                                     <td>381-20</td>
                                     <td>Special Topics in C++ (Lecture)</td>
                                     <td>Summer 2021</td>
-                                    <td>Tuesday/Thursdays</td>
+                                    <td>Mon/Tues/Wed/Thurs</td>
                                     <td>8:00PM - 9:15PM</td>
                                     <td>3.00</td>
+                                    <td>Online-Synchronous</td>
                                     <td>32/32</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <h3 class="overview-of-courses">CSCI 381-20 (click here to expand)</h3>
-                    <div id="test-div2">
-                        <table id="test-table2">
+                    <h3 class="display-info-h3" id="course-info-1">CSCI 355-01 (click here to expand)</h3>
+                    <div class="curr-semester-container">
+                        <table class="prof-courses-table" id="course-table-1">
                             <thead>
-                                <caption class="test-caption">Current roster:</caption>
+                                <caption class="table-caption">Current roster:</caption>
                                 <tr>
                                     <th>Student Name</th>
                                     <th>Student CUNY ID</th>
@@ -142,11 +163,11 @@
                         </table>
                     </div>
 
-                    <h3 class="overview-of-courses">CSCI 355-01 (click here to expand)</h3>
-                    <div id="test-div3">
-                        <table id="test-table3">
+                    <h3 class="display-info-h3" id="course-info-2">CSCI 381-20 (click here to expand)</h3>
+                    <div class="curr-semester-container">
+                        <table class="prof-courses-table" id="course-table-2">
                             <thead>
-                                <caption class="test-caption">Current roster:</caption>
+                                <caption class="table-caption">Current roster:</caption>
                                 <tr>
                                     <th>Student Name</th>
                                     <th>Student CUNY ID</th>
@@ -173,33 +194,140 @@
                     </div>
                 </div> <!-- End of accordion -->
 
-                <div class="prof-next-term-schedule">
-                    <table id="prof-next-term-table">
-                        <thead>
-                            <caption>Summer 2021 Schedule:</caption>
+                <div><p></p></div>
+                
+                <div class="special-content3">
+                    <div class="fade-in-block">
+                        <p class="special-p3">Fall term is around the corner</p>
+                    </div>
+                </div>
+
+                <div><p></p></div>
+
+                <!-- Beginning of NEXT semester course information and tables -->
+
+                <div class="accordion">
+                    <h3 class="display-info-h3" id="overview-next-sems-info">Fall 2021 courses (click here to expand)</h3>
+                    <div class="next-semester-container">
+                        <table class="prof-courses-table" id="prof-next-term-courses-table">
+                            <thead>
+                                <caption class="table-caption">Your courses:</caption>
+                                <tr>
+                                    <th>Class ID</th>
+                                    <th>Course Name</th>
+                                    <th>Semester</th>
+                                    <th>Days</th>
+                                    <th>Class Time</th>
+                                    <th>Units</th>
+                                    <th>Instruction Mode</th>
+                                    <th>Num. of Students</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>355-22</td>
+                                    <td>Internet and Web Technologies (Lecture)</td>
+                                    <td>Fall 2021</td>
+                                    <td>Tuesdays</td>
+                                    <td>12:15PM - 1:30PM</td>
+                                    <td>3.00</td>
+                                    <td>Hybrid</td>
+                                    <td>32/32</td>
+                                </tr>
+                                <tr>
+                                    <td>355-22</td>
+                                    <td>Internet and Web Technologies (Lecture)</td>
+                                    <td>Fall 2021</td>
+                                    <td>Fri</td>
+                                    <td>12:15PM - 1:30PM</td>
+                                    <td>3.00</td>
+                                    <td>Hybrid</td>
+                                    <td>18/32</td>
+                                </tr>
+                                <tr>
+                                    <td>370-39</td>
+                                    <td>Software Engineering (Lecture)</td>
+                                    <td>Fall 2021</td>
+                                    <td>Mon/Wed</td>
+                                    <td>6:45PM - 7:55PM</td>
+                                    <td>3.00</td>
+                                    <td>In-Person</td>
+                                    <td>10/32</td>
+                                </tr>
+                                <tr>
+                                    <td>370-12</td>
+                                    <td>Software Engineering (Lecture)</td>
+                                    <td>Fall 2021</td>
+                                    <td>Tues/Thurs</td>
+                                    <td>6:45PM - 7:55PM</td>
+                                    <td>3.00</td>
+                                    <td>In-Person</td>
+                                    <td>21/32</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="display-info-h3" id="course-info-1">CSCI 355-01 (click here to expand)</h3>
+                    <div class="curr-semester-container">
+                        <table class="prof-courses-table" id="course-table-3">
+                            <thead>
+                                <caption class="table-caption">Current roster:</caption>
+                                <tr>
+                                    <th>Student Name</th>
+                                    <th>Student CUNY ID</th>
+                                    <th>Email Address</th>
+                                    <th>Standing</th>
+                                    <th>Still Enrolled?</th>
+                                </tr>
+                            </thead>
                             <tr>
-                                <th>Class ID</th>
-                                <th>Semester</th>
-                                <th>Course Name</th>
-                                <th>Course Dept.</th>
-                                <th>Instructor</th>
-                                <th>Units</th>
-                                <th>Num. of Students</th>
+                                <td>David Acuqui</td>
+                                <td>98234509</td>
+                                <td>da@qmail.cuny.edu</td>
+                                <td>Senior</td>
+                                <td>Yes</td>
                             </tr>
-                        </thead>
-                        <tbody>
                             <tr>
-                                <td>361-37</td>
-                                <td>Summer 2021</td>
-                                <td>Numerical Methods (Lecture)</td>
-                                <td>CSCI</td>
-                                <td>Alex Chen</td>
-                                <td>3.00</td>
-                                <td>25/32</td>
+                                <td>Jonathan Yulan</td>
+                                <td>71128455</td>
+                                <td>jy@qmail.cuny.edu</td>
+                                <td>Senior</td>
+                                <td>Yes</td>
                             </tr>
-                        </tbody>
-                    </table>
-                </div><!-- End of prof-next-term-schedule -->
+                        </table>
+                    </div>
+
+                    <h3 class="display-info-h3" id="course-info-2">CSCI 381-20 (click here to expand)</h3>
+                    <div class="curr-semester-container">
+                        <table class="prof-courses-table" id="course-table-4">
+                            <thead>
+                                <caption class="table-caption">Current roster:</caption>
+                                <tr>
+                                    <th>Student Name</th>
+                                    <th>Student CUNY ID</th>
+                                    <th>Email Address</th>
+                                    <th>Standing</th>
+                                    <th>Still Enrolled?</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>Jose Ramirez</td>
+                                <td>27267201</td>
+                                <td>jr@qmail.cuny.edu</td>
+                                <td>Sophomore</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>John Smith</td>
+                                <td>48370059</td>
+                                <td>js@qmail.cuny.edu</td>
+                                <td>Senior</td>
+                                <td>No</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div> <!-- End of accordion -->
                 <footer>
                     Some Sort of Reference Material
                     <img src="../../images/qcLogo3.png" alt="vintageQcLogo"/>
