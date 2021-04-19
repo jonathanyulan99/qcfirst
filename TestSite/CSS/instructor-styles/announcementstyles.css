@@ -225,7 +225,7 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
 /*CSS to apply to all the tables on the LHS div*/
 .teacher-announcement-cuny-wide-add-drop-search-table, .teacher-announcement-liability-table{
     width:100%;
-    height:45%;
+    height:auto;
     border-collapse:collapse;
 }
 
@@ -262,6 +262,7 @@ th{
     color: white;
     font-size:20px;
     justify-content:space-between;
+    padding:12.5px;
 }
 
 th>tr{
