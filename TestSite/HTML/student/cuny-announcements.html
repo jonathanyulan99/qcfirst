@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link href="../../css/student-styles/announcementstyles.css" rel="stylesheet">
-        <title>Announcements</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Announcements</title>
+        <link href="../../css/student-styles/announcementstyles.css" rel="stylesheet">
     </head>
 
     <body>
@@ -21,19 +21,19 @@
                 </nav>
 
             <div class="announcement-inner-container">
-                <div class="announcement-display">
-                    <div><p id="student-name"><b>Full Name:</b></p><p id="student-name-display">Francisco Lindor</p></div>
-                    <div><p id="student-id"><b>ID#:</b></p><p id="student-id-display">23341538</p></div>
-                    <div><p id="student-term"><b>Term:</b></p><p id="student-term-display"> Spring '21</p></div>
-                    <div><p id="student-uni"><b>University:</b></p><p id="student-uni-display">Queens College</p></div>
+                <div class="announcement-stud-details">
+                    <div><p id="announcement-stud-name-header"><b>Full Name:</b></p><p id="announcement-stud-name">Francisco Lindor</p></div>
+                    <div><p id="announcement-stud-id-header"><b>ID#:</b></p><p id="announcement-stud-id">23341538</p></div>
+                    <div><p id="announcement-stud-term-header"><b>Term:</b></p><p id="announcement-stud-term"> Spring '21</p></div>
+                    <div><p id="announcement-stud-uni-header"><b>University:</b></p><p id="announcement-stud-uni">Queens College</p></div>
                 </div> <!-- end of announcement-display-->
                 <div class="announcement-stud-calendar">
-                        <div class="current-date">
-                            <div class="currentDate">
-                                <p id="current-date-caption-day">Day, XXth</p>
-                                <p id="current-date-caption-month">Month XXXX</p>
+                        <div class="announcement-stud-current-date">
+                            <div class="announcement-student-today-date">
+                                <p id="announcement-student-day">Day, XXth</p>
+                                <p id="announcement-student-month">Month, XXX</p>
                             </div>
-                                <ul class="studentCalendar">
+                                <ul>
                                             <li>SUN</li>
                                             <li>MON</li>
                                             <li>TUE</li>
@@ -78,31 +78,26 @@
                                             <li>4</li>
                                 </ul> <!-- end of the calendar-->
                             </div>
-
-                            <div class="announcement-student-specific-info2"><p id="announcement-student-specific-info2"> Student Specific Info2</p></div> <!-- end of the container for announcement-stud-specific2 div-->
-                            <div class="announcement-student-specific-info3"><p id="announcement-student-specific-info3"> Student Specific Info3</p></div> <!-- end of the container for announcement-stud-specific3 div-->
+                        <div class="announcement-student-menu"><p> **FUTURE IMPLEMENTATION** JAVASCRIPT INTERACTIVE MENU</p></div> <!-- end of the container for announcement-stud-specific2 div-->
+                        <div class="announcement-student-menu"><p> **FUTURE IMPLEMENTATION** JAVASCRIPT INTERACTIVE MENU</p></div> <!-- end of the container for announcement-stud-specific3 div-->
                         </div> <!-- end of the announcement-stud-calendar -->
             </div> <!-- end of the announcement-inner-container-->
-            <div class="announcement-student-inner-container">
-                <div class="announcement-student-info2">
-                    <table class="student-info-table">
-                        <caption id="announcement-table-student-info2">IMPORTANT PAYMENT DATES</caption>
-                        <thead>
-                            <tr ><th colspan="2">SPRING 2021 - PAYMENT DUE DATES</th></tr>
+            <div class="announcement-inner-container-2">
+                <div class="announcement-student-important-pay-dates">
+                    <table class="announcement-student-important-pay-dates-table">
+                        <caption>IMPORTANT PAYMENT DATES</caption>
+                        <caption id="announcement-student-table-header">SPRING 2021 - PAYMENT DUE DATES</caption>
+                        <tbody>
                             <tr><td>If you Register:</td><td>Payment is Due</td></tr>
-                        </thead>
-                        <tbody id="announcement-table-student-info2 tbody">
                             <tr><td><p>October28, 2020 - December 18, 2020</p></td><td><p>January 8, 2021</p></td></tr>
                             <tr><td><p>December 19, 2020 - January 22, 2021</p></td><td><p>January 22, 2021</p></td></tr>
                             <tr><td><p>January 23, 2021 or Later</p></td><td><p>Immediately</p></td></tr>
                         </tbody>
                     </table>
-                    <table class="student-info-table">
-                        <thead>
-                            <tr><th colspan="2">SPRING 2021 - LIABILITY SCHEDULE</th></tr>
-                            <tr><td>If you withdraw or drop your classes:</td><td>Your payment liability is</td></tr>
-                        </thead>
-                            <tbody id="announcement-table-student-info2-2 tbody">
+                    <table class="announcement-student-pay-liability-dates-table">
+                            <caption class="announcement-student-table-header">SPRING 2021 - LIABILITY SCHEDULE</caption>
+                            <tbody>
+                                <tr><td>If you withdraw or drop your classes:</td><td>Your payment liability is</td></tr>
                                 <tr><td><p>On or <b>BEFORE</b> January 28, 2021</p></td><td><p>No Liability</p></td></tr>
                                 <tr><td><p>January 29 - February 4, 2021</p></td><td><p>25% of Tuition</p></td></tr>
                                 <tr><td><p>February 5 - February 11, 2021</p></td><td><p>50% of Tuition</p></td></tr>
@@ -111,27 +106,27 @@
                             </tbody>
                     </table>
                 </div> <!-- end of the announcement-student-info2 -->
-                <div class="announcement-stud-schedule-table">
-                        <table class="announcement-stud-schedule-table table">
-                            <caption id="announcement-stud-schedule-table-header"> CUNYFIRST ALERTS</caption>
-                            <thead id="announcement-stud-schedule-table-thead">
-                                <tr><th colspan="5"><p class="announcement-stud-alert1" id="announcement-stud-alert1-1"><b>CANCELLED</b> - Monthly Maintenance(March 20)</p></th></tr>
+                <div class="announcement-stud-cunyfirst-alert">
+                        <table class="announcement-stud-cunyfirst-alert-table">
+                            <caption> CUNYFIRST ALERTS</caption>
+                            <thead>
+                                <tr><th><p><b>CANCELLED</b> - Monthly Maintenance(March 20)</p></th></tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td colspan="5"><p>The CUNYfirst hosting service provider has cancelled the maintenance scheduled for the Weekend of March 20-21</p></td>
+                                    <td><p>The CUNYfirst hosting service provider has cancelled the maintenance scheduled for the Weekend of March 20-21</p></td>
                                 </tr>
                                 <tr>
-                                    <th colspan="5"><p class="announcement-stud-alert1" id="announcement-stud-alert1-2"><b>COMPLETED</b> CUNYfirst migration to CUNY Data Center: March24-28</p></th>
+                                    <th><p><b>COMPLETED</b> CUNYfirst migration to CUNY Data Center: March24-28</p></th>
                                 </tr>
                                 <tr>
-                                    <td colspan="5"><p>The CUNYfirst system migration to the CUNYfirst data center has completed. Users can now access CUNYfirst</p></td>
+                                    <td><p>The CUNYfirst system migration to the CUNYfirst data center has completed. Users can now access CUNYfirst</p></td>
                                 </tr>
                                 <tr>
-                                    <th colspan="5"><p class="announcement-stud-alert1" id="announcement-stud-alert1-3">Schedule of CUNYfirst Recurring Manitenance</p></th>
+                                    <th><p>Schedule of CUNYfirst Recurring Maintenance</p></th>
                                 </tr>
                                 <tr>
-                                    <td colspan="5"><p>The schedule of CUNYfirst monthly maintenance is available on the <a href="https://www.cuny.edu/about/administration/offices/cis/technology-services/service-maintenance-windows/#:~:text=yearly%20maintenance%20windows.-,CUNYfirst,and%20month%2Dend%20financial%20close.&text=The%20CUNYfirst%20operations%20team%20schedules,at%207pm%20(Eastern%20Time).">Service Maintenance Windows</a> CUNY web site page</p></td>
+                                    <td><p>The schedule of CUNYfirst monthly maintenance is available on the <a href="https://www.cuny.edu/about/administration/offices/cis/technology-services/service-maintenance-windows/#:~:text=yearly%20maintenance%20windows.-,CUNYfirst,and%20month%2Dend%20financial%20close.&text=The%20CUNYfirst%20operations%20team%20schedules,at%207pm%20(Eastern%20Time).">Service Maintenance Windows</a> CUNY web site page</p></td>
                                 </tr>
                             </tbody>
                         </table>
