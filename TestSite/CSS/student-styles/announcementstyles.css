@@ -202,19 +202,17 @@ cyan - #d2fdff
     );
 }
 
+#announcement-student-table-header{
+    background-color: #303c6c;
+    color: white;
+    font-size:20px;
+    border:none;
+}
+
 .announcement-student-important-pay-dates-table:first-child > caption{
     font-size:25px;
-    column-gap:25%;
-    border:3px solid black;
-    border-collapse:collapse;
-    border-spacing:5px;
-    background: oldlace linear-gradient(
-            to bottom,
-            #fbe8a6,
-            #fbe8a6 5rem,
-            transparent 1rem,
-            transparent 100%
-    );
+    background-color:#fbe8a6;
+    border:solid;
 }
 
 /*Specific CSS selector to work on the one caption to ensure its not the same as top caption*/
