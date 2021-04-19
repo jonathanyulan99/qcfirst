@@ -88,10 +88,12 @@
 
 p.special-p1{
     font-family: 'Lato', sans-serif;
+    min-height: 250px;
     padding-top: 10%;
     padding-left: 35%;
     font-size: 50px;
     color: #303c6c;
+    text-align: center;
 }
 
 .special-content2{
@@ -107,10 +109,15 @@ p.special-p1{
 
 p.special-p2{
     font-family: 'Lato', sans-serif;
-    padding-top: 10%;
-    padding-left: 60%;
+    /* padding-top: 10%;
+    padding-left: 60%; */
+    min-height: 300px;
+    padding: 18px;
     font-size: 20px;
     color: black;
+    letter-spacing: 10px;
+    background-color: transparent;
+    text-align: center;
 }
 
 /* Styling for main content and buttons */
@@ -159,9 +166,11 @@ p.special-p2{
     border: 3px solid black;
     padding-top: 1%;
     padding-left: 16%;
+    padding-bottom: 1%;
+    background-color: #b4dfe5;
 }
 
-#test-div, #test-div2{
+#test-div, #test-div2, #test-div3{
     display:flex;
     border: 3px solid black;
     width: 100%;
@@ -182,7 +191,8 @@ p.special-p2{
     
 }
 
-#test-table, #test-table2{
+#test-table, #test-table2, #test-table3{
+    margin-top: -2%;
     padding-top: 3%;
     width: 100%;
 }
@@ -191,7 +201,7 @@ p.special-p2{
     color: #303c6c;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-    padding-bottom: .1%;
+    margin-bottom: -3%;
 }
 
 .prof-next-term-schedule{
