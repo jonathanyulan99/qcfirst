@@ -61,6 +61,20 @@
     display: flex;
 }
 
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #31708e;
+    border-radius: 4px;
+    background-color:#303c6c;
+}
+
+  input[type=text]:focus {
+    background-color: lightblue;
+}  
+
 #create-course-table{
     display:flex;
     flex-wrap:wrap;
@@ -70,9 +84,19 @@
     padding-top: 5%;
 }
 
+#create-form{
+    padding-top: 10%;
+    margin-right: 15%;
+    margin-top: 4%;
+}
+
 .flex-item-image{
     padding-top: 4%;
     float: right;
+}
+
+#lname{
+    padding-right: 10%;
 }
 
 footer{
