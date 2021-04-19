@@ -151,6 +151,49 @@ p.special-p2{
 
 /* Styling for tables */
 
+.accordion{
+    padding-top: 3%;
+}
+
+.accordion > h3{
+    border: 3px solid black;
+    padding-top: 1%;
+    padding-left: 16%;
+}
+
+#test-div, #test-div2{
+    display:flex;
+    border: 3px solid black;
+    width: 100%;
+    column-gap:25%;
+    padding-top: 3%;
+    margin-bottom: 3%;
+    flex-direction:row;
+    border-spacing: 5px;
+    border-collapse: collapse;
+    background: linear-gradient(
+        to bottom,
+        #fbe8a6,
+        #fbe8a6 6rem,
+        transparent 1rem,
+        transparent 100%
+      );
+      background-color: oldlace;
+    
+}
+
+#test-table, #test-table2{
+    padding-top: 3%;
+    width: 100%;
+}
+
+.test-caption{
+    color: #303c6c;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding-bottom: .1%;
+}
+
 .prof-next-term-schedule{
     display:flex;
     flex-direction:row;
@@ -169,6 +212,7 @@ p.special-p2{
       );
       background-color: oldlace;
 }
+
 
 caption{
     color: #303c6c;

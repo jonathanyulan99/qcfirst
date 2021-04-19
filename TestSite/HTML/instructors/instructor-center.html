@@ -7,6 +7,16 @@
         <link href="../../css/instructor-styles/profcenterstyles.css" rel="stylesheet">
         <script src="../../javascript/jquery-3.0.0.min.js"></script>
         <script src="../../javascript/infiniteScroll.js"></script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( ".accordion" ).accordion({
+            collapsible: true
+            });
+        } );
+        </script>
     </head>
 
     <body>
@@ -62,6 +72,63 @@
                 </div>
 
                 <div><p></p></div>
+
+                <div class="accordion">
+                    <h3 id="overview-of-courses">Summer 2021 courses (click here to expand)</h3>
+                    <div id="test-div">
+                        <table id="test-table">
+                            <thead>
+                                <caption class="test-caption">Summer 2021 Schedule:</caption>
+                                <tr>
+                                    <th>Class ID</th>
+                                    <th>Semester</th>
+                                    <th>Course Name</th>
+                                    <th>Course Dept.</th>
+                                    <th>Instructor</th>
+                                    <th>Units</th>
+                                    <th>Num. of Students</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>361-37</td>
+                                    <td>Summer 2021</td>
+                                    <td>Numerical Methods (Lecture)</td>
+                                    <td>CSCI</td>
+                                    <td>Alex Chen</td>
+                                    <td>3.00</td>
+                                    <td>25/32</td>
+                                </tr>
+                                <tr>
+                                    <td>381-20</td>
+                                    <td>Summer 2021</td>
+                                    <td>Special Topics in C++ (Lecture)</td>
+                                    <td>CSCI</td>
+                                    <td>Waxman</td>
+                                    <td>3.00</td>
+                                    <td>32/32</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3 class="overview-of-courses">CSCI 381-20 (click here to expand)</h3>
+                    <div id="test-div2">
+                        <table id="test-table2">
+                            <thead>
+                                <caption test-caption>Current roster:</caption>
+                                <tr>
+                                    <th>Student Name</th>
+                                    <th>Semester</th>
+                                    <th>Course Name</th>
+                                    <th>Course Dept.</th>
+                                    <th>Instructor</th>
+                                    <th>Units</th>
+                                    <th>Num. of Students</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
 
                 <div class="prof-next-term-schedule">
                     <table id="prof-next-term-table">
