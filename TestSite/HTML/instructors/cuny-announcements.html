@@ -1,16 +1,27 @@
+<!-- Project code by: David Acuqui and Jonathan Yulan  -->
+<!--
+  Name: David Acuqui and Jonathan Yulan
+  Date: 04.17.2021
+  Section: CS 355-
+his web page was created to be the teacher/announcement side of things. After logging
+in the teacher, will be brought to this page. This page will Display the teacher's information in the same
+format as the student-side but with different information being focused on. This webpage will
+also have a calendar that will be used as a reference and the same interactive menu that the student side
+announcement page has(implemented in the near future).-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link href="../../css/instructor-styles/announcementstyles.css" rel="stylesheet">
-        <title>Teacher's Announcements Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Teacher's Announcements Page</title>
+        <link href="../../css/instructor-styles/announcementstyles.css" rel="stylesheet">
     </head>
 
     <body>
         <div class="teacher-announcement-main-container">
             <nav class="nav-bar">
-                <img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125">
+                <a href="../instructors/cuny-announcements.html"><img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125"/></a>
                 <a href="../instructors/cuny-announcements.html">Announcements</a>
                 <a href="../instructors/instructor-center.html">Professor Center</a>
                 <a href="../instructors/important-links.html">Important Links</a>
@@ -18,19 +29,19 @@
             </nav> <!-- end of the nav bar for announcement-instructor -->
 
             <div class="teacher-announcement-inner-container">
-                <div class="teacher-announcement-display">
-                    <div><p id="teacher-name"><b>Full Name:</b></p><p id="teacher-name-display">Francisco Lindor</p></div>
-                    <div><p id="teacher-id"><b>ID#:</b></p><p id="teacher-id-display">23341538</p></div>
-                    <div><p id="teacher-term"><b>Term:</b></p><p id="teacher-term-display"> Spring '21</p></div>
-                    <div><p id="teacher-uni"><b>University:</b></p><p id="teacher-uni-display">Queens College</p></div>
-                </div> <!-- end of teacher-announcement-display-->
+                <div class="teacher-announcement-details">
+                    <div><p id="teacher-announcement-name-header"><b>Full Name:</b></p><p id="teacher-announcement-name">Marky Mark</p></div>
+                    <div><p id="teacher-announcement-id-header"><b>ID#:</b></p><p id="teacher-announcement-id">11110000</p></div>
+                    <div><p id="teacher-announcement-term-header"><b>Term:</b></p><p id="teacher-announcement-term"> Spring '21</p></div>
+                    <div><p id="teacher-announcement-uni-header"><b>University:</b></p><p id="teacher-announcement-uni">Queens College</p></div>
+                </div> <!-- end of teacher-announcement-details-->
                 <div class="teacher-announcement-calendar">
-                    <div class="current-date">
-                        <div class="currentDate">
-                            <p id="current-date-caption-day">Day, XXth</p>
-                            <p id="current-date-caption-month">Month, XXXX</p>
+                    <div class="teacher-announcement-current-date">
+                        <div class="teacher-announcement-today-date">
+                            <p id="teacher-announcement-day">19th</p>
+                            <p id="teacher-announcement-month">APRIL, 2021</p>
                         </div>
-                        <ul class="teacherCalendar">
+                        <ul>
                             <li>SUN</li>
                             <li>MON</li>
                             <li>TUE</li>
@@ -75,15 +86,14 @@
                             <li>4</li>
                         </ul> <!-- end of the calendar-->
                     </div>
-
-                    <div class="announcement-teacher-specific-info2"><p class="announcement-student-specific-info2"> Teacher Specific Info2</p></div> <!-- end of the container for announcement-stud-specific2 div-->
-                    <div class="announcement-teacher-specific-info2"><p class="announcement-student-specific-info3"> Teacher Specific Info3</p></div> <!-- end of the container for announcement-stud-specific3 div-->
+                    <div class="announcement-teacher-menu"><p> **FUTURE IMPLEMENTATION** INTERACTIVE MENU</p></div> <!-- end of the container for announcement-stud-specific2 div-->
+                    <div class="announcement-teacher-menu"><p> **FUTURE IMPLEMENTATION** INTERACTIVE MENU</p></div> <!-- end of the container for announcement-stud-specific3 div-->
                 </div> <!-- end of the teacher-announcement-calendar -->
             </div> <!-- end of the teacher-announcement-inner-container-->
-            <div class="teacher-announcement-inner-container-div2">
-                <div class="announcement-teacher-info2">
-                    <table class="announcement-teacher-info-table">
-                        <caption id="announcement-table-teacher-info2">2020-2021 CUNY-WIDE Academic Calendar: Spring 2021</caption>
+            <div class="teacher-announcement-inner-container2">
+                <div class="teacher-announcement-cuny-wide-left">
+                    <table class="teacher-announcement-cuny-wide-academic-table">
+                        <caption id="teacher-announcement-cuny-academic-calendar-header">2020-2021 CUNY-WIDE Academic Calendar: Spring 2021</caption>
                         <thead>
                             <tr>
                                 <th>Date</th>
@@ -91,22 +101,22 @@
                                 <th>Description</th>
                             </tr>
                         </thead>
-                        <tbody id="announcement-table-teacher-info2 tbody">
-                        <tr><td><p>1/28/2021</p></td><td><p>Thursday</p></td><td><p>Last day to drop for 100% tuition refund<br>Last day to file Permit request</p></td></tr>
-                        <tr><td><p>1/29/2021</p></td><td><p>Friday</p></td><td><p>Start of Spring Regular Session<br>Classes begin</p></td></tr>
-                        <tr><td><p>2/4/2021</p></td><td><p>Friday</p></td><td><p>Last day to add a course<br>
-                                                                                 Last day to drop for 75% tuition refund<br>
-                                                                                  Financial Aid Certification</p></td></tr>
-                        <tr><td><p>2/5/2021</p></td><td><p>Friday</p></td><td><p>Verification of Enrollment Rosters<br>
-                                                                                  Grade of WD is assigned to students who officially drop a course</p></td></tr>
+                        <tbody>
+                            <tr><td><p>1/28/2021</p></td><td><p>Thursday</p></td><td><p>Last day to drop for 100% tuition refund<br>Last day to file Permit request</p></td></tr>
+                            <tr><td><p>1/29/2021</p></td><td><p>Friday</p></td><td><p>Start of Spring Regular Session<br>Classes begin</p></td></tr>
+                            <tr><td><p>2/4/2021</p></td><td><p>Friday</p></td><td><p>Last day to add a course<br>Last day to drop for 75% tuition refund<br>Financial Aid Certification</p></td></tr>
+                            <tr><td><p>2/5/2021</p></td><td><p>Friday</p></td><td><p>Verification of Enrollment Rosters<br>Grade of WD is assigned to students who officially drop a course</p></td></tr>
                         </tbody>
                     </table>
-                    <table class="teacher-info-table">
+                    <table class="teacher-announcement-liability-table">
                         <thead>
-                        <tr ><th colspan="2">SPRING 2021 - LIABILITY SCHEDULE</th></tr>
+                        <tr>
+                            <th>SPRING 2021 - LIABILITY SCHEDULE</th>
+                            <th>Payment Liability Amount</th>
+                        </tr>
                         <tr><td>If you withdraw or drop your classes:</td><td>Your payment liability is</td></tr>
                         </thead>
-                        <tbody id="announcement-table-student-info2-2 tbody">
+                        <tbody>
                         <tr><td><p>On or <b>BEFORE</b> January 28, 2021</p></td><td><p>No Liability</p></td></tr>
                         <tr><td><p>January 29 - February 4, 2021</p></td><td><p>25% of Tuition</p></td></tr>
                         <tr><td><p>February 5 - February 11, 2021</p></td><td><p>50% of Tuition</p></td></tr>
@@ -115,10 +125,10 @@
                         </tbody>
                     </table>
                 </div> <!-- end of the announcement-student-info2 -->
-                <div class="announcement-teacher-schedule-table">
-                    <table class="announcement-teacher-schedule-table table">
-                        <caption id="announcement-teacher-schedule-table-header">TEACHER QUICK ADD, DROP, SEARCH</caption>
-                        <thead id="announcement-teacher-schedule-table-thead">
+                <div class="teacher-announcement-cuny-wide-right">
+                    <table class="teacher-announcement-cuny-wide-add-drop-search-table">
+                        <caption id="teacher-announcement-add-drop-search-header">TEACHER QUICK ADD, DROP, SEARCH</caption>
+                        <thead>
                             <tr>
                                 <th>Class</th>
                                 <th>Days/Times</th>
@@ -129,7 +139,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td> CSCI 355 - 40</td>
+                                <td> CSCI 355 -40</td>
                                 <td>
                                     MoTuWeTh <br>
                                     7:00pm - <br>
@@ -143,7 +153,7 @@
                                 <td> 3.00</td>
                             </tr>
                             <tr>
-                                <td> CSCI 316 - 35</td>
+                                <td> CSCI 316 -35</td>
                                 <td>
                                     TuTh <br>
                                     10:00am - <br>
@@ -157,7 +167,7 @@
                                 <td> 4.00 </td>
                             </tr>
                             <tr>
-                                <td> CSCI 381</td>
+                                <td> CSCI 381 -33</td>
                                 <td>
                                     TuTh <br>
                                     3:15pm - <br>
@@ -170,12 +180,26 @@
                                 <td> 89278356</td>
                                 <td> 1.00</td>
                             </tr>
+                            <tr>
+                                <td> CSCI 355 -39</td>
+                                <td>
+                                    TuTh <br>
+                                    4:00pm - <br>
+                                    6:45pm
+                                </td>
+                                <td>
+                                    Online- <br>
+                                    Synchronous
+                                </td>
+                                <td> 12185721</td>
+                                <td> 3.00</td>
+                            </tr>
                         </tbody>
                     </table>
                     <div class="announcement-stud-schedule-button">
-                        <button type="button" id="stud-addButton">ADD</button>
-                        <button type="button" id="stud-dropButton">DROP</button>
-                        <button type="button" id="stud-searchButton">SEARCH</button>
+                        <a type="button" id="announcement-teacher-addButton" href="../instructors/create-courses.html">ADD</a>
+                        <a type="button" id="announcement-teacher-dropButton" href="../instructors/swap-courses.html">DROP</a>
+                        <a type="button" id="announcement-teacher-searchButton" href="../instructors/drop-courses.html">SEARCH</a>
                     </div> <!-- end of the announcement-stud-schedule-button-->
                 </div> <!-- end of announcement-teacher-schedule-table -->
             </div> <!-- end of the teacher-announcement-inner-container-->

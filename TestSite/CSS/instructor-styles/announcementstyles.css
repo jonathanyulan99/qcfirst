@@ -32,6 +32,13 @@ cyan - #d2fdff
     padding-left: 5%;
 }
 
+.teacher-announcement-inner-container2{
+    display:flex;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
 /* Styling for the nav bar */
 
 .nav-bar-logo {
@@ -62,44 +69,8 @@ cyan - #d2fdff
     color:white;
 }
 
-/* selectors work on the calendar on the LHS */
-.current-date{
-    display:grid;
-    width:40%
-}
-
-.currentDate{
-    display:flex;
-    justify-content:center;
-}
-
-/* controls the CSS for the month,date heading for the calendar */
-#current-date-caption-month, #current-date-caption-day{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    color: #303c6c;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    padding-bottom: 2%;
-}
-
-th{
-    background-color: #303c6c;
-    color: white;
-    font-size:20px;
-    justify-content:space-between;
-}
-
-tr:nth-child(even){
-    background-color: #eee;
-}
-
-tr:nth-child(odd){
-    background-color: #fff;
-}
-
 /* This css selector work on the div teacher-specific heading display */
-.teacher-announcement-display{
+.teacher-announcement-details{
     display:flex;
     flex-direction:row;
     column-gap:20%;
@@ -112,89 +83,26 @@ tr:nth-child(odd){
     justify-content:center;
 }
 
-/* This css selector work on the inner-container second div */
-.teacher-announcement-calendar{
-    display:flex;
-}
-
 /* CSS to apply to the display main selector on the academics page */
-#teacher-name, #teacher-id, #teacher-term, #teacher-uni{
+#teacher-announcement-name-header, #teacher-announcement-id-header, #teacher-announcement-term-header, #teacher-announcement-uni-header{
     color: #fbe8a6;
     text-decoration: underline;
     font-size: 20px;
 }
 
 /*font color for the display of the teacher specific information */
-#teacher-name-display, #teacher-id-display, #teacher-term-display, #teacher-uni-display{
+#teacher-announcement-name, #teacher-announcement-id, #teacher-announcement-term, #teacher-announcement-uni{
     font-family: 'Lato', sans-serif;
     color: white;
 }
 
-/* first table on the left side of the container */
-.announcement-teacher-info2{
-    flex:50%;
-    text-align:center;
+/* This css selector work on the inner-container second div, which contains the calendar of UL days*/
+.teacher-announcement-calendar{
+    display:flex;
 }
 
-/* CSS to fix the table in the second inner container on the page */
-.teacher-info-table{
-    width:100%;
-    text-align:center;
-    border:solid;
-}
-
-/* id selector for the caption of the first table */
-#announcement-table-teacher-info2{
-    border:solid;
-    background-color: #fbe8a6;
-}
-
-/*CSS to fix the student database generated table on the second inner-container page*/
-.announcement-teacher-schedule-table{
-    flex:50%;
-    text-align:center;
-    padding-top:10px;
-    border:solid;
-
-}
-
-/*CSS to apply to the table specifically working table in the second inner container*/
-.announcement-teacher-schedule-table table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-#announcement-teacher-schedule-table-thead {
-    border:1px solid #303c6c;
-    text-align:center;
-    padding:2%;
-}
-
-caption{
-    color: #303c6c;
-    font-family: 'Lato', sans-serif;
-    font-size: 25px;
-    padding-bottom: 2%;
-}
-
-
-/* Styling for the table headers */
-.announcement-teacher-schedule-table{
-    height:100%;
-    column-gap:25%;
-    border: 3px solid black;
-    border-collapse: collapse;
-    border-spacing: 5px;
-    background: oldlace linear-gradient(
-            to bottom,
-            #fbe8a6,
-            #fbe8a6 5rem,
-            transparent 1rem,
-            transparent 100%
-    );
-}
-
-ul{
+/* Padding for the day UL representation of the calendar */
+.teacher-announcement-current-date ul{
     margin: 0;
     padding: 0;
 }
@@ -223,51 +131,29 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
     color: #ecf0f1;
 }
 
-.calendarButton{
-    flex-direction:row;
-    padding-top:25px;
-    display: -webkit-flex;
-    display: flex;
-    margin-right:auto;
+/* selectors work on the calendar on the LHS */
+.teacher-announcement-current-date{
+    display:grid;
+    width:60%;
 }
 
-.addButton, .dropButton, .searchButton{
-    margin-right:auto;
-}
-
-/* css selector that works on the first table under the calendar*/
-.announcement-teacher-info-table{
-    width:100%;
-    border:solid;
-}
-
-.teacher-announcement-inner-container-div2{
+.teacher-announcement-today-date{
     display:flex;
-    padding-top: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
+    justify-content:center;
 }
 
-footer{
-    padding: 5%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+/* controls the CSS for the month,date heading for the calendar */
+#teacher-announcement-month, #teacher-announcement-day{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    color: #303c6c;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding-bottom: 2%;
 }
 
-/*formatting for the <p> tags for after the first display teacher generated information*/
-.teacher-announcement-display p{
-    display:flex;
-    flex-direction:column;
-    text-decoration-line:none;
-}
-
-/* change the div containing the schedule buttons */
-.announcement-stud-schedule-button{
-    padding:2%;
- }
-
-.announcement-student-specific-info2, .announcement-student-specific-info3{
+/*CSS selector future implementation of JAVASCRIPT INTERACTIVE MENU */
+.announcement-teacher-menu{
     flex: 30%;
     display: flex;
     background-image: url("../../images/student8.jpg");
@@ -280,10 +166,127 @@ footer{
     align-items:center;
 }
 
-.announcement-teacher-specific-info2{
+/*CSS selector future implementation of the content insideJAVASCRIPT INTERACTIVE MENU */
+.announcement-teacher-menu p{
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     text-align:center;
     color: #303c6c;
     width:30%;
+}
+
+/* first div that holds the table on the left/right side */
+.teacher-announcement-cuny-wide-left, .teacher-announcement-cuny-wide-right{
+    flex:50%;
+    text-align:center;
+    border:solid;
+}
+
+/* CSS to fix the table in the second inner container on the page */
+.teacher-announcement-cuny-wide-academic-table{
+    width:100%;
+    text-align:center;
+    border:solid;
+}
+
+/* id selector for the caption of the table on the LHS div */
+#teacher-announcement-cuny-academic-calendar-header{
+    border:solid;
+    background-color: #fbe8a6;
+}
+
+/*CSS selectors to format the buttons listed on the RHS teacher side table*/
+.announcement-stud-schedule-button{
+    justify-content:center;
+    background-color: #fbe8a6;
+    border:solid;
+}
+
+#announcement-teacher-addButton, #announcement-teacher-dropButton, #announcement-teacher-searchButton{
+    display: inline-flex;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-color: #153983;
+    border-width: 3px;
+    background-color:#153983;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    border-radius: .3rem;
+    line-height: 1.5;
+    box-shadow: 5px 5px 10px #153983;
+}
+
+/*CSS to apply to all the tables on the LHS div*/
+.teacher-announcement-cuny-wide-add-drop-search-table, .teacher-announcement-liability-table{
+    width:100%;
+    height:45%;
+    border-collapse:collapse;
+}
+
+.teacher-announcement-cuny-wide-add-drop-search-table thead{
+    border:1px solid #303c6c;
+    text-align:center;
+    padding:2%;
+}
+
+/* CSS for the right hand large table caption */
+.announcement-teacher-schedule-table{
+    width:100%;
+    column-gap:25%;
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    background: oldlace linear-gradient(
+            to bottom,
+            #fbe8a6,
+            #fbe8a6 5rem,
+            transparent 1rem,
+            transparent 100%
+    );
+}
+
+#teacher-announcement-add-drop-search-header{
+    border:solid;
+    background-color: #fbe8a6;
+}
+
+/*CSS selector applies to all table elements for formatting*/
+th{
+    background-color: #303c6c;
+    color: white;
+    font-size:20px;
+    justify-content:space-between;
+}
+
+th>tr{
+    width:100%;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:nth-child(odd){
+    background-color: #fff;
+}
+
+caption{
+    color: #303c6c;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    padding-bottom: 2%;
+}
+
+/*CSS selector working on the footer*/
+footer{
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
