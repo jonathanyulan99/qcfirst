@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<!-- Project code by: Jonathan Yulan and David Acuqui -->
+<!--
+  Name: David Acuqui and Jonathan Yulan 
+  Date: 04.17.2021
+  Section: CS 355-54
+
+  This is create courses page for the professor.  A professor account can create a course and add it 
+  to their course schedule.
+
+  Photos taken from https://unsplash.com/ (search keywords: college, professor, student)
+-->
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -8,92 +20,48 @@
     </head>
 
     <body>
-        <div class="prof-create-courses-main-container">            
+        <div class="prof-create-courses-main-container">
             <nav class="nav-bar">
-                <nav class="nav-bar">
-                    <img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="cunyFirstLogo" id="cunyFirstLogo" width="125">
-                    <a href="../instructors/cuny-announcements.html">Announcements</a>
-                    <a href="../instructors/instructor-center.html">Professor Center</a>
-                    <a href="../instructors/important-links.html">Important Links</a>
-                    <a href="../loginpage.html" class="dropdown-toggle">Professor Account</a>
-                </nav>
+                <img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="cunyFirstLogo" id="cunyFirstLogo" width="125">
+                <a href="../instructors/cuny-announcements.html">Announcements</a>
+                <a href="../instructors/instructor-center.html">Professor Center</a>
+                <a href="../instructors/important-links.html">Important Links</a>
+                <a href="../loginpage.html" class="dropdown-toggle">Professor Account</a>
+            </nav>
 
-            <div id="addClassHeader">
-                <h2><u>ADD CLASSES</u></h2>
-                <h3>1.Search and Select Classes to Add</h3>
-                <p> To select classes for another term, select the term and select 'Change Term'.<br>
-                    When you are satisfied with your class selections, proceed forward.</p>
+            <div class="prof-create-courses-inner-container">
+                <div id="create-class-header">
+                    <form>
+                        <label for="lname">Pick semester</label><br>
+                        <input type="text" id="lname" name="lname"><br>
 
-                <h3> 2021 Summer Term | Undergraduate | Queens College </h3>
-                <button type="submit" id="changeTerm">Change Term</button>
-            </div>
+                        <label for="fname">Course name:</label><br>
+                        <input type="text" id="fname" name="fname" placeholder=""><br>
 
-            <div id="addClassTable">
-                <div id="addTable1">
-                    <table id="addClass1">
-                        <tbody>
-                            <tr>
-                                <th>Add to Cart:</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="classNumber"> Enter Class Number: </label>
-                                    <input type="text" id="classNumber">
-                                    <input type="submit" placeholder="Enter">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <label for="lname">Course ID:</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Must be unique number"><br>
 
-                    <table id="addClass2">
-                        <tbody>
-                            <tr id="addClass2Header1">
-                                <th>Find Classes</th>
-                            </tr>
-                            <tr id="addClass2Header2">
-                                <td> <input type="radio"> Class Search</td>
-                                <td> <input type="radio"> My Schedule</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <label for="lname">Department:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+
+                        <label for="lname">Size of class:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+
+                        <button type="submit" id="change-term">Create course</button>
+                      </form>
+
+                      
+                <div class="flex-item-image">
+                    <a><img src="../../images/professor1.jpg" alt="prof1" width="100%"/></a>
+                </div>
                 </div>
 
-                <div id="addTable2">
-                    <table id="displayAddTable">
-                        <tr>
-                            <th><h3>2021 Semester Shown Shopping Cart</h3></th>
-                        </tr>
-                        <tr>
-                            <td><h4>Class</h4></td>
-                            <td><h4>Days/Times</h4></td>
-                            <td><h4>Room</h4></td>
-                            <td><h4>Instructor</h4></td>
-                            <td><h4>Credits</h4></td>
-                        </tr>
-                        <tbody>
-                            <tr>
-                                <td> CSCI 355 - 40 (9649)</td>
-                                <td>
-                                    MoTuWeTh <br>
-                                    7:00pm - <br>
-                                    9:40pm
-                                </td>
-                                <td>
-                                    Online- <br>
-                                    Synchronous
-                                </td>
-                                <td> To Be Determined</td>
-                                <td> 3.00 Credits</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <footer>
+                    Some Sort of Reference Material
+                    <img src="../../images/qcLogo3.png" alt="vintageQcLogo"/>
+                    Some sort of Reference Material
+                </footer>
             </div>
-            <footer>
-                Some Sort of Reference Material
-                <img src="../../images/qcLogo3.png" alt="vintageQcLogo"/>
-                Some sort of Reference Material
-            </footer>
         </div>
     </body>
 </html>
