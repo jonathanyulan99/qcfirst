@@ -81,14 +81,12 @@ cyan - #d2fdff
     text-decoration-line:none;
 }
 
-
 /* CSS to apply to the display main selector on the academics page */
 #announcement-stud-name-header, #announcement-stud-id-header, #announcement-stud-term-header, #announcement-stud-uni-header{
     color: #fbe8a6;
     text-decoration-line: underline;
     font-size: 20px;
 }
-
 
 /* This css selector work on the inner-container second div */
 .announcement-stud-calendar{
@@ -265,6 +263,7 @@ announcement-student-important-pay-dates-table caption {
             transparent 100%
     );
 }
+
 .announcement-stud-cunyfirst-alert-table caption{
     font-size: 25px;
     column-gap:25%;
