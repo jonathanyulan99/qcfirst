@@ -1,9 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
+/* color schemes:
+Set being used across the site:
+light orange - #fbe8a6
+pastel orange - #f4976c
+dark blue - #303c6c
+cyan ish - #b4dfe5
+cyan - #d2fdff
 
-<<<<<<< HEAD
+One set of blues:
+teal blueish - #31708e
+lighter than prev - #5085a5
+lighter than prev - #8fc1e3
+blue - #0074e1
+*/
 
-=======
->>>>>>> 2cb84804dd0b3bd2e1d4681483c448372c263f4a
+/* Styling for body */
 /* Styling for body */
 .stud-ctr-main-container{
     position: relative;
@@ -131,7 +142,7 @@ p.special-p2{
         #fbe8a6 5rem,
         transparent 1rem,
         transparent 100%
-      );
+    );
       background-color: oldlace;
 }
 
