@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
 
 /* Styling for body */
-.drop-main-container{
+.drop-course-main-container{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     flex-grow: 1;
 }
 
-.drop-inner-container{
+.drop-course-inner-container{
     padding-top: 5%;
     padding-right: 5%;
     padding-left: 5%;

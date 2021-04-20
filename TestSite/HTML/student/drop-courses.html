@@ -19,7 +19,7 @@
     </head>
 
     <body>
-        <div class="drop-main-container">
+        <div class="drop-course-main-container">
             <nav class="nav-bar">
                 <a href="../student/cuny-announcements.html"><img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125"/></a>
                 <a href="../student/cuny-announcements.html">Announcements</a>
@@ -31,23 +31,26 @@
                 <a href="../loginpage.html" class="dropdown-toggle">My Account</a>
             </nav>
 
-            <div class="drop-inner-container">
-                <div id="drop-class-header">
+            <div class="drop-course-inner-container">
+                <div id="drop-course-inner-container">
                     <h1><u>Drop Courses</u></h1>
                     <h2>1.Select Classes to Drop</h2>
-                    <p>Select the classes to drop and select Drop Selected Classes.</p>
-
-                    <h3> 2021 Summer Term | Undergraduate | Queens College </h3>
-                    <button type="submit" id="changeTerm">Change Term</button>
+                    <h3> <label for="drop-semester">Choose A Semester:</label> | Undergraduate | Queens College </h3>
+                    <select name="drop-semester" id="drop-semester">
+                        <option value="Summer">Summer</option>
+                        <option value="Fall">Fall</option>
+                        <option value="Winter">Winter</option>
+                        <option value="Spring">Spring</option>
+                    </select>
                 </div>
 
-                <div id="tables-container">
-                    <div class="drop-table1">
+                <div class="drop-course-table">
+                    <div id="drop-course-table">
                         <table>
                             <thead>
                                 <caption>Classes Able to be Dropped</caption>
                                 <tr>
-                                    <th></th>
+                                    <th>Selection</th>
                                     <th>Class</th>
                                     <th>Days/Times</th>
                                     <th>Format</th>
@@ -57,7 +60,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><input type="checkbox" />    &nbsp;   </td>
+                                    <td><input type="checkbox" /></td>
                                     <td> CSCI 355 - 40 (9649)</td>
                                     <td>
                                         MoTuWeTh <br>
@@ -72,7 +75,7 @@
                                     <td> 3.00 Credits</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" />    &nbsp;   </td>
+                                    <td><input type="checkbox" /></td>
                                     <td> CSCI 331 - 40 (9649)</td>
                                     <td>
                                         MoWe <br>
@@ -86,33 +89,13 @@
                                     <td> To Be Determined</td>
                                     <td> 3.00 Credits</td>
                                 </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div id="buttonDrop">
-                        <input type="button" value="DROP" name="DROP">
-                    </div>
-
-                    <div class="drop-table2">
-                        <table>
-                            <thead>
-                                <caption>Current Schedule</caption>
                                 <tr>
-                                    <th>Class</th>
-                                    <th>Days/Times</th>
-                                    <th>Format</th>
-                                    <th>Instructor</th>
-                                    <th>Credits</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td> CSCI 355 - 40 (9649)</td>
+                                    <td><input type="checkbox" /></td>
+                                    <td> MATH 242 - 23 (41232)</td>
                                     <td>
-                                        MoTuWeTh <br>
-                                        7:00pm - <br>
-                                        9:40pm
+                                        ThFr <br>
+                                        12:00pm - <br>
+                                        1:30pm
                                     </td>
                                     <td>
                                         Online- <br>
@@ -122,22 +105,25 @@
                                     <td> 3.00 Credits</td>
                                 </tr>
                                 <tr>
-                                    <td> MAT 200 - 40 (9649)</td>
+                                    <td><input type="checkbox" /></td>
+                                    <td> CSCI 381 - 31 (31423)</td>
                                     <td>
-                                        MoTuWeTh <br>
-                                        7:00pm - <br>
-                                        9:40pm
+                                        FrSa <br>
+                                        2:00pm - <br>
+                                        4:30pm
                                     </td>
                                     <td>
                                         Online- <br>
                                         Synchronous
                                     </td>
                                     <td> To Be Determined</td>
-                                    <td> 3.00 Credits</td>
+                                    <td> 1.00 Credits</td>
                                 </tr>
                             </tbody>
                         </table>
+                        <button type="submit" id="changeTerm">Drop Course</button>
                     </div>
+                </div>
                 </div><!-- End of tables-container -->
                 <footer class="footer-cuny-wide">
                     <section class="footer-main">
