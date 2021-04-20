@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="../../css/student-styles/searchresultsstyles.css" type="text/css" rel="stylesheet">
+        <title>Search Results</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="../../javascript/jquery-3.0.0.min.js"></script>
+        <script src="../../javascript/infiniteScroll.js"></script>
+
+        <script>
+            $("#report tr:odd").addClass("odd");
+            $("#report tr:not(.odd)").hide();
+            $("#report tr:first-child").show();
+
+            $("#report tr.odd").click(function () {
+                $("#report tr:not(.odd)").hide();
+                $(this).next("tr").toggle();
+                $(this).find(".arrow").toggleClass("up");
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="search-results-main-container">
+            <nav class="nav-bar">
+                <a href="../student/cuny-announcements.html"><img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="cuny-first-logo"  width="125"/></a>
+                <a href="../student/cuny-announcements.html">Announcements</a>
+                <a href="../student/student-center.html">Student Center</a>
+                <a href="../student/academics.html">Academics</a>
+                <a href="../student/enrollment-overview.html">Enrollment</a>
+                <a href="../student/financial-aid.html">Financial Aid</a>
+                <a href="../student/important-links.html">Important Links</a>
+                <a href="../loginpage.html" class="dropdown-toggle">My Account</a>
+            </nav>
+
+            <div class="search-results-inner-container">
+                <table id="report">
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Course Id</th>
+                        <th>Instructor</th>
+                        <th>Credits</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>CSCI 355</td>
+                        <td>39383</td>
+                        <td>Mark</td>
+                        <td>3.00</td>
+                        <td>show/hide</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                             <h4>Additional information</h4>
+                
+                            <ul>
+                                <li>Class time: </li>
+                                <li>blah</li>
+                                <li>blah </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CSCI 355</td>
+                        <td>28393</td>
+                        <td>Law</td>
+                        <td>3.0</td>
+                        <td>show/hide</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <h4>Additional information</h4>
+               
+                           <ul>
+                               <li>Class time: </li>
+                               <li>blah</li>
+                               <li>blah </li>
+                           </ul>
+                       </td>
+                    </tr>
+                </table>
+            </div><!-- end of academics-inner-container -->
+        </div><!-- end of academics-main-container -->
+    </body>
+</html>
