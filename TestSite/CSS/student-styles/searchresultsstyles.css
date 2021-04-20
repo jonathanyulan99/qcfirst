@@ -1,0 +1,103 @@
+/* color schemes: 
+Set being used across the site:
+light orange - #fbe8a6
+pastel orange - #f4976c
+dark blue - #303c6c
+cyan ish - #b4dfe5
+cyan - #d2fdff
+
+One set of blues:
+teal blueish - #31708e
+lighter than prev - #5085a5
+lighter than prev - #8fc1e3
+blue - #0074e1 
+*/
+
+/* Styling for body */
+
+.enrollment-main-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-grow: 1;
+}
+
+.enrollment-inner-container{
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/* Styling for nav bar */
+
+.nav-bar-logo{
+    float: left;
+    line-height: 55px;
+}
+
+.nav-bar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background: #F5F3EE;
+}
+
+.nav-bar a{
+    float: left;
+    display: block;
+    color: darkblue;
+    text-align: center;
+    padding: 1px 28px;
+    text-decoration: none;
+    line-height: 65px;
+}
+
+.nav-bar a:hover{
+    background: #153983;
+    color:white;    
+}
+
+
+#report {
+    border-collapse:collapse;
+    margin-top: 10%;
+    padding-top: 10%;
+}
+#report h4 {
+    margin:0px;
+    padding:0px;
+}
+#report img {
+    float:right;
+}
+#report ul {
+    margin:10px 0 10px 40px;
+    padding:0px;
+}
+#report th {
+    background:#7CB8E2 url(header_bkg.png) repeat-x scroll center left;
+    color:#fff;
+    padding:7px 15px;
+    text-align:left;
+}
+#report td {
+    background:#C7DDEE none repeat-x scroll center left;
+    color:#000;
+    padding:7px 15px;
+}
+#report tr.odd td {
+    background:#52edc7;
+    cursor:pointer;
+}
+#report div.arrow {
+    background:transparent url(arrows.png) no-repeat scroll 0px -16px;
+    width:16px;
+    height:16px;
+    display:block;
+}
+#report div.up {
+    background-position:0px 0px;
+}
