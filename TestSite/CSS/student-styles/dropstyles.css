@@ -89,6 +89,15 @@ tr:nth-child(odd){
     margin-left: 5%;
 }
 
+/*CSS selector working on the footer*/
+footer{
+    margin:2%;
+    padding: 1%;
+    display:flex;
+    background-color: #555;
+    color: #bbb;
+}
+
 footer a {
     text-decoration: none;
     color: #eee;
