@@ -286,7 +286,7 @@ caption{
 
 /*CSS selector working on the footer*/
 footer{
-    padding: 5%;
+    padding: 1%;
     display:flex;
     background-color: #555;
     color: #bbb;
