@@ -15,8 +15,6 @@ blue - #0074e1
 */
 
 /* Styling for body */
-
-/* Styling for body */
 .important-links-main-container{
     position: absolute;
     display: flex;
@@ -37,6 +35,7 @@ blue - #0074e1
 
 .nav-bar-logo{
     float: left;
+    line-height: 55px;
 }
 
 .nav-bar{
@@ -72,8 +71,7 @@ blue - #0074e1
     display: flex;
 }
 
-
-/* Styling for table */
+/* Syling for table */
 
 #url-links-table{
     padding-right: 2%;
@@ -90,7 +88,7 @@ blue - #0074e1
     font-family: 'Lato', sans-serif;
 }
 
-th, td{
+#url-links-table th, #url-links-table td{
     padding: 8px;
     text-align: left;
 }
