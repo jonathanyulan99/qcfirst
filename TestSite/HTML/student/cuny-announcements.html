@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <!-- Project code by: David Acuqui and Jonathan Yulan  -->
 <!--
-  Name: David Acuqui and Jonathan Yulan
-  Date: 04.17.2021
-  Section: CS 355-
-This webpage is the announcement page for the student side of CUNY system website.
-It has a calendar for browsing, as well as alerts and pertinent information to the student
-to include his/her name displayed. It has a future interactive menu portion that will be implemented later.
-This webpage was created, designed by David and Jonathan for CS355 D3.-->
+    Name: David Acuqui and Jonathan Yulan
+    Date: 04.17.2021
+    Section: CS 355-
+
+    This webpage is the announcement page for the student side of CUNY system website.
+    It has a calendar for browsing, as well as alerts and pertinent information to the student
+    to include his/her name displayed. It has a future interactive menu portion that will be implemented later.
+    This webpage was created, designed by David and Jonathan for CS355 D3.
+-->
 
 <html lang="en">
     <head>
@@ -15,8 +17,9 @@ This webpage was created, designed by David and Jonathan for CS355 D3.-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="../../css/student-styles/announcementstyles.css" rel="stylesheet">
         <title>Announcements</title>
+
         <!--Javascript resource taken from https://kit.fontawesome.com/a63... that will  be used to display the logos
-       in our footer bar-->
+            in our footer bar-->
         <script src="https://kit.fontawesome.com/a6360b8855.js" crossorigin="anonymous"></script>
     </head>
 
@@ -30,7 +33,11 @@ This webpage was created, designed by David and Jonathan for CS355 D3.-->
                     <a href="../student/enrollment-overview.html">Enrollment</a>
                     <a href="../student/financial-aid.html">Financial Aid</a>
                     <a href="../student/important-links.html">Important Links</a>
-                    <a href="../loginpage.html" class="dropdown-toggle">My Account</a>
+                    <a href="../loginpage.html">My Account</a>
+                    <form action="../student/add-search-courses.html">
+                        <input type="text" placeholder="Search courses.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
                 </nav>
 
             <div class="announcement-inner-container">
@@ -40,6 +47,7 @@ This webpage was created, designed by David and Jonathan for CS355 D3.-->
                     <div><p id="announcement-stud-term-header"><b>Term:</b></p><p id="announcement-stud-term"> Spring '21</p></div>
                     <div><p id="announcement-stud-uni-header"><b>University:</b></p><p id="announcement-stud-uni">Queens College</p></div>
                 </div> <!-- end of announcement-display-->
+
                 <div class="announcement-stud-calendar">
                     <div class="announcement-stud-current-date">
                         <div class="announcement-student-today-date">
@@ -92,7 +100,7 @@ This webpage was created, designed by David and Jonathan for CS355 D3.-->
                             </ul> <!-- end of the calendar-->
                         </div>
                     <div class="announcement-student-menu"><p> **FUTURE IMPLEMENTATION** INTERACTIVE MENU</p></div> <!-- end of the container for announcement-stud-specific2 div-->
-                    <div class="announcement-student-menu"><p> **FUTURE IMPLEMENTATION** INTERACTIVE MENU</p></div> <!-- end of the container for announcement-stud-specific3 div-->
+                    <div class="announcement-student-menu"><p></p></div> <!-- end of the container for announcement-stud-specific3 div-->
                 </div> <!-- end of the announcement-stud-calendar -->
             </div> <!-- end of the announcement-inner-container-->
             <div class="announcement-inner-container-2">
@@ -121,25 +129,19 @@ This webpage was created, designed by David and Jonathan for CS355 D3.-->
                 </div> <!-- end of the announcement-student-info2 -->
                 <div class="announcement-stud-cunyfirst-alert">
                         <table class="announcement-stud-cunyfirst-alert-table">
-                            <caption> CUNYFIRST ALERTS</caption>
+                            <caption> QC First Alerts</caption>
                             <thead>
                                 <tr><th><p><b>CANCELLED</b> - Monthly Maintenance(March 20)</p></th></tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><p>The CUNYfirst hosting service provider has cancelled the maintenance scheduled for the Weekend of March 20-21</p></td>
+                                    <td><p>The QC First hosting service provider has cancelled the maintenance scheduled for the Weekend of March 20-21</p></td>
                                 </tr>
                                 <tr>
-                                    <th><p><b>COMPLETED</b> CUNYfirst migration to CUNY Data Center: March24-28</p></th>
+                                    <th><p><b>COMPLETED</b> QC First migration to QC First Data Center: March24-28</p></th>
                                 </tr>
                                 <tr>
-                                    <td><p>The CUNYfirst system migration to the CUNYfirst data center has completed. Users can now access CUNYfirst</p></td>
-                                </tr>
-                                <tr>
-                                    <th><p>Schedule of CUNYfirst Recurring Maintenance</p></th>
-                                </tr>
-                                <tr>
-                                    <td><p>The schedule of CUNYfirst monthly maintenance is available on the <a href="https://www.cuny.edu/about/administration/offices/cis/technology-services/service-maintenance-windows/#:~:text=yearly%20maintenance%20windows.-,CUNYfirst,and%20month%2Dend%20financial%20close.&text=The%20CUNYfirst%20operations%20team%20schedules,at%207pm%20(Eastern%20Time).">Service Maintenance Windows</a> CUNY web site page</p></td>
+                                    <td><p>The QC First system migration to the QC First data center has completed. Users can now access QC First</p></td>
                                 </tr>
                             </tbody>
                         </table>
