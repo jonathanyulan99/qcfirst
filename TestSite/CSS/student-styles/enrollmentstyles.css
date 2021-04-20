@@ -100,7 +100,7 @@ cyan - #d2fdff
     padding: 5px;
 }
 
-.btn2, .btn1{
+.btn2, .btn1, .btn3{
     display: inline-block;
     font-size: 1.25rem;
     font-weight: 400;
@@ -115,26 +115,6 @@ cyan - #d2fdff
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 110px;
-    border-radius: .3rem;
-    line-height: 1.5;
-    box-shadow: 5px 5px 10px #153983;
-}
-
-.btn3{
-    display: inline-block;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color:white;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid transparent;
-    border-color: #153983;
-    border-width: 3px;
-    background-color:#153983;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 115px;
     border-radius: .3rem;
     line-height: 1.5;
     box-shadow: 5px 5px 10px #153983;
