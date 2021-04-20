@@ -26,11 +26,9 @@ blue - #0074e1
 }
 
 .important-links-inner-container{
-    padding-top: 7%;
+    padding-top: 5%;
     padding-right: 5%;
     padding-left: 5%;
-    display:flex;
-    flex-direction:column;
 }
 
 /* Styling for nav bar */
@@ -65,10 +63,7 @@ blue - #0074e1
 }
 
 /* Styling for main content div */
-
 .important-links-main-content{
-    float: left;
-    flex: 33.33%;
     padding: 5px;
     display: flex;
 }
@@ -82,20 +77,29 @@ blue - #0074e1
 }
 
 /* Syling for table */
-
 #url-links-table{
+    padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 1.5%;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 4%;
-    border: 3px solid black;
+    border: 3px solid #303c6c;
+    width: 25%;
 }
 
-#capHeader{
-    text-decoration: underline;
-    font-size: 25px;
-    font-family: 'Lato', sans-serif;
+.important-links-list{
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 3px black solid;
+    margin: 0 auto;
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    background: #369;
+    height: fit-content;
 }
 
 #url-links-table th, #url-links-table td{
@@ -114,10 +118,20 @@ blue - #0074e1
 #url-links-table a:hover{
     background: #153983;
     color:white;    
+    color:white;
 }
 
 .flex-itemImage{
-    padding-top: 4%;
+    padding-top: 2%;
+    padding-bottom:1%;
+}
+
+#important-links-list-info, #important-links-list-aid, #important-links-list-resources,#important-links-list-links{
+    height: fit-content;
+    border: 1px black solid;
+    background: #eee;
+    padding: 2%;
+    margin: 2%;
 }
 
 /*CSS selector working on the footer*/
@@ -177,4 +191,8 @@ a:hover {
 ul {
     list-style: none;
     padding-left: 0;
+}
+/*default color of the links*/
+*a{
+    color:white;
 }
