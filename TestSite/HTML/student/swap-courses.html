@@ -37,17 +37,18 @@
                 <div id="swap-class-header">
                     <h1><u>Swap Course</u></h1>
                     <h2>1.Select Classes to Swap</h2>
-                    <p>Select the classes to swap and select "Swap".</p>
-
-                    <h3> 2021 Summer Term | Undergraduate | Queens College </h3>
-                    <button type="submit" id="changeTerm">Change Term</button>
+                    <h3> XXXX Summer Term | Undergraduate | Queens College </h3>
+                    <select id="term-selection" name="term-selection">
+                        <option value="current-term-option">Summer 2021</option>
+                        <option value="next-term-option">Fall 2021</option>
+                    </select>
                 </div>
 
                 <div class="tables-container">
                     <div class="swap-courses-table">
                         <table id="select-swap-table">
-                            <thead>
                                 <caption>Classes Able to be Swapped</caption>
+                            <thead>
                                 <tr>
                                     <th></th>
                                     <th>Class</th>
@@ -76,15 +77,10 @@
                             </tbody>
                         </table>
                     </div>
-
-                    <div id="buttonSwap">
-                        <p>Ready to swap classes? <input type="button" value="SWAP" name="swapbutton"></p>
-                    </div>
-
                     <div class="student-schedule-table">
                         <table id="current-schedule-table">
-                            <thead>
                                 <caption>Current Schedule</caption>
+                            <thead>
                                 <tr>
                                     <th></th>
                                     <th>Class</th>
@@ -127,6 +123,9 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="student-swap-button">
+                            <input type="submit" id="swap-button" value="Swap Courses" name="swap-button">
+                        </div>
                     </div>
                 </div><!-- End of tables-container -->
                 <footer class="footer-cuny-wide">
