@@ -16,7 +16,6 @@ blue - #0074e1
 */
 
 /* Styling for body */
-
 .important-links-main-container{
     position: absolute;
     display: flex;
@@ -29,10 +28,10 @@ blue - #0074e1
     padding-top: 5%;
     padding-right: 5%;
     padding-left: 5%;
+    width: 100%;
 }
 
 /* Styling for nav bar */
-
 .nav-bar-logo{
     float: left;
     line-height: 55px;
