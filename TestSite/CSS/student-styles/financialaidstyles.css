@@ -1,12 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
 
-@media (max-width: 900px)
-{}.nav-bar {
-    border-radius: 0!important;
-}
-
 /* Styling for body */
-
 .fin-aid-main-container{
     position: relative;
     display: flex;
