@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
+
 /* color schemes:
 Set being used across the site:
 light orange - #fbe8a6
@@ -15,6 +16,7 @@ blue - #0074e1
 */
 
 /* Styling for body */
+
 .important-links-main-container{
     position: absolute;
     display: flex;
@@ -71,6 +73,14 @@ blue - #0074e1
     display: flex;
 }
 
+.important-links-list{
+    padding-top: 7%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display:flex;
+    flex-direction:column;
+}
+
 /* Syling for table */
 
 #url-links-table{
@@ -111,6 +121,7 @@ blue - #0074e1
 }
 
 /*CSS selector working on the footer*/
+
 footer{
     display:flex;
     background-color: #555;

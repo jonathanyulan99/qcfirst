@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
 
+/* Styling for body */
 
 body, html {
     margin: 0;
@@ -8,11 +9,11 @@ body, html {
     background: #F5F3EE;
 }
 
-h2 {
+h2{
     text-align: center;
 }
 
-.test {
+.login-form{
     color: #7D1935;
     width: 100%;
     height: 100vh;
@@ -21,7 +22,7 @@ h2 {
     align-content: center;
 }
 
-.formonline {
+.formonline{
     color: #7D1935;
     padding-right: 14px;
     font-family: 'Lato', sans-serif;
@@ -38,7 +39,6 @@ h2 {
     padding: 20px;
     padding-left: 25px;
     margin: 25px;
-
 }
 
 a:link {
