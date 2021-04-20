@@ -1,9 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
 
-@media (max-width: 900px)
-{}.nav-bar {
-    border-radius: 0!important;
-}
+/* Styling for body */
 
 .add-search-main-container{
     position: relative;
@@ -19,8 +16,11 @@
     padding-left: 5%;
 }
 
+/* Styling for nav bar*/
+
 .nav-bar-logo{
     float: left;
+    line-height: 55px;
 }
 
 .nav-bar{
@@ -37,9 +37,9 @@
     display: block;
     color: darkblue;
     text-align: center;
-    padding: 5px 33px;
+    padding: 1px 33px;
     text-decoration: none;
-    margin-top: 15px;
+    line-height: 65px;
 }
 
 .nav-bar a:hover{
@@ -47,10 +47,81 @@
     color:white;    
 }
 
-#add-class-header{
-    padding-top: 5%;
-    margin-left: 5%;
+/* Styling for form */
+
+.flex-item-image{
+    padding-top: 4%;
+    float: right;
 }
+
+#stud-search-class-header{
+    float: left;
+    flex: 33.33%;
+    padding: 5px;
+    display: flex;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #31708e;
+    border-radius: 4px;
+    background-color:lightblue;
+}
+
+input[type=text]:focus {
+    background-color: #31708e;
+}  
+
+#term-selection{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #31708e;
+    border-radius: 4px;
+    background-color: #8fc1e3;
+}
+
+#term-selection:focus{
+    background-color: lightblue;
+}
+
+#search-form{
+    padding-top: .4%;
+    margin-right: 15%;
+    margin-top: 4%;
+}
+
+h3{
+    border: 3px solid #303c6c;
+    padding: 2%;
+    background-color: #8fc1e3;
+}
+
+#btn{
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    border-color: #153983;
+    border-width: 3px;
+    background-color:#153983;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    border-radius: .3rem;
+    line-height: 1.5;
+    box-shadow: 10px 5px 0px #31708e;
+}
+
+/* Styling for tables */
 
 .tables-container{
     display:flex;

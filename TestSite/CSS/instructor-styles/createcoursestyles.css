@@ -49,11 +49,6 @@
 
 /* Styling for first div*/
 
-.create-class-header{
-    padding-top: 5%;
-    margin-left: 5%;
-}
-
 #create-class-header{
     float: left;
     flex: 33.33%;
