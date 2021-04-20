@@ -212,10 +212,11 @@ tr:nth-child(odd){
 /*CSS selector working on the footer*/
 footer{
     margin:2%;
-    padding: 1%;
+    padding:0;
     display:flex;
     background-color: #555;
     color: #bbb;
+    place-content: space-between;
 }
 
 footer a {

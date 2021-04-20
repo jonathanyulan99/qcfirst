@@ -286,11 +286,14 @@ caption{
 
 /*CSS selector working on the footer*/
 footer{
-    margin:2%;
-    padding: 1%;
     display:flex;
     background-color: #555;
     color: #bbb;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 footer a {
@@ -319,6 +322,13 @@ a:hover {
     min-width: 12.5rem /*200px*/;
 }
 
+.footer-main-item ul{
+    display:-webkit-inline-flex;
+}
+
+.footer-main-item li{
+    padding-left:.5em;
+}
 .footer-main-social-media{
     padding: 0 1.875rem 1.25rem;
     list-style: none;
