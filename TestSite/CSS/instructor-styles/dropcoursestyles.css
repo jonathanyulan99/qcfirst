@@ -47,6 +47,36 @@
     color:white;    
 }
 
+/* Styling for special content */
+
+.fade-in-block{
+    opacity: 0;
+    font-family: 'Lato', sans-serif;
+    color: orangered;
+}
+
+.special-content1{
+    background-image: url("../../images/professor5.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-bottom: 5%;
+    margin-top: 5%;
+}
+
+p.special-p1{
+    font-family: 'Lato', sans-serif;
+    min-height: 250px;
+    padding-top: 10%;
+    padding-left: 35%;
+    font-size: 50px;
+    color: #fbe8a6;
+    text-align: center;
+}
+
 /* Styling for table*/
 
 p{
