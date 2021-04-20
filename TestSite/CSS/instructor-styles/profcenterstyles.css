@@ -161,27 +161,6 @@ p.special-p3{
     padding: 5px;
 }
 
-/* .btn{
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid black;
-    background-color:#153983;
-    border-color: #153983;
-    border-width: 3px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 90px;
-    font-size: 1.25rem;
-    border-radius: .3rem;
-    line-height: 1.5;
-    text-decoration: none;
-    color:white;
-    line-height: 1.5;
-    box-shadow: 10px 10px 10px #153983;
-} */
-
 .btn{
     display: inline-block;
     font-size: 1.25rem;
@@ -234,7 +213,6 @@ p.special-p3{
         transparent 100%
       );
       background-color: oldlace;
-    
 }
 
 .prof-courses-table{
@@ -249,36 +227,6 @@ p.special-p3{
     font-size: 18px;
     margin-bottom: -3%;
 }
-
-.prof-next-term-schedule{
-    display:flex;
-    flex-direction:row;
-    column-gap:25%;
-    border: 3px solid black;
-    padding-top: 3%;
-    border-collapse: collapse;
-    border-spacing: 5px;
-    margin-bottom: 3%;
-    background: linear-gradient(
-        to bottom,
-        #fbe8a6,
-        #fbe8a6 5rem,
-        transparent 1rem,
-        transparent 100%
-      );
-      background-color: oldlace;
-}
-
-caption{
-    color: #303c6c;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    padding-bottom: 2%;
-} 
-
-#prof-next-term-table{
-    width: 100%;
-}   
 
 th, td{
     padding: 15px;
@@ -296,4 +244,8 @@ tr:nth-child(even){
 
 tr:nth-child(odd){
     background-color: #fff;
+}
+
+footer{
+    padding-top:50px;
 }
