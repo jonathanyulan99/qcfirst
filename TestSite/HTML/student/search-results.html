@@ -9,14 +9,12 @@
         <script src="../../javascript/infiniteScroll.js"></script>
 
         <script>
-            $("#report tr:odd").addClass("odd");
-            $("#report tr:not(.odd)").hide();
-            $("#report tr:first-child").show();
-
-            $("#report tr.odd").click(function () {
-                $("#report tr:not(.odd)").hide();
-                $(this).next("tr").toggle();
-                $(this).find(".arrow").toggleClass("up");
+            $(function() {
+                $("tr[colspan=3]").find("div").hide();
+                $("tr").click(function(event) {
+                    var $target = $(event.target);
+                    $target.closest("tr").next().find("div").slideToggle();                
+                });
             });
         </script>
     </head>
@@ -35,52 +33,66 @@
             </nav>
 
             <div class="search-results-inner-container">
-                <table id="report">
-                    <tr>
-                        <th>Course Name</th>
-                        <th>Course Id</th>
-                        <th>Instructor</th>
-                        <th>Credits</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td>CSCI 355</td>
-                        <td>39383</td>
-                        <td>Mark</td>
-                        <td>3.00</td>
-                        <td>show/hide</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5">
-                             <h4>Additional information</h4>
-                
-                            <ul>
-                                <li>Class time: </li>
-                                <li>blah</li>
-                                <li>blah </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>CSCI 355</td>
-                        <td>28393</td>
-                        <td>Law</td>
-                        <td>3.0</td>
-                        <td>show/hide</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5">
-                            <h4>Additional information</h4>
-               
-                           <ul>
-                               <li>Class time: </li>
-                               <li>blah</li>
-                               <li>blah </li>
-                           </ul>
-                       </td>
-                    </tr>
-                </table>
-            </div><!-- end of academics-inner-container -->
-        </div><!-- end of academics-main-container -->
+                <div class="search-results-stud-details">
+                    <div><p id="results-stud-name-header">Full Name:</p><p id="results-stud-fullname">Francisco Lindor</p></div>
+                    <div><p id="results-sems-header">Semester:</p><p id="results-semester">Summer 2021</p></div>
+                    <div><p id="results-college-header">College:</p><p id="results-current-college">Queens College</p></div>
+                </div>
+
+                <div id="display-results">
+                    <table id="list-courses-table">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Section</th>
+                                <th>Prof</th>
+                                <th>Days</th>
+                                <th>Times</th>
+                                <th>Status</th>
+                                <th>Select Course</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>355</td>
+                                <td>33</td>
+                                <td>Mark</td>
+                                <td>Mon/Wed</td>
+                                <td>3:00PM - 4:15PM</td>
+                                <td>Open</td>
+                                <td><input type="checkbox" />    &nbsp;   </td>
+                            </tr>
+                            <tr colspan=3>
+                                <td>
+                                    <div>
+                                        <h4>Additional Information:</h4>
+                                        <p>Capacity: 32/45</p>
+                                        <p>Format: Online-Synchronous</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>355</td>
+                                <td>33</td>
+                                <td>Law</td>
+                                <td>Tues/Thurs</td>
+                                <td>8:00PM - 9:15PM</td>
+                                <td>Closed</td>
+                                <td><input type="checkbox" />    &nbsp;   </td>
+                            </tr>
+                            <tr colspan=3>
+                                <td>
+                                    <div>
+                                        <h4>Additional Information:</h4>
+                                        <p>Capacity: 30/30</p>
+                                        <p>Format: Online-Synchronous</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div> <!-- end of display-results div -->
+            </div><!-- end of search-results-main-container -->
+        </div><!-- end of search-results-main-container -->
     </body>
 </html>
