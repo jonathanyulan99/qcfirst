@@ -73,6 +73,13 @@ blue - #0074e1
     display: flex;
 }
 
+#search-form{
+    padding-top: 5%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -101,20 +108,15 @@ input[type=text]:focus {
     background-color: lightblue;
 }
 
-#search-form{
-    padding-top: 10%;
-    margin-right: 10%;
-    margin-top: 4%;
-    margin-left: 15%;
-}
-
 .student-add-search-header{
     border: 3px solid #303c6c;
     padding: 2%;
     background-color: #8fc1e3;
 }
 
-#search-btn, #add-btn{
+/* Styling for buttons */
+
+#search-btn{
     display: inline-block;
     font-size: 1.25rem;
     font-weight: 400;
@@ -128,7 +130,27 @@ input[type=text]:focus {
     background-color:#153983;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 90px;
+    margin-left: 65px;
+    border-radius: .3rem;
+    line-height: 1.5;
+    box-shadow: 10px 5px 0px #31708e;
+}
+
+#add-btn{
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    border-color: #153983;
+    border-width: 3px;
+    background-color:#153983;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 65px;
     border-radius: .3rem;
     line-height: 1.5;
     box-shadow: 10px 5px 0px #31708e;
