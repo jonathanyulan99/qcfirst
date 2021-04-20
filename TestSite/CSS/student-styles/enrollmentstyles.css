@@ -1,19 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
 
 /* color schemes: 
-blue - #0074e1 
-
-One set of blues:
-teal blueish - #31708e
-lighter than prev - #5085a5
-lighter than prev - #8fc1e3
-
-Another set of colorful (37) current ones being used:
+Set being used across the site:
 light orange - #fbe8a6
 pastel orange - #f4976c
 dark blue - #303c6c
 cyan ish - #b4dfe5
 cyan - #d2fdff
+
+One set of blues:
+teal blueish - #31708e
+lighter than prev - #5085a5
+lighter than prev - #8fc1e3
+blue - #0074e1 
 */
 
 /* Styling for body */
@@ -53,7 +52,7 @@ cyan - #d2fdff
     display: block;
     color: darkblue;
     text-align: center;
-    padding: 1px 33px;
+    padding: 1px 28px;
     text-decoration: none;
     line-height: 65px;
 }
@@ -100,7 +99,7 @@ cyan - #d2fdff
     padding: 5px;
 }
 
-.btn2, .btn1, .btn3{
+.btn1, .btn2, .btn3{
     display: inline-block;
     font-size: 1.25rem;
     font-weight: 400;
