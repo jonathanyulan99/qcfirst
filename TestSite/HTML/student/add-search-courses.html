@@ -36,8 +36,7 @@
 
             <div class="add-search-inner-container">
                 <div id="add-search-class-header">
-                    <form id="search-form" action="">
-                        <h1>Search and then add your courses!</h1>
+                    <form id="search-form" action="../student/search-results.html">
                         <h3 class="student-add-search-header">Fill out the form to search for CUNY courses.</h3>
                         <select id="term-selection" name="term-selection">
                             <option value="current-term-option">Summer 2021</option>
@@ -50,13 +49,13 @@
                         <label for="course-num">Course Number:</label><br>
                         <input type="text" id="course-num" name="course-num" required><br>
 
-                        <input type="submit" id="search-btn" value="Search">
+                        <button type="submit" id="search-btn" value="Search">Search</button>
                     </form>
 
                     <div class="flex-item-image">
-                        <a><img src="../../images/student10.jpg" alt="prof4" width="100%"/></a>
+                        <img src="../../images/student10.jpg" alt="student10" width="100%"/>
                     </div>
-                </div>
+                </div><!-- add-search-class-header -->
 
                 <div class="add-table2">
                     <table id="course-in-cart">
@@ -129,6 +128,7 @@
                     </table>
                     <button type="submit" id="add-btn">Click Here to Add Class</button>
                 </div><!-- End of tables-container -->
+
                 <footer class="footer-cuny-wide">
                     <section class="footer-main">
                         <div class="footer-main-item">

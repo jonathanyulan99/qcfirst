@@ -37,7 +37,7 @@
     display: block;
     color: darkblue;
     text-align: center;
-    padding: 1px 80px;
+    padding: 1px 55px;
     text-decoration: none;
     line-height: 65px;
 }
@@ -109,8 +109,6 @@ p.special-p1{
 
 p.special-p2{
     font-family: 'Lato', sans-serif;
-    /* padding-top: 10%;
-    padding-left: 60%; */
     margin-top: 17%;
     min-height: 300px;
     padding: 18px;
@@ -133,8 +131,6 @@ p.special-p2{
 
 p.special-p3{
     font-family: 'Lato', sans-serif;
-    /* padding-top: 10%;
-    padding-left: 60%; */
     margin-top: 17%;
     min-height: 300px;
     padding: 18px;
