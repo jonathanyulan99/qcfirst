@@ -295,23 +295,13 @@ footer{
     margin-bottom: 5%;
     margin-top: 5%;
 }
-
 footer a {
     text-decoration: none;
     color: #eee;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
-.footer-title{
-    color: #fff;
-    font-family: ’Merriweather’, serif;
-    font-size: 1.375rem;
-    padding-bottom: 0.625rem;
-}
-
 .footer-main {
     padding: 1.25rem 1.875rem;
     display: flex;
@@ -321,13 +311,12 @@ a:hover {
     padding: 1.25rem;
     min-width: 12.5rem /*200px*/;
 }
-
 .footer-main-item ul{
     display:-webkit-inline-flex;
 }
-
 .footer-main-item li{
     padding-left:.5em;
+    padding-right:.5em;
 }
 .footer-main-social-media{
     padding: 0 1.875rem 1.25rem;
@@ -343,31 +332,11 @@ a:hover {
     margin: 0.5rem;
     font-size: 1.25rem;
 }
-
-.footer-main-legal {
-    padding: 0.9375rem 1.875rem;
-    background-color: #333;
-}
-.footer-legal-list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.footer-legal-list li {
-    margin: 0.125rem 0.625rem;
-    white-space: nowrap;
-}
-/* one before the last child */
-.footer-legal-list li:nth-last-child(2) {
-    flex: 1;       /* same as flex-grow: 1; */
-}
-
 /*CSS to work on the icons for the footer*/
 .fa-facebook-f, .fa-flickr, .fa-twitter-square, .fa-youtube{
-    font-size: 60px; color:Dodgerblue;
-
+    font-size: 50px; color: #eee;
+    justify-items: center;
 }
-
 ul {
     list-style: none;
     padding-left: 0;
