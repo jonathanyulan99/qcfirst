@@ -246,6 +246,60 @@ tr:nth-child(odd){
     background-color: #fff;
 }
 
+/*CSS selector working on the footer*/
 footer{
-    padding-top:50px;
+    display:flex;
+    background-color: #555;
+    color: #bbb;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+a:hover {
+    text-decoration: underline;
+}
+.footer-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+.footer-main-item ul{
+    display:-webkit-inline-flex;
+}
+.footer-main-item li{
+    padding-left:.5em;
+    padding-right:.5em;
+}
+.footer-main-social-media{
+    padding: 0 1.875rem 1.25rem;
+    list-style: none;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+.footer-social li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+/*CSS to work on the icons for the footer*/
+.fa-facebook-f, .fa-flickr, .fa-twitter-square, .fa-youtube{
+    font-size: 50px; color: #eee;
+    justify-items: center;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
 }
