@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
 
 /* Styling for body */
-
-.add-search-main-container{
+.student-add-courses-main-container{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,7 @@
 }
 
 .add-search-inner-container{
-    padding-top: 7%;
+    padding-top: 5%;
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -54,8 +53,7 @@
     float: right;
 }
 
-#stud-search-class-header{
-    float: left;
+#add-search-class-header{
     flex: 33.33%;
     padding: 5px;
     display: flex;
@@ -90,18 +88,19 @@ input[type=text]:focus {
 }
 
 #search-form{
-    padding-top: .4%;
-    margin-right: 15%;
+    padding-top: 10%;
+    margin-right: 10%;
     margin-top: 4%;
+    margin-left: 15%;
 }
 
-h3{
+.student-add-search-header{
     border: 3px solid #303c6c;
     padding: 2%;
     background-color: #8fc1e3;
 }
 
-#btn{
+#search-btn, #add-btn{
     display: inline-block;
     font-size: 1.25rem;
     font-weight: 400;
@@ -165,6 +164,91 @@ tr:nth-child(odd){
     background-color: #fff;
 }
 
+/* Styling for Table Header */
+#course-in-cart caption{
+    color: #303c6c;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 1%;
+    text-decoration-line: underline;
+    font-size: 20px;
+    background-color: #fbe8a6;
+}
+
+/*CSS selector working on the footer*/
 footer{
-    padding-top:50px;
+    margin:2%;
+    padding: 1%;
+    display:flex;
+    background-color: #555;
+    color: #bbb;
+}
+
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer-title{
+    color: #fff;
+    font-family: ’Merriweather’, serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+
+.footer-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+
+.footer-main-social-media{
+    padding: 0 1.875rem 1.25rem;
+    list-style: none;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+.footer-social li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.footer-main-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+}
+.footer-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+/* one before the last child */
+.footer-legal-list li:nth-last-child(2) {
+    flex: 1;       /* same as flex-grow: 1; */
+}
+
+/*CSS to work on the icons for the footer*/
+.fa-facebook-f, .fa-flickr, .fa-twitter-square, .fa-youtube{
+    font-size: 60px; color:Dodgerblue;
+
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
 }

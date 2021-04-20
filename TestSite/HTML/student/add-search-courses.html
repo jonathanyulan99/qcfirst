@@ -15,12 +15,13 @@
         <title>Add or Search classes</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="../../css/student-styles/addsearchstyles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a6360b8855.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div class="add-search-main-container">
+        <div class="student-add-courses-main-container">
             <nav class="nav-bar">
-                <img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="cunyFirstLogo" width="125">
+                <a href="../student/cuny-announcements.html"><img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="logo1" id="cunyLogo" width="125"/></a>
                 <a href="../student/cuny-announcements.html">Announcements</a>
                 <a href="../student/student-center.html">Student Center</a>
                 <a href="../student/academics.html">Academics</a>
@@ -31,9 +32,9 @@
             </nav>
 
             <div class="add-search-inner-container">
-                <div id="stud-search-class-header">
+                <div id="add-search-class-header">
                     <form id="search-form" action="">
-                        <h3>Fill out the form to search for CUNY courses.</h3>
+                        <h3 class="student-add-search-header">Fill out the form to search for CUNY courses.</h3>
                         <select id="term-selection" name="term-selection">
                             <option value="current-term-option">Summer 2021</option>
                             <option value="next-term-option">Fall 2021</option>
@@ -45,7 +46,7 @@
                         <label for="course-num">Course Number:</label><br>
                         <input type="text" id="course-num" name="course-num" required><br>
 
-                        <input type="submit" id="btn" value="Search"></button>
+                        <input type="submit" id="search-btn" value="Search"></button>
                     </form>
 
                     <div class="flex-item-image">
@@ -60,6 +61,7 @@
                                 <caption>2021 Semester Shown Shopping Cart</caption>
                             </tr>
                             <tr>
+                                <th>Selection</th>
                                 <th>Class</th>
                                 <th>Days/Times</th>
                                 <th>Room</th>
@@ -69,6 +71,9 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td>
+                                    <input type="radio" name="add-shopping-cart-selection" />
+                                </td>
                                 <td>CSCI 355 - 40 (9649)</td>
                                 <td>
                                     MoTuWeTh <br>
@@ -83,6 +88,9 @@
                                 <td>3.00 Credits</td>
                             </tr>
                             <tr>
+                                <td>
+                                    <input type="radio" name="add-shopping-cart-selection" />
+                                </td>
                                 <td>CSCI 343 (9649)</td>
                                 <td>
                                     TuTh <br>
@@ -96,14 +104,89 @@
                                 <td>To Be Determined</td>
                                 <td>3.00 Credits</td>
                             </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="add-shopping-cart-selection" />
+                                </td>
+                                <td>CSCI 381 (9239)</td>
+                                <td>
+                                    MoWe <br>
+                                    5:00pm - <br>
+                                    6:15pm
+                                </td>
+                                <td>
+                                    Online- <br>
+                                    Synchronous
+                                </td>
+                                <td>To Be Determined</td>
+                                <td>3.00 Credits</td>
+                            </tr>
                         </tbody>
                     </table>
+                    <button type="button" id="add-btn">Click Here to Add Class</button>
                 </div><!-- End of tables-container -->
-                <footer>
-                    Some Sort of Reference Material
-                    <img src="../../images/qcLogo3.png" alt="vintageQcLogo"/>
-                    Some sort of Reference Material
-                </footer>
+                <footer class="footer-cuny-wide">
+                    <section class="footer-main">
+                        <div class="footer-main-item">
+                            <h3>INFORMATION FOR</h3>
+                            <ul>
+                                <li><a href="https://www.cuny.edu/admissions/future-student-guide/">Future Students</a></li>
+                                <li><a href="https://www.cuny.edu/current-students/">Current Students</a></li>
+                                <li><a href="https://www.cuny.edu/faculty-staff/">Faculty & Staff</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-main-item">
+                            <h3>FINANCIAL AID</h3>
+                            <ul>
+                                <li><a href="https://www.cuny.edu/financial-aid/applying-for-financial-aid/">Applying for Financial Aid</a></li>
+                                <li><a href="https://www.cuny.edu/financial-aid/federal-and-state-grants/">Pell/TAP Need-Based Support</a></li>
+                                <li><a href="https://www.cuny.edu/financial-aid/scholarships/">Find People(phone/emails)</a></li>
+                                <li><a href="https://npc.cuny.edu/npc/public/fin_aid/financial_aid_estimator/FinAidEstimator.jsp">Estimating College Costs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-main-item">
+                            <h3>RESOURCES</h3>
+                            <ul>
+                                <li><a href="https://www1.cuny.edu/sites/title-ix/campus/university/">Combating Sexual Misconduct (Title IX)</a></li>
+                                <li><a href="https://www.cuny.edu/foil/">Freedom of Information Law (FOIL)</a></li>
+                                <li><a href="http://www.cuny.edu/about/administration/offices/fpcm/cucf/procurement/">CUNY Builds: CUCF Procurement</a></li>
+                                <li><a href="https://www.cuny.edu/about/university-resources/emergency-preparedness/">Emergency Preparedness</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-main-item">
+                            <h3>QUICKLINKS</h3>
+                            <ul>
+                                <li><a href="https://www.cuny.edu/about/university-resources/telephone-email-directories/">Find People(phone/emails)</a></li>
+                                <li><a href="https://www.cuny.edu/about/administration/offices/university-advancement/">University Advancement</a></li>
+                                <li><a href="https://www.cuny.edu/about/administration/offices/communications-marketing/">Communications and Marketing</a></li>
+                                <li><a href="https://www1.cuny.edu/sites/cuny-arts/">CUNY Arts</a></li>
+                                <li><a href="https://www1.cuny.edu/sites/matters/">CUNYMatters</a></li>
+                                <li><a href="https://www.cuny.edu/employment/">Employment</a></li>
+                                <li><a href="https://www1.cuny.edu/sites/selltocuny/">Sell to CUNY</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="footer-main-logo">
+                        <div class="footer-main-image">
+                            <img src="../../images/qcLogo3.png" alt="vintageQcLogo"/>
+                        </div>
+                    </section>
+                    <section class="footer-main-social-media">
+                        <div class="footer-social">
+                            <li><a href="https://www.facebook.com/CUNYedu"><i class="fab fa-facebook-f"></i> </a></li>
+                            <li><a href="https://twitter.com/cuny"><i class="fab fa-twitter-square"></i></i> </a></li>
+                            <li><a href="https://www.youtube.com/channel/UC9t20Xexjtp5FbbIF3vVAZw"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.flickr.com/photos/cunyedu/"><i class="fab fa-flickr"></i> </a></li>
+                        </div>
+                    </section>
+                    <section class="footer-main-legal">
+                        <ul class="footer-legal-list">
+                            <li><a href="https://www.cuny.edu/website/copyright/">Terms &amp; Conditions</a></li>
+                            <li><a href="https://www.cuny.edu/website/privacy-policy/">Privacy Policy</a></li>
+                            <li>&copy; 2019 Copyright Nowrap Inc.</li>
+                        </ul>
+                    </section>
+                </footer> <!-- end of the footer -->
             </div><!-- End of add-search-inner-container -->
         </div><!-- End of add-search-main-container -->
     </body>
