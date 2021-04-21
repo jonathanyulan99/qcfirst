@@ -15,11 +15,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="../../css/instructor-styles/dropcoursestyles.css" rel="stylesheet">
         <title>Professor Drop Courses</title>
+        <script src="../../javascript/jquery-3.0.0.min.js"></script>
+        <script src="../../javascript/infiniteScroll.js"></script>
+
         <!--Javascript resource taken from https://kit.fontawesome.com/a63... that will  be used to display the logos
        in our footer bar-->
         <script src="https://kit.fontawesome.com/a6360b8855.js" crossorigin="anonymous"></script>
-        <script src="../../javascript/jquery-3.0.0.min.js"></script>
-        <script src="../../javascript/infiniteScroll.js"></script>
     </header>
 
     <body>
@@ -29,7 +30,11 @@
                 <a href="../instructors/cuny-announcements.html">Announcements</a>
                 <a href="../instructors/instructor-center.html">Professor Center</a>
                 <a href="../instructors/important-links.html">Important Links</a>
-                <a href="../loginpage.html" class="dropdown-toggle">Professor Account</a>
+                <a href="../loginpage.html">Professor Account</a>
+                <form action="../student/add-search-courses.html">
+                    <input type="text" placeholder="Search courses.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </nav>
 
             <div class="drop-course-inner-container">
