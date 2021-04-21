@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:900italic);
+
+.nav-bar-logo{
+    float: left;
+    line-height: 55px;
+}
+
+.nav-bar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background: #F5F3EE;
+}
+
+.nav-bar a{
+    float: left;
+    display: block;
+    color: darkblue;
+    text-align: center;
+    padding: 1px 50px;
+    text-decoration: none;
+    line-height: 65px;
+}
+
+.nav-bar input[type=text]{
+    color:white;
+    margin-top: 2%;
+    padding-right: .8%;
+}
+
+.nav-bar a:hover{
+    background: #153983;
+    color:white;    
+}

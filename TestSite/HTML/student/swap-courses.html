@@ -14,8 +14,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="../../css/student-styles/swapStyles.css" rel="stylesheet">
-        <title>Swap</title>
+        <title>Swap Courses</title>
         <script src="https://kit.fontawesome.com/a6360b8855.js" crossorigin="anonymous"></script>
+
         <!-- JS script resource API: https://kit.fontawesome.com/... used in navigation bar -->
         <script src="https://kit.fontawesome.com/a6360b8855.js" crossorigin="anonymous"></script>
     </head>
@@ -23,21 +24,24 @@
     <body>
         <div class="swap-main-container">
             <nav class="nav-bar">
-                <a href="../student/cuny-announcements.html"><img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="cuny-first-logo"  width="125"/></a>
+                <a href="../student/cuny-announcements.html"><img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="qcfirst-logo"  width="125"/></a>
                 <a href="../student/cuny-announcements.html">Announcements</a>
                 <a href="../student/student-center.html">Student Center</a>
                 <a href="../student/academics.html">Academics</a>
                 <a href="../student/enrollment-overview.html">Enrollment</a>
                 <a href="../student/financial-aid.html">Financial Aid</a>
                 <a href="../student/important-links.html">Important Links</a>
-                <a href="../loginpage.html" class="dropdown-toggle">My Account</a>
+                <a href="../loginpage.html">My Account</a>
+                <form action="../student/add-search-courses.html">
+                    <input type="text" placeholder="Search courses.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </nav>
 
             <div class="swap-inner-container">
                 <div id="swap-class-header">
                     <h1><u>Swap Course</u></h1>
                     <h2>1.Select Classes to Swap</h2>
-                    <h3> XXXX Summer Term | Undergraduate | Queens College </h3>
                     <select id="term-selection" name="term-selection">
                         <option value="current-term-option">Summer 2021</option>
                         <option value="next-term-option">Fall 2021</option>

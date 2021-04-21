@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
+
 /* color schemes:
 Set being used across the site:
 light orange - #fbe8a6
@@ -30,6 +31,7 @@ blue - #0074e1
 }
 
 /* Styling for nav bar */
+
 .nav-bar-logo{
     float: left;
     line-height: 55px;
@@ -49,9 +51,15 @@ blue - #0074e1
     display: block;
     color: darkblue;
     text-align: center;
-    padding: 1px 28px;
+    padding: 1px 16px;
     text-decoration: none;
     line-height: 65px;
+}
+
+.nav-bar input[type=text]{
+    color:white;
+    margin-top: 2%;
+    padding-right: .8%;
 }
 
 .nav-bar a:hover{
@@ -60,6 +68,7 @@ blue - #0074e1
 }
 
 /* Main CSS selector for container*/
+
 #swap-class-header{
     padding-top: 1%;
     margin-left: 5%;
@@ -155,6 +164,7 @@ blue - #0074e1
 }
 
 /*CSS selector working on the footer*/
+
 footer{
     display:flex;
     background-color: #555;
@@ -165,19 +175,19 @@ footer{
     margin-bottom: 5%;
     margin-top: 5%;
 }
-footer a {
+footer a{
     text-decoration: none;
     color: #eee;
 }
-a:hover {
+a:hover{
     text-decoration: underline;
 }
-.footer-main {
+.footer-main{
     padding: 1.25rem 1.875rem;
     display: flex;
     flex-wrap: wrap;
 }
-.footer-main-item {
+.footer-main-item{
     padding: 1.25rem;
     min-width: 12.5rem /*200px*/;
 }
@@ -202,12 +212,15 @@ a:hover {
     margin: 0.5rem;
     font-size: 1.25rem;
 }
+
 /*CSS to work on the icons for the footer*/
+
 .fa-facebook-f, .fa-flickr, .fa-twitter-square, .fa-youtube{
     font-size: 50px; color: #eee;
     justify-items: center;
 }
-ul {
+
+ul{
     list-style: none;
 }
 

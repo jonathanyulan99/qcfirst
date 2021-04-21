@@ -5,7 +5,7 @@
   Date: 04.17.2021
   Section: CS 355-54
 
-  This page allows a student account to add and search for courses to enroll in.
+  This page allows a student account to drop a course.
 
   Photos taken from https://unsplash.com/ (search keywords: college, professor, student)
 -->
@@ -15,29 +15,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="../../css/student-styles/dropstyles.css" rel="stylesheet">
         <title>Drop</title>
+
         <!--Javascript resource taken from https://kit.fontawesome.com/a63... that will  be used to display the logos
-       in our footer bar-->
+            in our footer bar-->
         <script src="https://kit.fontawesome.com/a6360b8855.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div class="drop-course-main-container">
+        <main class="drop-course-main-container">
             <nav class="nav-bar">
-                <a href="../student/cuny-announcements.html"><img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="cuny-first-logo"  width="125"/></a>
+                <a href="../student/cuny-announcements.html"><img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="qcfirst-logo"  width="125"/></a>
                 <a href="../student/cuny-announcements.html">Announcements</a>
                 <a href="../student/student-center.html">Student Center</a>
                 <a href="../student/academics.html">Academics</a>
                 <a href="../student/enrollment-overview.html">Enrollment</a>
                 <a href="../student/financial-aid.html">Financial Aid</a>
                 <a href="../student/important-links.html">Important Links</a>
-                <a href="../loginpage.html" class="dropdown-toggle">My Account</a>
+                <a href="../loginpage.html">My Account</a>
+                <form action="../student/add-search-courses.html">
+                    <input type="text" placeholder="Search courses.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </nav>
 
             <div class="drop-course-inner-container">
                 <div id="drop-course-inner-container">
                     <h1><u>Drop Courses</u></h1>
                     <h2>1.Select Classes to Drop</h2>
-                    <h3> <label for="drop-semester">Choose A Semester:</label> | Undergraduate | Queens College </h3>
+                    <h3> <label for="drop-semester">Choose A Semester:</label> | Undergraduate | Queens College</h3>
                     <select name="drop-semester" id="drop-semester">
                         <option value="Summer">Summer</option>
                         <option value="Fall">Fall</option>
@@ -158,6 +163,6 @@
                 </section>
             </footer> <!-- end of the footer -->
             </div><!-- End of drop-inner-container -->
-        </div><!-- End of drop-main-container -->
+        </main><!-- End of drop-main-container -->
     </body>
 </html>

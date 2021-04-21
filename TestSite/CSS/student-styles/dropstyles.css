@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900italic);
+
 /* color schemes:
 Set being used across the site:
 light orange - #fbe8a6
@@ -62,6 +63,7 @@ p.special-p1{
 /* Styling for nav bar */
 .nav-bar-logo{
     float: left;
+    line-height: 55px;
 }
 
 .nav-bar{
@@ -78,14 +80,20 @@ p.special-p1{
     display: block;
     color: darkblue;
     text-align: center;
-    padding: 1px 28px;
+    padding: 1px 16px;
     text-decoration: none;
-    margin-top: 15px;
+    line-height: 65px;
+}
+
+.nav-bar input[type=text]{
+    color:white;
+    margin-top: 2%;
+    padding-right: .8%;
 }
 
 .nav-bar a:hover{
     background: #153983;
-    color:white;
+    color:white;    
 }
 
 #drop-class-header{
@@ -96,7 +104,8 @@ p.special-p1{
 }
 
 /* Button CSS Selectors*/
-#drop-semester{
+
+.drop-semester{
     display: inline-block;
     font-size: 1.25rem;
     font-weight: 400;
@@ -114,8 +123,8 @@ p.special-p1{
     border-radius: .3rem;
     line-height: 1.5;
     box-shadow: 5px 5px 10px #153983;
-
 }
+
 #drop-course-submit{
     display: inline-block;
     font-size: 1.25rem;
@@ -148,11 +157,11 @@ p.special-p1{
     border-spacing: 5px;
     border-collapse: collapse;
     background: oldlace linear-gradient(
-            to bottom,
-            #fbe8a6,
-            #fbe8a6 6rem,
-            transparent 1rem,
-            transparent 100%
+        to bottom,
+        #fbe8a6,
+        #fbe8a6 6rem,
+        transparent 1rem,
+        transparent 100%
     );
 }
 #drop-course-table{
@@ -210,6 +219,7 @@ tr:nth-child(odd){
 }
 
 /*CSS selector working on the footer*/
+
 footer{
     display:flex;
     background-color: #555;
@@ -220,49 +230,61 @@ footer{
     margin-bottom: 5%;
     margin-top: 5%;
 }
-footer a {
+
+footer a{
     text-decoration: none;
     color: #eee;
 }
-a:hover {
+
+a:hover{
     text-decoration: underline;
 }
-.footer-main {
+
+.footer-main{
     padding: 1.25rem 1.875rem;
     display: flex;
     flex-wrap: wrap;
 }
-.footer-main-item {
+
+.footer-main-item{
     padding: 1.25rem;
     min-width: 12.5rem /*200px*/;
 }
+
 .footer-main-item ul{
     display:-webkit-inline-flex;
 }
+
 .footer-main-item li{
     padding-left:.5em;
     padding-right:.5em;
 }
+
 .footer-main-social-media{
     padding: 0 1.875rem 1.25rem;
     list-style: none;
 }
+
 .footer-social{
     display: flex;
     justify-content: center;
     border-top: 1px #777 solid;
     padding-top: 1.25rem;
 }
-.footer-social li {
+
+.footer-social li{
     margin: 0.5rem;
     font-size: 1.25rem;
 }
+
 /*CSS to work on the icons for the footer*/
+
 .fa-facebook-f, .fa-flickr, .fa-twitter-square, .fa-youtube{
     font-size: 50px; color: #eee;
     justify-items: center;
 }
-ul {
+
+ul{
     list-style: none;
     padding-left: 0;
 }

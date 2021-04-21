@@ -14,6 +14,7 @@ announcement page has(implemented in the near future).-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="../../css/instructor-styles/announcementstyles.css" rel="stylesheet">
+        <link href="../../css/instructor-styles/navbarcss.css" rel="stylesheet">
         <title>Teacher's Announcements Page</title>
         <!-- JS script resource API: https://kit.fontawesome.com/... used in navigation bar -->
         <script src="https://kit.fontawesome.com/a6360b8855.js" crossorigin="anonymous"></script>
@@ -22,11 +23,15 @@ announcement page has(implemented in the near future).-->
     <body>
         <div class="teacher-announcement-main-container">
             <nav class="nav-bar">
-                <a href="../instructors/cuny-announcements.html"><img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="cuny-first-logo" width="125"/></a>
+                <a href="../instructors/cuny-announcements.html"><img class="nav-bar-logo" src="../../images/CUNYfirst.png" alt="qcfirst-logo" width="125"/></a>
                 <a href="../instructors/cuny-announcements.html">Announcements</a>
                 <a href="../instructors/instructor-center.html">Professor Center</a>
                 <a href="../instructors/important-links.html">Important Links</a>
-                <a href="../loginpage.html" class="dropdown-toggle">Professor Account</a>
+                <a href="../loginpage.html">Professor Account</a>
+                <form action="../student/add-search-courses.html">
+                    <input type="text" placeholder="Search courses.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </nav> <!-- end of the nav bar for announcement-instructor -->
 
             <div class="teacher-announcement-inner-container">
@@ -36,6 +41,7 @@ announcement page has(implemented in the near future).-->
                     <div><p id="teacher-announcement-term-header"><b>Term:</b></p><p id="teacher-announcement-term"> Spring '21</p></div>
                     <div><p id="teacher-announcement-uni-header"><b>University:</b></p><p id="teacher-announcement-uni">Queens College</p></div>
                 </div> <!-- end of teacher-announcement-details-->
+
                 <div class="teacher-announcement-calendar">
                     <div class="teacher-announcement-current-date">
                         <div class="teacher-announcement-today-date">
@@ -88,7 +94,7 @@ announcement page has(implemented in the near future).-->
                         </ul> <!-- end of the calendar-->
                     </div>
                     <div class="announcement-teacher-menu"><p> **FUTURE IMPLEMENTATION** INTERACTIVE MENU</p></div> <!-- end of the container for announcement-stud-specific2 div-->
-                    <div class="announcement-teacher-menu"><p> **FUTURE IMPLEMENTATION** INTERACTIVE MENU</p></div> <!-- end of the container for announcement-stud-specific3 div-->
+                    <div class="announcement-teacher-menu"><p></p></div> <!-- end of the container for announcement-stud-specific3 div-->
                 </div> <!-- end of the teacher-announcement-calendar -->
             </div> <!-- end of the teacher-announcement-inner-container-->
             <div class="teacher-announcement-inner-container2">
