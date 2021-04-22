@@ -12,37 +12,31 @@
 
 <html lang="en">
     <head>
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <title>Student homepage</title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Student homepage</title>
        
-       <!-- <script src="../Javascript/jquery-3.0.0.min.js"></script> -->
-       <script src="../Javascript/bootstrap.min.js"></script>
-       <script src="../CSS/bootstrap.min.css"></script>
+        <!-- <script src="../Javascript/jquery-3.0.0.min.js"></script> -->
+        <script src="../Javascript/bootstrap.min.js"></script>
+        <script src="../CSS/bootstrap.min.css"></script>
 
         <!-- Make sure to put our custom css after the bootstrap css file-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../CSS/indexstyles.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/indexstyles.css">
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-        <script>
-            $(document).ready(function(){
-                $("#myBtns .nav-item").click(function(){
-                $(this).button('active');
-                });
-            });
-        </script>
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="nav-bar">
+        <!-- Have to get rid of navbar-dark bg-dark before our own nav bar css kicks in
+            but we need a hamburger icon-->
+        <nav role="navigation" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="nav-bar-custom">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand">QCFirst Logo</a>
+                <a href="../HTML/index.html" class="navbar-brand">QCFirst Logo</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -65,13 +59,12 @@
         <!-- REMOVE STYLE FOR DIV CLASS -->
         <div class="container-lg my-3" style="padding-top: 5%;">
             <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-                <!-- Carousel indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                 </ol>
-                <!-- Wrapper for carousel items -->
+
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="../Images/college1.jpg" alt="First Slide">
@@ -110,7 +103,7 @@
             <div class="bs-example">
                 <table class="table" id="stud-schedule-table">
                     <thead>
-                        <caption>My Courses:</caption>
+                        <caption>My Current schedule:</caption>
                         <tr>
                             <th>Class</th>
                             <th>Days</th>
