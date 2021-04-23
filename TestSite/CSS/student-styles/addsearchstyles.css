@@ -17,255 +17,258 @@ blue - #0074e1
 
 /* Styling for body */
 
-.student-add-courses-main-container{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 4vh;
-    flex-grow: 1;
+.student-add-courses-main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 4vh;
+  flex-grow: 1;
 }
 
-.add-search-inner-container{
-    padding-top: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
+.add-search-inner-container {
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 /* Styling for nav bar*/
 
-.nav-bar-logo{
-    float: left;
-    line-height: 55px;
+.nav-bar-logo {
+  float: left;
+  line-height: 55px;
 }
 
-.nav-bar{
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    font-family: 'Lato', sans-serif;
-    background: #F5F3EE;
+.nav-bar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  background: #f5f3ee;
 }
 
-.nav-bar a{
-    float: left;
-    display: block;
-    color: darkblue;
-    text-align: center;
-    padding: 1px 16px;
-    text-decoration: none;
-    line-height: 65px;
+.nav-bar a {
+  float: left;
+  display: block;
+  color: darkblue;
+  text-align: center;
+  padding: 1px 16px;
+  text-decoration: none;
+  line-height: 65px;
 }
 
-.nav-bar input[type=text]{
-    color:white;
-    margin-top: 2%;
-    padding-right: .8%;
+.nav-bar input[type="text"] {
+  color: white;
+  margin-top: 2%;
+  padding-right: 0.8%;
 }
 
-.nav-bar a:hover{
-    background: #153983;
-    color:white;    
+.nav-bar a:hover {
+  background: #153983;
+  color: white;
 }
 
 /* Styling for form */
 
-.flex-item-image{
-    padding-top: 4%;
-    float: right;
+.flex-item-image {
+  padding-top: 4%;
+  float: right;
 }
 
-#add-search-class-header{
-    flex: 33.33%;
-    padding: 5px;
-    display: flex;
+#add-search-class-header {
+  flex: 33.33%;
+  padding: 5px;
+  display: flex;
 }
 
-#search-form{
-    padding-top: 5%;
-    margin-right: 10%;
-    margin-top: 2%;
-    margin-left: 15%;
+#search-form {
+  padding-top: 5%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-left: 15%;
 }
 
-input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #31708e;
-    border-radius: 4px;
-    background-color:lightblue;
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #31708e;
+  border-radius: 4px;
+  background-color: lightblue;
 }
 
-input[type=text]:focus {
-    background-color: #31708e;
-}  
-
-#term-selection{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #31708e;
-    border-radius: 4px;
-    background-color: #8fc1e3;
+input[type="text"]:focus {
+  background-color: #31708e;
 }
 
-#term-selection:focus{
-    background-color: lightblue;
+#term-selection {
+  box-sizing: border-box;
+  border: 2px solid #31708e;
+  border-radius: 4px;
+  background-color: #8fc1e3;
 }
 
-.student-add-search-header{
-    border: 3px solid #303c6c;
-    padding: 2%;
-    background-color: #8fc1e3;
+#term-selection:focus {
+  background-color: lightblue;
+}
+
+.student-add-search-header {
+  border: 3px solid #303c6c;
+  padding: 2%;
+  background-color: #8fc1e3;
 }
 
 /* Styling for buttons */
 
-#search-btn, #add-btn{
-    display: inline-block;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color:white;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid black;
-    border-color: #153983;
-    border-width: 3px;
-    background-color:#153983;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 65px;
-    border-radius: .3rem;
-    line-height: 1.5;
-    box-shadow: 10px 5px 0px #31708e;
+#search-btn,
+#add-btn {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+  border-color: #153983;
+  border-width: 3px;
+  background-color: #153983;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 65px;
+  border-radius: 0.3rem;
+  line-height: 1.5;
+  box-shadow: 10px 5px 0px #31708e;
 }
 
 /* Styling for tables */
 
-.tables-container{
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction: column;
-    align-content: space-between;
-    margin-left: 5%;
-    padding-top: 5%;
+.tables-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+  margin-left: 5%;
+  padding-top: 5%;
 }
 
-.add-table1{
-    display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    margin-right: 5%;
-    border: 3px solid black;
+.add-table1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 5%;
+  border: 3px solid black;
 }
 
-.add-table2{
-    display:flex;
-    flex-direction: column;
-    border: 3px solid black;
-    margin-top: 5%;
+.add-table2 {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  margin-top: 5%;
 }
 
-th, td{
-    padding: 15px;
-    text-align: left;
+th,
+td {
+  padding: 15px;
+  text-align: left;
 }
 
-th{
-    background-color: black;
-    color: white;
+th {
+  background-color: black;
+  color: white;
 }
 
-tr:nth-child(even){
-    background-color: #eee;
+tr:nth-child(even) {
+  background-color: #eee;
 }
 
-tr:nth-child(odd){
-    background-color: #fff;
+tr:nth-child(odd) {
+  background-color: #fff;
 }
 
 /* Styling for Table Header */
 
-#course-in-cart caption{
-    color: #303c6c;
-    font-family: 'Lato', sans-serif;
-    padding-bottom: 1%;
-    text-decoration-line: underline;
-    font-size: 20px;
-    background-color: #fbe8a6;
+#course-in-cart caption {
+  color: #303c6c;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 1%;
+  text-decoration-line: underline;
+  font-size: 20px;
+  background-color: #fbe8a6;
 }
 
 /*CSS selector working on the footer*/
 
-footer{
-    display:flex;
-    background-color: #555;
-    color: #bbb;
-    justify-content: space-between;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+footer {
+  display: flex;
+  background-color: #555;
+  color: #bbb;
+  justify-content: space-between;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
-footer a{
-    text-decoration: none;
-    color: #eee;
+footer a {
+  text-decoration: none;
+  color: #eee;
 }
 
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 
-.footer-main{
-    padding: 1.25rem 1.875rem;
-    display: flex;
-    flex-wrap: wrap;
+.footer-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.footer-main-item{
-    padding: 1.25rem;
-    min-width: 12.5rem /*200px*/;
+.footer-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem /*200px*/;
 }
 
-.footer-main-item ul{
-    display:-webkit-inline-flex;
+.footer-main-item ul {
+  display: -webkit-inline-flex;
 }
 
-.footer-main-item li{
-    padding-left:.5em;
-    padding-right:.5em;
+.footer-main-item li {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
-.footer-main-social-media{
-    padding: 0 1.875rem 1.25rem;
-    list-style: none;
+.footer-main-social-media {
+  padding: 0 1.875rem 1.25rem;
+  list-style: none;
 }
 
-.footer-social{
-    display: flex;
-    justify-content: center;
-    border-top: 1px #777 solid;
-    padding-top: 1.25rem;
+.footer-social {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
 }
 
-.footer-social li{
-    margin: 0.5rem;
-    font-size: 1.25rem;
+.footer-social li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
 }
 
 /*CSS to work on the icons for the footer*/
 
-.fa-facebook-f, .fa-flickr, .fa-twitter-square, .fa-youtube{
-    font-size: 50px; color: #eee;
-    justify-items: center;
+.fa-facebook-f,
+.fa-flickr,
+.fa-twitter-square,
+.fa-youtube {
+  font-size: 50px;
+  color: #eee;
+  justify-items: center;
 }
 
-ul{
-    list-style: none;
-    padding-left: 0;
+ul {
+  list-style: none;
+  padding-left: 0;
 }

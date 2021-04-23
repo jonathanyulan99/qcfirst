@@ -58,7 +58,30 @@
       
       <div class="container-fluid">
             <!-- main content goes here -->
-
+         <div class="row">
+            <div class="col-md-6" id="course-form">
+               <form id="search-form" action="../student/search-results.html">
+                  <h3 class="student-add-search-header">Fill out the form to search for CUNY courses.</h3>
+                  <select id="term-selection" name="term-selection">
+                        <option value="current-term-option">Summer 2021</option>
+                        <option value="next-term-option">Fall 2021</option>
+                  </select>
+   
+                  <label for="course-name">Course name:</label><br>
+                  <input type="text" id="course-name" name="course-name" required><br>
+   
+                  <label for="course-num">Course Number:</label><br>
+                  <input type="text" id="course-num" name="course-num" required><br>
+   
+                  <button type="submit" id="search-btn" value="Search">Search</button>
+               </form>
+            </div>
+            <div class="col-md-6">
+               <div class="img-container">
+                  <img src="../Images/professor2.jpg" alt="classroom" width="100%"/>
+              </div>
+            </div>
+         </div><!-- end of row -->
 
 
             
