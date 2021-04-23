@@ -54,3 +54,16 @@ input[type="text"]:focus {
   border-radius: 4px;
   background-color: #8fc1e3;
 }
+
+#search-btn {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-color: #153983;
+  border-width: 3px;
+  background-color: #153983;
+  line-height: 1.5;
+  box-shadow: 10px 5px 0px #31708e;
+}
