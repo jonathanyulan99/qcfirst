@@ -40,7 +40,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  background-color: #31708e;
+  background-color: white;
 }
 
 #term-selection {
