@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Student homepage</title>
        
-        <!-- <script src="../Javascript/jquery-3.0.0.min.js"></script> -->
+        <script src="../Javascript/jquery-3.0.0.min.js"></script>
         <script src="../Javascript/bootstrap.min.js"></script>
         <script src="../CSS/bootstrap.min.css"></script>
 
@@ -26,7 +26,7 @@
         <link rel="stylesheet" type="text/css" href="../CSS/studenthomestyles.css">
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
@@ -55,10 +55,10 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav><!-- End of nav bar -->
         
-        <div class="container-lg my-3">
-            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+        <div class="container-lg my-3" id="carousel-container">
+            <div class="carousel slide" id="carousel-info" data-interval="3000" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -67,77 +67,46 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../Images/college1.jpg" alt="First Slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Register now for Fall classes!</h5>
-                            <p>Opening enrollment.</p>
+                        <img src="../Images/college1.jpg" alt="slide-1">
+                        <div class="container">
+                            <div class="carousel-caption" id="slide-info1">
+                                <h1>Register for Fall classes!</h1>
+                                <p>Enrollment starts 4/26</p>
+                                <p><a class="btn btn-lg btn-primary" href="../HTML/signup.html" role="button">Register today</a></p>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../Images/college2.jpg" alt="Second Slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Contact finanical aid</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <img src="../Images/college2.jpg" alt="slide-2">
+                        <div class="container">
+                            <div class="carousel-caption" id="slide-info2">
+                                <h1></h1>
+                                <p>Opening enrollment.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../Images/college3.jpg" alt="Third Slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Did you buy your books yet?</h5>
-                            <p>Don't wait, visit the QC First bookstore!</p>
+                        <img src="../Images/student2.jpg" alt="slide-3">
+                        <div class="container">
+                            <div class="carousel-caption" id="slide-info3">
+                                <h1>A wide range of degrees offered through QC First</h1>
+                                <p>Including Computer Science, Nursing, Arts, Business.</p>
+                                <p><a class="btn btn-lg btn-primary" href="../HTML/addcourse.html" role="button">Explore courses</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <a class="carousel-control-prev" href="#carousel-info" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </a>
-                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <a class="carousel-control-next" href="#carousel-info" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
             </div>
-        </div>
+        </div><!-- End of carousel-container -->
         
         <div class="container-fluid">
             <!-- main content goes here -->
-            <div class="bs-example">
-                <table class="table table-striped" id="stud-schedule-table">
-                    <thead>
-                        <caption>My Current schedule:</caption>
-                        <tr>
-                            <th>Class</th>
-                            <th>Days</th>
-                            <th>Time</th>
-                            <th>Room</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>CSCI 370-34</td>
-                            <td>Monday/Wednesday</td>
-                            <td>8:00PM - 9:15PM</td>
-                            <td>Online-Synchronous</td>
-                        </tr>
-                        <tr>
-                            <td>CSCI 355-54</td>
-                            <td>Tuesday</td>
-                            <td>8:00PM - 10:50PM</td>
-                            <td>Online-Synchronous</td>
-                        </tr>
-                        <tr>
-                            <td>CSCI 381-03</td>
-                            <td>Tuesday/Friday</td>
-                            <td>12:15PM - 1:30PM</td>
-                            <td>Online-Synchronous</td>
-                        </tr>
-                        <tr>
-                            <td>Mat 200-24</td>
-                            <td>Monday/Wednesday</td>
-                            <td>10:05AM - 11:55AM</td>
-                            <td>Online-Synchronous</td>
-                        </tr>         
-                    </tbody>
-                </table>
-            </div>
 
             <div class="row">
                 <div class="col-md-4">
@@ -153,10 +122,6 @@
                     <p>Save money.</p>  
                 </div>
             </div>
-
-
-
-            
             <!-- footer goes here -->
             <hr>
             <footer style="padding-top: 5%;">

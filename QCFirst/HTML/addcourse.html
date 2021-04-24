@@ -53,14 +53,37 @@
       </nav>
       
       <div class="container-fluid">
-            <!-- main content goes here -->
+         <!-- main content goes here -->
          <div class="row">
             <div class="col-md-6" id="course-form">
+               <div class="card">
+                  <h5 class="card-header info-color white-text text-center py-4">
+                     <strong>Fill out the form to search for QC First courses.</strong>
+                  </h5>
+                  <div class="card-body px-lg-5">
+                     <form class="md-form" style="color: #757575;">
+                        <div class="text-center">
+                           <p>Select the term.</p>
+                        </div>
+                        <select id="term-selection" name="term-selection">
+                           <option value="current-term-option">Summer 2021</option>
+                           <option value="next-term-option">Fall 2021</option>
+                        </select>
+                        <label for="input">Course name</label>
+                        <input type="text" id="input" class="form-control" placeholder="course name">
+                        <label for="input">Course ID</label>
+                        <input type="text" id="input" class="form-control" placeholder="course id">
+                        <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Sign in</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <!-- <div class="col-md-6" id="course-form">
                <form id="search-form" action="../student/search-results.html">
-                  <h3 class="student-add-search-header">Fill out the form to search for CUNY courses.</h3>
+                  <h3 class="student-add-search-header">Fill out the form to search for QC First courses.</h3>
                   <select id="term-selection" name="term-selection">
-                        <option value="current-term-option">Summer 2021</option>
-                        <option value="next-term-option">Fall 2021</option>
+                     <option value="current-term-option">Summer 2021</option>
+                     <option value="next-term-option">Fall 2021</option>
                   </select>
    
                   <label for="course-name">Course name:</label><br>
@@ -68,17 +91,60 @@
    
                   <label for="course-num">Course Number:</label><br>
                   <input type="text" id="course-num" name="course-num" required><br>
-                  <a href="../HTML/searchresults.html"><button type="button" class="btn btn-primary" id="search-btn">Register course</button></a>
-                  <!-- The above button is just to navigate the site.  We will use the below when we need to pass on the values. -->
-                  <!-- <a href="../CSS/searchresultsstyles.css"><button type="submit" id="search-btn" value="Search">Search</button></a> -->
+                  <a href="../HTML/searchresults.html"><button type="button" class="btn btn-primary" id="search-btn">Search course</button></a>
+
                </form>
-            </div>
+            </div> -->
+                              <!-- The above button is just to navigate the site.  We will use the below when we need to pass on the values. -->
+                  <!-- <a href="../CSS/searchresultsstyles.css"><button type="submit" id="search-btn" value="Search">Search course</button></a> -->
             <div class="col-md-6">
                <div class="img-container">
                   <img src="../Images/professor2.jpg" alt="classroom" width="100%"/>
-              </div>
+               </div>
             </div>
          </div><!-- end of row -->
+
+         
+         <div class="table-responsive">
+            <!-- main content goes here -->
+               <table class="table table-hover" id="stud-schedule-table">
+                  <thead>
+                        <caption>My Current schedule:</caption>
+                        <tr>
+                           <th>Class</th>
+                           <th>Days</th>
+                           <th>Time</th>
+                           <th>Room</th>
+                        </tr>
+                  </thead>
+                  <tbody>
+                        <tr>
+                           <td>CSCI 370-34</td>
+                           <td>Monday/Wednesday</td>
+                           <td>8:00PM - 9:15PM</td>
+                           <td>Online-Synchronous</td>
+                        </tr>
+                        <tr>
+                           <td>CSCI 355-54</td>
+                           <td>Tuesday</td>
+                           <td>8:00PM - 10:50PM</td>
+                           <td>Online-Synchronous</td>
+                        </tr>
+                        <tr>
+                           <td>CSCI 381-03</td>
+                           <td>Tuesday/Friday</td>
+                           <td>12:15PM - 1:30PM</td>
+                           <td>Online-Synchronous</td>
+                        </tr>
+                        <tr>
+                           <td>Mat 200-24</td>
+                           <td>Monday/Wednesday</td>
+                           <td>10:05AM - 11:55AM</td>
+                           <td>Online-Synchronous</td>
+                        </tr>         
+                  </tbody>
+               </table>
+         </div>
 
 
             

@@ -15,10 +15,19 @@ lighter than prev - #8fc1e3
 blue - #0074e1
 */
 
-/* #nav-bar-custom {
-  font-family: "Lato", sans-serif;
-  background: orangered;
-} */
+#carousel-container {
+  padding-top: 5%;
+}
+
+.overlay {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
 
 #stud-schedule-table {
   margin-top: 3%;

@@ -21,13 +21,11 @@ blue - #0074e1
 } */
 
 .img-container {
-  margin-top: 18%;
-  padding-top: 4%;
-  float: right;
+  margin-top: 19%;
 }
 
 #course-form {
-  margin-top: 12%;
+  margin-top: 5%;
   padding-top: 4%;
 }
 
@@ -66,4 +64,17 @@ input[type="text"]:focus {
   background-color: #153983;
   line-height: 1.5;
   box-shadow: 10px 5px 0px #31708e;
+}
+
+#stud-schedule-table {
+  margin-top: 3%;
+  border: 3px solid black;
+  background: oldlace
+    linear-gradient(
+      to bottom,
+      #fbe8a6,
+      #fbe8a6 3rem,
+      transparent 1rem,
+      transparent 100%
+    );
 }
