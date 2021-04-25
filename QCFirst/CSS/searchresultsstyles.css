@@ -23,3 +23,9 @@ blue - #0074e1
 #container-div {
   margin-top: 10%;
 }
+
+#course-description,
+#num-of-credits,
+#course-dates {
+  border: 3px solid blueviolet;
+}

@@ -65,34 +65,56 @@
          </div>
       </nav><!-- End of nav bar -->
 
-      <div class="container-fluid">
+      <div class="container-fluid" id="container-div">
+         <div class="row">
+            <div class="col-md-4" id="course-description">
+               <h2>Course description</h2>
+               <p>Web application & website design</p>
+            </div>
+            <div class="col-md-4" id="num-of-credits">
+               <h2>Credits</h2>
+               <p>This course is 3 units.</p>    
+            </div>
+            <div class="col-md-4" id="course-dates">
+               <h2>Course dates</h2>
+               <p>7/3/2021 - 8/25/2021</p>  
+            </div>
+         </div><!-- End of row -->
          <div class="table-responsive" id="container-div">
             <!-- main content goes here -->
-            <table class="table table-hover" id="search-results-table">
+            <table class="table table-hover .table-sm" id="search-results-table">
                <thead>
                   <tr>
-                     <th>Class</th>
+                     <th>Course</th>
                      <th>Section</th>
+                     <th>Instructor</th>
                      <th>Days</th>
                      <th>Times</th>
+                     <th>Room</th>
                      <th>Status</th>
-                     <th>Select Course</th>
+                     <th>Add Course</th>
                   </tr>
                </thead>
                <tbody>
                   <tr>
-                     <td>47031</td>
+                     <td>355</td>
                      <td>31</td>
+                     <td>Jake deGrom</td>
                      <td>Mon/Wed</td>
                      <td>6:30PM - 7:45PM</td>
+                     <td>SB-122</td>
                      <td>Closed</td>
-                     <td><input type="checkbox" />    &nbsp;   </td>
+                     <td>
+                        <button type="button" class="btn btn-primary">Add</button>
+                     </td>
                   </tr>
                   <tr>
-                     <td>47036</td>
+                     <td>355</td>
                      <td>46</td>
+                     <td>Frankie Lindor</td>
                      <td>Sat</td>
                      <td>9:10AM - 11:50AM</td>
+                     <td>SB-230</td>
                      <td>Open</td>
                      <td><input type="checkbox" />    &nbsp;   </td>
                   </tr>      
