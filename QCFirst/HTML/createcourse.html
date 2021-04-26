@@ -34,7 +34,7 @@
    <body>
       <nav role="navigation" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
          <div class="container-fluid">
-            <a href="../HTML/professorcenter.html" class="navbar-brand">QCFirst Logo</a>
+            <a href="../HTML/instructorhomepage.html" class="navbar-brand">QCFirst Logo</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                <span class="navbar-toggler-icon"></span>
             </button>
@@ -54,13 +54,73 @@
          </div>
       </nav><!-- End of nav bar -->
 
-      <div class="container-fluid">
-            <!-- main content goes here -->
+      <div class="container-fluid" id="create-course-container">
+         <!-- main content goes here -->
+         <div class="row">
+            <div class="col-md-6">
+               <div class="card" id="create-course-form">
+                  <h5 class="card-header info-color white-text text-center py-4">
+                      <strong>Fill out the form to create a new course</strong>
+                  </h5>
+                  <div class="card-body px-lg-5 pt-0">
+                     <form class="text-center" style="color:orange;" action="#!">
+                        <div class="md-form">
+                           <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                           <label for="materialRegisterFormFirstName">Course ID</label>
+                        </div>
+                        <div class="md-form">
+                           <input type="email" id="materialRegisterFormLastName" class="form-control">
+                           <label for="materialRegisterFormLastName">Course Name</label>
+                        </div>
+                        <span>Semester</span>
+                        <select class="mdb-select">
+                           <option value="" disabled>Choose term</option>
+                           <option value="1" selected>Fall</option>
+                           <option value="2">Spring</option>
+                           <option value="3">Summer</option>
+                        </select>
+                        <div class="md-form">
+                           <input type="email" id="" class="form-control">
+                           <label for="materialRegisterDept">Department</label>
+                        </div>
+                        <div class="md-form">
+                           <input type="email" id="materialRegisterFormLastName" class="form-control">
+                           <label for="materialRegisterFormLastName">Class capacity</label>
+                        </div>
 
+                        <!-- The code/css for the following class, weekDays selector, was taken from
+                           here: https://codepen.io/steelwater/pen/BjeZQx -->
+                        <div class="weekDays-selector">
+                           <p>Select days:</p>
+                           <input type="checkbox" id="weekday-mon" class="weekday" />
+                           <label for="weekday-mon">M</label>
+                           <input type="checkbox" id="weekday-tue" class="weekday" />
+                           <label for="weekday-tue">T</label>
+                           <input type="checkbox" id="weekday-wed" class="weekday" />
+                           <label for="weekday-wed">W</label>
+                           <input type="checkbox" id="weekday-thu" class="weekday" />
+                           <label for="weekday-thu">T</label>
+                           <input type="checkbox" id="weekday-fri" class="weekday" />
+                           <label for="weekday-fri">F</label>
+                           <input type="checkbox" id="weekday-sat" class="weekday" />
+                           <label for="weekday-sat">S</label>
+                           <input type="checkbox" id="weekday-sun" class="weekday" />
+                           <label for="weekday-sun">S</label>
+                         </div>
 
-
-            
-            <!-- footer goes here -->
+                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Create course</button>
+                        <hr>
+                     </form>
+                  </div>
+               </div>
+            </div><!-- end of form div -->
+            <div class="col-md-6">
+               <div class="img-container">
+                  <img src="../Images/professor2.jpg" alt="classroom" width="100%"/>
+               </div>
+            </div><!-- end of image div -->
+         </div>
+         <!-- footer goes here -->
          <hr>
          <footer>
             <div class="row">
