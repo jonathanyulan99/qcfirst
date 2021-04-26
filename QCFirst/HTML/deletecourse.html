@@ -35,7 +35,7 @@
    <body>
       <nav role="navigation" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
          <div class="container-fluid">
-            <a href="../HTML/professorcenter.html" class="navbar-brand">QCFirst Logo</a>
+            <a href="../HTML/instructorhomepage.html" class="navbar-brand">QCFirst Logo</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                <span class="navbar-toggler-icon"></span>
             </button>
@@ -55,8 +55,55 @@
          </div>
       </nav><!-- End of nav bar -->
 
-      <div class="container-fluid">
+      <div class="container-fluid" id="delete-course-container">
          <!-- main content goes here -->
+         <div class="table-responsive">
+            <!-- main content goes here -->
+            <table class="table table-hover" id="prof-delete-table">
+               <thead>
+                  <caption>My courses</caption>
+                  <tr>
+                     <th>Class ID</th>
+                     <th>Course Name</th>
+                     <th>Semester</th>
+                     <th>Days</th>
+                     <th>Class Time</th>
+                     <th>Units</th>
+                     <th>Room</th>
+                     <th>Num. of Students</th>
+                     <th>Delete Course</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>355-01</td>
+                     <td>Web Technologies</td>
+                     <td>Summer 2021</td>
+                     <td>Mon/Wed/Fri</td>
+                     <td>12:15PM - 1:30PM</td>
+                     <td>3.00</td>
+                     <td>SB-201</td>
+                     <td>25/32</td>
+                     <td>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>381-20</td>
+                     <td>Advanced C++</td>
+                     <td>Summer 2021</td>
+                     <td>Mon/Tues/Wed/Thurs</td>
+                     <td>8:00PM - 9:15PM</td>
+                     <td>3.00</td>
+                     <td>SB-115</td>
+                     <td>32/32</td>
+                     <td>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                     </td>
+                  </tr>      
+               </tbody>
+            </table>
+         </div>
 
 
 
