@@ -14,3 +14,11 @@ lighter than prev - #5085a5
 lighter than prev - #8fc1e3
 blue - #0074e1
 */
+
+.card-info {
+  margin-top: 1%;
+}
+
+.card-img {
+  width: 300px;
+}

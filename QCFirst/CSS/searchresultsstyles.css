@@ -29,3 +29,11 @@ blue - #0074e1
 #course-dates {
   border: 3px solid blueviolet;
 }
+
+.card-info {
+  margin-top: 1%;
+}
+
+.card-img {
+  width: 300px;
+}
