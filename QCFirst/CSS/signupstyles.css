@@ -113,7 +113,6 @@ body{
 .signup-form a{
     color: whitesmoke;
     text-decoration: underline;
-    padding-left:2px;
 }
 
 .signup-form a:hover{
