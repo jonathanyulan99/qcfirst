@@ -20,6 +20,22 @@ blue - #0074e1
   background: orangered;
 } */
 
+#myNav {
+  /* background-color: #800000; fav thus far also this one ffebcd*/
+  background-color: #800000;
+}
+
+#navLinks a,
+#navAcctLink a {
+  color: #ecd5bb;
+  font-size: 15px;
+}
+
+#navLinks a:hover,
+#navAcctLink a:hover {
+  color: #54627b;
+}
+
 #left-panel-info,
 #right-panel-info {
   margin-top: 10%;
