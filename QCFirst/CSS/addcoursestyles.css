@@ -2,23 +2,17 @@
 
 /* color schemes:
 Set being used across the site:
+Crimison: #800000
+light beige: #ecd5bb
+dark blueish: #54627b
+
+Other css colors
 light orange - #fbe8a6
 pastel orange - #f4976c
 dark blue - #303c6c
 cyan ish - #b4dfe5
 cyan - #d2fdff
-
-One set of blues:
-teal blueish - #31708e
-lighter than prev - #5085a5
-lighter than prev - #8fc1e3
-blue - #0074e1
 */
-
-/* #nav-bar-custom {
-  font-family: "Lato", sans-serif;
-  background: orangered;
-} */
 
 .img-container {
   margin-top: 19%;
@@ -29,6 +23,10 @@ blue - #0074e1
   padding-top: 4%;
 }
 
+.myForm {
+  color: #757575;
+}
+
 input[type="text"] {
   width: 100%;
   padding: 12px 20px;
@@ -36,11 +34,11 @@ input[type="text"] {
   box-sizing: border-box;
   border: 2px solid #31708e;
   border-radius: 4px;
-  background-color: lightblue;
+  background-color: #ecd5bb;
 }
 
 input[type="text"]:focus {
-  background-color: white;
+  background-color: #ecd5bb;
 }
 
 #term-selection {
@@ -50,7 +48,7 @@ input[type="text"]:focus {
   box-sizing: border-box;
   border: 2px solid #31708e;
   border-radius: 4px;
-  background-color: #8fc1e3;
+  background-color: #ecd5bb;
 }
 
 #search-btn {

@@ -2,46 +2,47 @@
 
 /* color schemes:
 Set being used across the site:
+Crimison: #800000
+light beige: #ecd5bb
+dark blueish: #54627b
+
+Other css colors
 light orange - #fbe8a6
 pastel orange - #f4976c
 dark blue - #303c6c
 cyan ish - #b4dfe5
 cyan - #d2fdff
-
-One set of blues:
-teal blueish - #31708e
-lighter than prev - #5085a5
-lighter than prev - #8fc1e3
-blue - #0074e1
 */
-
-/* #nav-bar-custom {
-  font-family: "Lato", sans-serif;
-  background: orangered;
-} */
-
-#myNav {
-  /* background-color: #800000; fav thus far also this one ffebcd*/
-  background-color: #800000;
-}
-
-#navLinks a,
-#navAcctLink a {
-  color: #ecd5bb;
-  font-size: 15px;
-}
-
-#navLinks a:hover,
-#navAcctLink a:hover {
-  color: #54627b;
-}
 
 #left-panel-info,
 #right-panel-info {
   margin-top: 10%;
 }
 
-#reg-btn,
+#reg-btn {
+  margin-top: 5%;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-color: #153983;
+  border-width: 3px;
+  background-color: #153983;
+  line-height: 1.5;
+  box-shadow: 10px 5px 0px #31708e;
+}
+
 #drop-btn {
   margin-top: 5%;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-color: #b22222;
+  border-width: 3px;
+  background-color: #b22222;
+  line-height: 1.5;
+  box-shadow: 10px 5px 0px #8b0000;
 }

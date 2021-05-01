@@ -19,34 +19,31 @@
       <script src="../Javascript/bootstrap.min.js"></script>
       <script src="../CSS/bootstrap.min.css"></script>
 
-      <!-- The below css is for testing purposes only.  We can use it if we need it -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="../CSS/navbarstyles.css">
       <link rel="stylesheet" type="text/css" href="../CSS/dropcoursestyles.css">
-
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    </head>
    
    <body>
-      <nav role="navigation" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <nav role="navigation" class="navbar navbar-expand-md fixed-top myNav">
          <div class="container-fluid">
-            <a href="../HTML/studenthomepage.html" class="navbar-brand">QCFirst Logo</a>
+            <a href="../HTML/studenthomepage.html" class="navbar-brand">
+               <img src="../Images/QCFirstLogo.png" class="navlogo" alt="qcfirstlogo">
+            </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-               <span class="navbar-toggler-icon"></span>
+               <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-               <div class="navbar-nav">
+               <div class="navbar-nav navLinks">
                   <a href="../HTML/studenthomepage.html" class="nav-item nav-link active">Home</a>
                   <a href="../HTML/enrollment.html" class="nav-item nav-link">Enrollment</a>
                </div>
-               <form class="form-inline ml-auto">
+               <form class="form-inline ml-auto navSearchLink">
                   <input type="text" class="form-control mr-sm-2" placeholder="Search courses..">
                   <button type="submit" class="btn btn-outline-light">Search</button>
                </form>
-               <div class="navbar-nav ml-auto">
+               <div class="navbar-nav ml-auto navAcctLink">
                   <a href="../HTML/loginpage.html" class="nav-item nav-link">Logout</a>
                </div>
             </div>
