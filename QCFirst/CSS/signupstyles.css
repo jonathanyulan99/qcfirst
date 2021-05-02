@@ -16,7 +16,7 @@ blue - #0074e1
 */
 
 html{
-    background: url(../Images/loginImage.jpg) no-repeat center center fixed;
+    background: url(../Images/loginpage.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,7 +26,7 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
-    background: url(../Images/loginImage.jpg) no-repeat center center fixed;
+    background: url(../Images/loginpage.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
