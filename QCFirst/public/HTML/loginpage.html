@@ -34,14 +34,17 @@
       <div class="main">
         <div class="col-md-6 col-sm-12">
           <div class="login-form">
-            <form>
+            <!-- Changes to form: add the method, action to the form tag -->
+            <form method="post" action="/loginpage">
               <div class="form-group">
                 <label class="text-primary" >User Name</label>
-                <input type="text" class="form-control-lg" placeholder="@qmail.cuny.edu">
+                <!-- Added name=email so that the server.js file knows the name of the variables -->
+                <input type="text" name="email" class="form-control-lg" placeholder="@qmail.cuny.edu">
               </div>
               <div class="form-group">
                 <label class="text-primary" >Password</label>
-                <input type="password" class="form-control-lg" placeholder="XXXXXXX">
+                <!-- Same as email, added one for password -->
+                <input type="password" name="password" class="form-control-lg" placeholder="XXXXXXX">
               </div>
                 <button type="submit" class="btn btn-black">Login</button>
                 <button class="btn btn-outline-info"><a href="../HTML/signup.html">Register</a></button>
