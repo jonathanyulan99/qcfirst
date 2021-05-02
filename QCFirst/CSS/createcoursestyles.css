@@ -52,7 +52,8 @@ cyan - #d2fdff
 #sems-span{
   padding-top: 2%;
 }
-#course-btn{
+
+#course-btn {
   margin-top: 5%;
   font-size: 1.25rem;
   font-weight: 400;
@@ -64,4 +65,9 @@ cyan - #d2fdff
   background-color: #153983;
   line-height: 1.5;
   box-shadow: 10px 5px 0px #31708e;
+}
+
+/* Added a bit of a margin to help with the formatting */
+select {
+  margin-top:10px;
 }
