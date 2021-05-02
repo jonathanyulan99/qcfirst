@@ -18,76 +18,72 @@
 
       <script src="../Javascript/jquery-3.0.0.min.js"></script>
       <script src="../Javascript/bootstrap.min.js"></script>
-      <script src="../CSS/bootstrap.min.css"></script>
+      <!-- <script src="../CSS/bootstrap.min.css"></script> -->
 
-      <!-- The below css is for testing purposes only.  We can use it if we need it -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="../CSS/navbarstyles.css">
       <link rel="stylesheet" type="text/css" href="../CSS/profhomestyles.css">
-
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    </head>
    
    <body>
-      <nav role="navigation" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <nav role="navigation" class="navbar navbar-expand-md fixed-top myNav">
          <div class="container-fluid">
-            <a href="../HTML/instructorhomepage.html" class="navbar-brand">QCFirst Logo</a>
+            <a href="../HTML/instructorhomepage.html" class="navbar-brand">
+               <img src="../Images/QCFirstLogo.png" class="navlogo" alt="qcfirstlogo">
+            </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-               <span class="navbar-toggler-icon"></span>
+               <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-               <div class="navbar-nav">
+               <div class="navbar-nav navLinks">
                   <a href="../HTML/instructorhomepage.html" class="nav-item nav-link active">Home</a>
-                  <a href="../HTML/managecourse.html" class="nav-item nav-link">My Courses</a>
+                  <a href="../HTML/managecourse.html" class="nav-item nav-link">Manage Courses</a>
                </div>
-               <form class="form-inline ml-auto">
+               <form class="form-inline ml-auto navSearchLink">
                   <input type="text" class="form-control mr-sm-2" placeholder="Search courses..">
                   <button type="submit" class="btn btn-outline-light">Search</button>
                </form>
-               <div class="navbar-nav ml-auto">
+               <div class="navbar-nav ml-auto navAcctLink">
                   <a href="../HTML/loginpage.html" class="nav-item nav-link">Logout</a>
                </div>
             </div>
          </div>
       </nav><!-- End of nav bar -->
 
-      <div class="container-fluid" id="prof-main-div">
-         <div class="card card-image" id="big-info" style="background-image: url(../Images/professor2.jpg);">
-            <div class="text-white text-center rgba-stylish-strong py-5 px-4">
-              <div class="py-5">
-          
-                <!-- Content -->
-                <h5 class="h5 orange-text">QC First</h5>
-                <h2 class="card-title h2 my-4 py-2">Lorem ipsum dolor sit amet</h2>
-                <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Pariatur obcaecati vero aliquid libero doloribus ad, 
-                  unde tempora maiores, ullam, modi qui quidem minima debitis perferendis 
-                  vitae cumque et quo impedit.</p>
-              </div>
+      <div class="jumbotron text-center">
+         <h4 class="card-title h4 pb-2 profattentionjumbo"><strong>QC First</strong></h4>
+            <div class="view overlay my-4">
+               <img src="../Images/campus.jpg" class="img-fluid" alt="collegecampus">
+               <a href="#">
+                  <div class="mask rgba-white-slight"></div>
+               </a>
             </div>
-          </div>
-         <!-- main content goes here -->
+            <h5 class="indigo-text h5 mb-4">Welcome to QC First Course Management</h5>
+         <p class="card-text">Create courses with ease.  View the rosters for your courses. Delete
+                  any course at any time!
+         </p>
+      </div>
+
+      <div class="container-fluid" id="prof-main-div">
          <div class="row">
             <div class="col-md-6" class=".card-info">
                <div class="card" class=".card-img">
-                  <img class="card-img-top" src="../Images/college1.jpg" alt="professor1">
+                  <img class="card-img-top" src="../Images/professor.jpg" alt="professor1">
                   <div class="card-body text-center">
                      <h5 class="card-title">Create course</h5>
                      <p class="card-text">Fill out the information to create a new course.</p>
-                     <a href="../HTML/createcourse.html" class="btn btn-primary">Create Course</a>
+                     <a href="../HTML/createcourse.html"><button type="button" class="btn btn-primary" id="create-btn">Create course</button></a>
                   </div>
                </div>
             </div>
             <div class="col-md-6" class=".card-info">
                <div class="card" class=".card-img">
-                  <img src="../Images/college1.jpg" class="card-img-top" alt="professor2">
+                  <img src="../Images/professor2.jpg" class="card-img-top" alt="professor2">
                   <div class="card-body text-center">
                      <h5 class="card-title">Delete course</h5>
                      <p class="card-text">Select the course to be deleted.</p>
-                     <a href="../HTML/deletecourse.html" class="btn btn-danger">Delete course</a>
+                     <a href="../HTML/deletecourse.html"><button type="button" class="btn btn-danger" id="delete-btn">Delete course</button></a>
                   </div>
                </div>
             </div>
