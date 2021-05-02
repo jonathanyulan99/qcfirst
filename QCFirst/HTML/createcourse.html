@@ -59,7 +59,7 @@
                       <strong>Fill out the form to create a new course</strong>
                   </h5>
                   <div class="card-body px-lg-5 pt-0">
-                     <form class="text-center" style="color:orange;" action="#!">
+                     <form class="text-center" action="#!">
                         <div class="md-form" id="course-id-form">
                            <label for="course-id-form">Course ID:</label>
                            <input type="text" id="course-id-form" class="form-control">
@@ -68,7 +68,7 @@
                            <label for="course-name-form">Course Name:</label>
                            <input type="text" id="course-name-form" class="form-control">
                         </div>
-                        <span>Semester:</span>
+                        <span id="sems-span">Semester:</span>
                         <select class="mdb-select">
                            <option value="" disabled>Choose term</option>
                            <option value="1" selected>Fall</option>
@@ -104,7 +104,21 @@
                            <label for="weekday-sun">S</label>
                         </div>
 
-                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Create course</button>
+                        <span id="time-selection">Time:</span>
+                        <select class="mdb-select">
+                           <option value="" disabled>Choose time</option>
+                           <option value="1" selected>9:00am-10:15am</option>
+                           <option value="2">10:30am-11:45am</option>
+                           <option value="3">12:00pm-1:15pm</option>
+                           <option value="4">1:30pm-2:45pm</option>
+                           <option value="5">3:00pm-4:15pm</option>
+                           <option value="3">4:30pm-5:45pm</option>
+                           <option value="3">6:00pm-7:15pm</option>
+                           <option value="3">7:30pm-8:45pm</option>
+                           <option value="3">9:00pm-10:15pm</option>
+                        </select>
+
+                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" id="course-btn" type="submit">Create course</button>
                         <hr>
                      </form>
                   </div>

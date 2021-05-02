@@ -44,3 +44,24 @@ cyan - #d2fdff
   background: #31708e;
   color: #303c6c;
 }
+
+.text-center {
+  color: #54627b;
+}
+
+#sems-span{
+  padding-top: 2%;
+}
+#course-btn{
+  margin-top: 5%;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-color: #153983;
+  border-width: 3px;
+  background-color: #153983;
+  line-height: 1.5;
+  box-shadow: 10px 5px 0px #31708e;
+}

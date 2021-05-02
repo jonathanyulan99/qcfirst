@@ -2,19 +2,33 @@
 
 /* color schemes:
 Set being used across the site:
+Crimison: #800000
+light beige: #ecd5bb
+dark blueish: #54627b
+
+Other css colors
 light orange - #fbe8a6
 pastel orange - #f4976c
 dark blue - #303c6c
 cyan ish - #b4dfe5
 cyan - #d2fdff
-
-One set of blues:
-teal blueish - #31708e
-lighter than prev - #5085a5
-lighter than prev - #8fc1e3
-blue - #0074e1
 */
+
+
 
 #delete-course-container {
   margin-top: 10%;
+}
+
+#prof-delete-table{
+  margin-top: 3%;
+  border: 3px solid black;
+  background: oldlace
+    linear-gradient(
+      to bottom,
+      #fbe8a6,
+      #fbe8a6 3rem,
+      transparent 1rem,
+      transparent 100%
+    );
 }
