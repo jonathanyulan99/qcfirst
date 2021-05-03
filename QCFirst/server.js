@@ -5,6 +5,7 @@ const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const mongoose = require('mongoose');
+const { compile } = require('pug');
 
 app.use(express.static(path.join(__dirname + '/public')));
 app.use(bodyParser.json());
@@ -47,10 +48,10 @@ app.get('/signup.html', function(req, res, next) {
 });
 
 app.get('/signuppage', function(req, res) {
-    // const firstname = req.body.firstname;
-    // const lastname = req.body.lastname;
-    // const email = req.body.email;
-    // const pass = req.body.password;
+    const firstname = req.body.firstname;
+    const lastname = req.body.lastname;
+    const email = req.body.email;
+    const password = req.body.password;
     console.log(firstname);
 
     const user = new User({
@@ -60,6 +61,7 @@ app.get('/signuppage', function(req, res) {
         password: req.body.password
     });
     console.log(user);
+    console.log(user.firstname);
     
     user.save(function(err, user) {
         res.send("Saved " + user._id)
@@ -97,6 +99,7 @@ var server = http.listen(3000, () => {
     console.log('Server is listening on port', server.address().port);
 });
 
+module.exports = User;
 
 
 // app.param("username", function(req, res, next, username) {
