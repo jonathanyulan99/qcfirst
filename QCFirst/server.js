@@ -71,9 +71,7 @@ app.get('/', (req, res, next) => {
     res.sendFile(__dirname + '/public/HTML/index.html');
 });
 
-console.log("Above user");
-app.use("/signup", user);
-console.log("User info: " + user);
+app.use("/", user);
 
 // app.get('/', (req, res) => {
 //     console.log("success")
