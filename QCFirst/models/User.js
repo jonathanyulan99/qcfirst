@@ -48,4 +48,4 @@ const userSchema = new Schema({
     }
 }); // https://mongoosejs.com/docs/validation.html#async-custom-validators -- ASYNC CUSTOM VALIDATORS
 
-module.exports = User = mongoose.model('User', userSchema);
+module.exports = user = mongoose.model('user', userSchema);
