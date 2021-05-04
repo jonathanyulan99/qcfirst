@@ -31,3 +31,10 @@ cyan - #d2fdff
       transparent 100%
     );
 }
+
+/*Disabling Functionality*/ 
+.disabled {
+  pointer-events:none;
+  cursor:default;
+  opacity:0.8;
+}

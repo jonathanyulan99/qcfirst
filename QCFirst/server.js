@@ -1,4 +1,5 @@
 const express = require('express');
+<<<<<<< Updated upstream
 const bodyParser= require('body-parser');
 const app = express();
 const path = require('path');
@@ -80,7 +81,32 @@ app.get('/', (req, res) => {
 
 app.listen(3000, function() {
     console.log("Listening on port 3000");
+=======
+const bodyParser = require('body-parser');
+const path = require('path');
+var app = express();
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
+const mongoose = require('mongoose');
+const { compile } = require('pug');
+const { truncate } = require('fs');
+
+app.use(express.static(path.join(__dirname , '/public')));
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
+const mongoURL = 'mongodb+srv://Admin:355project@cluster0.fkohz.mongodb.net/QCFirst?retryWrites=true&w=majority'
+
+mongoose.connect(mongoURL,  { useUnifiedTopology: true, useNewUrlParser: true })
+.then((result) => console.log("DB CONNECTED"))
+.catch((err) => console.log(err));
+
+/*
+mongoose.connect(mongoURL, { useUnifiedTopology: true }, { useNewUrlParser: true }, (err) => {
+    console.log('mongo db connection');
+>>>>>>> Stashed changes
 });
+*/
 
 //this makes use of Promises
 // MongoClient.connect(mongoURL, { useUnifiedTopology: true })
@@ -206,6 +232,43 @@ app.listen(3000, function() {
 //     password: String
 // });
 
+<<<<<<< Updated upstream
+=======
+/*
+const userSchema = new mongoose.Schema({
+    firstname: String,
+    lastname: String,
+    email: String,
+    password: String
+ });*/
+
+ const userSchema = mongoose.Schema({
+     password: {
+         type:String,
+         required:true
+     },
+     passwordConfirm:{
+         type:String,
+         required:true
+     },
+     email: {
+         type:String,
+         required:true
+     },
+     firstName: {
+         type:String,
+         required:true
+     },
+     role:{
+         type: String,
+         required:true
+     },
+     createdAt:{
+         type:Date,
+         default:Date.now()
+     }
+ });
+>>>>>>> Stashed changes
 
 // const userSchema = new mongoose.Schema({
 //     firstname: String,
@@ -222,6 +285,7 @@ app.listen(3000, function() {
 //     password: String
 // } )
 
+<<<<<<< Updated upstream
 // var UserCollection = mongoose.model('User');
 
 // const user = new User({
@@ -262,6 +326,40 @@ app.listen(3000, function() {
 //     //     res.send("Saved " + user._id)
 //     // })
 // });
+=======
+/*testing*/
+app.get('/', (req,res) => {
+    res.json( { message: "API WORKING"});
+});
+
+app.get('/signup.html', function(req, res, next) {
+    res.sendFile(__dirname + '/signup.html');
+    console.log('success');
+    next();
+});
+
+app.get('/auth', function(req, res) {
+    const firstname = req.body.firstname;
+    const lastname = req.body.lastname;
+    const email = req.body.email;
+    const password = req.body.password;
+
+    const user = new User({
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
+        email: req.body.email,
+        password: req.body.password
+    });
+    
+    
+    user.save(function(err, user) {
+        res.send("Saved " + 12345)
+    })
+
+    console.log(user);
+    console.log(user.firstname);
+});
+>>>>>>> Stashed changes
 
 
 //This is how I grabbed the info from the browser.  Check loginpage.html 
@@ -271,6 +369,7 @@ app.listen(3000, function() {
 //     const email = req.body.email;
 //     console.log(email);
 
+<<<<<<< Updated upstream
 //     // user.save((err) => {
 //     //     if(err){
 //     //         sendStatus(500);
@@ -278,6 +377,85 @@ app.listen(3000, function() {
 //     //     users.push(req.body);
 //     //     res.sendStatus(200);
 //     // })
+=======
+const { check, validationResult} = require("express-validator/check");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+
+app.post('/auth', 
+        [
+            check("firstname", "Please Enter a Valid Firs tName")
+            .not()
+            .isEmpty(),
+            check("lastname", "Please Enter a Valid Last Name") 
+            .not()
+            .isEmpty(),
+            check("email", "Please Enter a Valid Email").isEmail(),
+            check("password", "PLease Enter a Valid Password").isLength({min:8}),
+            check("password-confirm", "Please Ensure Both Passwords Match").isString(password)
+        ],
+        async(req,res)=> {
+            const errors = validationResult(req);
+            if(!errors.isEmpty()){
+                return res.status(400).json({
+                    errors:errors.array()
+                });
+            }
+
+            const {
+                username,
+                email,
+                password
+            } = req.body;
+            try {
+                let user = await User.findOne({
+                    email
+                });
+                if(user){
+                    return res.status(400).json({
+                        msg: "User Already Exists"
+                    });
+                }
+
+                user = new User({
+                    username,
+                    email,
+                    password
+                });
+
+                const salt = await bcrypt.genSalt(10);
+                user.password = await bcrypt.hash(password, salt);
+
+                await user.save();
+                
+                const payload = {
+                    user: {
+                        id: user.id
+                    }
+                };
+
+                jwt.sign(
+                    payload,
+                    "randomString", {
+                        expiresIn: 10000
+                    }, 
+                    (err, token) => {
+                        if (err) throw err;
+                        res.status(200).json({
+                            token
+                        });
+                    }
+                );
+            } catch(err){
+                console.log(err.message);
+                res.status(500).send("Error in Saving");
+            }
+        });
+
+io.on('connection', (socket) => {
+    console.log("connected");
+});
+>>>>>>> Stashed changes
 
 //     // if()
 //     // const email = req.body.email;
@@ -286,6 +464,7 @@ app.listen(3000, function() {
 //     // console.log(pass);
 // });
 
+<<<<<<< Updated upstream
 
 // var server = http.listen(3000, () => {
 //     console.log('Server is listening on port', server.address().port);
@@ -301,6 +480,17 @@ app.listen(3000, function() {
 // //     }
 // //     next();
 // //  });
+=======
+// app.param("username", function(req, res, next, username) {
+//     if () {
+//         req.user = {};
+//     } 
+//     else {
+//         req.user = { };
+//     }
+//     next();
+//  });
+>>>>>>> Stashed changes
  
 // //  app.get("/users/:username", function(req, res) {
 // //     res.send("<h1>Profile for " + req.user.name + "</h1>");

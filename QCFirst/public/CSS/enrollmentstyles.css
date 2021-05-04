@@ -47,3 +47,10 @@ cyan - #d2fdff
   line-height: 1.5;
   box-shadow: 10px 5px 0px #8b0000;
 }
+
+/*Disabling Functionality*/ 
+.disabled {
+  pointer-events:none;
+  cursor:default;
+  opacity:0.8;
+}

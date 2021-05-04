@@ -165,3 +165,10 @@ body{
 .form-group.error input {
     border-color: #e74c3c;
 }
+
+/*Disabling Functionality*/ 
+.disabled {
+    pointer-events:none;
+    cursor:default;
+    opacity:0.8;
+  }

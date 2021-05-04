@@ -14,13 +14,11 @@ cyan ish - #b4dfe5
 cyan - #d2fdff
 */
 
-
-
 #delete-course-container {
   margin-top: 10%;
 }
 
-#prof-delete-table{
+#prof-delete-table {
   margin-top: 3%;
   border: 3px solid black;
   background: oldlace
@@ -31,4 +29,11 @@ cyan - #d2fdff
       transparent 1rem,
       transparent 100%
     );
+}
+
+/*Disabling Functionality*/
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.8;
 }

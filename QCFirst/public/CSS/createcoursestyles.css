@@ -49,7 +49,7 @@ cyan - #d2fdff
   color: #54627b;
 }
 
-#sems-span{
+#sems-span {
   padding-top: 2%;
 }
 
@@ -69,5 +69,12 @@ cyan - #d2fdff
 
 /* Added a bit of a margin to help with the formatting */
 select {
-  margin-top:10px;
+  margin-top: 10px;
+}
+
+/*Disabling Functionality*/
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.8;
 }

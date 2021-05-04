@@ -32,3 +32,10 @@ cyan - #d2fdff
 .navlogo {
   height: 50px;
 }
+
+/*Disabling Functionality*/ 
+.disabled {
+  pointer-events:none;
+  cursor:default;
+  opacity:0.8;
+}
