@@ -16,6 +16,9 @@ mongoose.connect(mongoURL, {
 });
 
 app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname + '/public')));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 const db = mongoose.connection
 db.once('open', _ => {
@@ -25,6 +28,11 @@ db.once('open', _ => {
 db.on('error', err => {
   console.error('connection error:', err)
 })
+
+
+//     console.log('Connected to Mongo Database');
+//     const db = client.db('QCFirst');
+//     const userCollection = db.collection('User');
 
 const david = new User ({
     email: "test@gmail.com",
@@ -59,9 +67,18 @@ nimmo.save(function (error, document) {
 //     res.sendFile(__dirname + '/public/HTML/index.html');
 // });
 
-app.get('/', (req, res, next) => {
-    res.render('index.ejs');
-    console.log("Sucess!");
+app.get('/', (req, res) => {
+    console.log("success")
+    db.collection('users').find().toArray()
+    .then(results => {
+        res.render('index.ejs', { user: results })
+        console.log("yes")
+    })
+    .catch();
+});
+
+app.listen(3000, function() {
+    console.log("Listening on port 3000");
 });
 
 //this makes use of Promises
