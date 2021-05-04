@@ -43,11 +43,11 @@ const david = new User ({
     course: [ ]
 })
 
-
+/*
 david.save(function (error, document) {
     if (error) console.error(error)
     console.log(document)
-})
+})*/
 
 const nimmo = new User ({
     email: "123@gmail.com",
@@ -58,10 +58,11 @@ const nimmo = new User ({
     courses: [ ]
 })
 
+/*
 nimmo.save(function (error, document) {
     if (error) console.error(error)
     console.log(document)
-})
+})*/
 
 // app.get('/', (req, res, next) => {
 //     res.sendFile(__dirname + '/public/HTML/index.html');
