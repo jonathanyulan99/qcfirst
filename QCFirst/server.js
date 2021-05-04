@@ -35,7 +35,7 @@ db.on('error', err => {
 //     const userCollection = db.collection('User');
 
 const david = new User ({
-    email: "test@gmail.com",
+    email: "123@gmail.com",
     password: "ezpz",
     firstname: "David",
     lastname: "A",
@@ -50,11 +50,11 @@ david.save(function (error, document) {
 })
 
 const nimmo = new User ({
-    email: "test2@gmail.com",
+    email: "123@gmail.com",
     password: "ezpz2",
     firstname: "Brandon",
     lastname: "Nimmo",
-    isInstructor: true,
+    isInstructor: false,
     courses: [ ]
 })
 
