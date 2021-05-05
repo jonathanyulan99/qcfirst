@@ -1,0 +1,174 @@
+doctype html
+// Project code by: Jonathan Yulan and David Acuqui
+//
+  Name: David Acuqui and Jonathan Yulan 
+  Date: 04.22.2021
+  Section: CS 355-54
+  *ADD CONTENT*
+  Photos taken from https://unsplash.com/ (search keywords: college, professor, student)
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    |       
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    |       
+    title Create course - professor
+    |       
+    script(src='../Javascript/jquery-3.0.0.min.js')
+    |       
+    script(src='../Javascript/bootstrap.min.js')
+    // <script src="../CSS/bootstrap.min.css"></script>
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    |       
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    |       
+    link(rel='stylesheet', type='text/css', href='../CSS/navbarstyles.css')
+    |       
+    link(rel='stylesheet', type='text/css', href='../CSS/createcoursestyles.css')
+  |    
+  |    
+  body
+    nav.navbar.navbar-expand-md.fixed-top.myNav(role='navigation')
+      .container-fluid
+        a.navbar-brand(href='../HTML/instructorhomepage.html')
+          img.navlogo(src='../Images/QCFirstLogo.png', alt='qcfirstlogo')
+        |             
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse')
+          span.navbar-toggler-icon
+            i.fa.fa-bars
+        |             
+        #navbarCollapse.collapse.navbar-collapse
+          .navbar-nav.navLinks
+            a.nav-item.nav-link.active.disabled(href='../HTML/instructorhomepage.html') Home
+            |                   
+            a.nav-item.nav-link.disabled(href='../HTML/managecourse.html') Manage Courses
+          |                
+          form.form-inline.ml-auto.navSearchLink
+            input.form-control.mr-sm-2.disabled(type='text', placeholder='Search courses..')
+            |                   
+            button.btn.btn-outline-light.disabled(type='submit') Search
+          |                
+          .navbar-nav.ml-auto.navAcctLink
+            a.nav-item.nav-link(href='../HTML/loginpage.html') Logout
+    // End of nav bar
+    #create-course-container.container-fluid
+      .row
+        .col-md-6
+          #create-course-form.card
+            h5.card-header.info-color.white-text.text-center.py-4
+              strong Fill out the form to create a new course
+            |                   
+            .card-body.px-lg-5.pt-0
+              form.text-center(action='#!')
+                #course-id-form.md-form
+                  label(for='course-id-form') Course ID:
+                  |                            
+                  input#course-id-form.form-control.disabled(type='text')
+                |                         
+                .md-form
+                  label(for='course-name-form') Course Name:
+                  |                            
+                  input#course-name-form.form-control.disabled(type='text')
+                |                         
+                span#sems-span Semester:
+                |                         
+                select.mdb-select.disabled
+                  option(value='', disabled='') Choose term
+                  |                            
+                  option(value='1', selected='') Fall
+                  |                            
+                  option(value='2') Spring
+                  |                            
+                  option(value='3') Summer
+                |                         
+                .md-form
+                  label(for='dept-form') Department:
+                  |                            
+                  input#dept-form.form-control.disabled(type='text')
+                |                         
+                .md-form
+                  label(for='class-size-form') Class capacity:
+                  |                            
+                  input#class-size-form.form-control.disabled(type='text')
+                //
+                  The code/css for the following class, weekDays selector, was taken from
+                  here: https://codepen.io/steelwater/pen/BjeZQx
+                .weekDays-selector.disabled
+                  p Select days:
+                  |                            
+                  input#weekday-mon.weekday(type='checkbox')
+                  |                            
+                  label(for='weekday-mon') M
+                  |                            
+                  input#weekday-tue.weekday(type='checkbox')
+                  |                            
+                  label(for='weekday-tue') T
+                  |                            
+                  input#weekday-wed.weekday(type='checkbox')
+                  |                            
+                  label(for='weekday-wed') W
+                  |                            
+                  input#weekday-thu.weekday(type='checkbox')
+                  |                            
+                  label(for='weekday-thu') T
+                  |                            
+                  input#weekday-fri.weekday(type='checkbox')
+                  |                            
+                  label(for='weekday-fri') F
+                  |                            
+                  input#weekday-sat.weekday(type='checkbox')
+                  |                            
+                  label(for='weekday-sat') S
+                  |                            
+                  input#weekday-sun.weekday(type='checkbox')
+                  |                            
+                  label(for='weekday-sun') S
+                |                         
+                span#time-selection Time:
+                |                         
+                select.mdb-select.disabled
+                  option(value='', disabled='') Choose time
+                  |                            
+                  option(value='1', selected='') 9:00am-10:15am
+                  |                            
+                  option(value='2') 10:30am-11:45am
+                  |                            
+                  option(value='3') 12:00pm-1:15pm
+                  |                            
+                  option(value='4') 1:30pm-2:45pm
+                  |                            
+                  option(value='5') 3:00pm-4:15pm
+                  |                            
+                  option(value='3') 4:30pm-5:45pm
+                  |                            
+                  option(value='3') 6:00pm-7:15pm
+                  |                            
+                  option(value='3') 7:30pm-8:45pm
+                  |                            
+                  option(value='3') 9:00pm-10:15pm
+                |                         
+                button#course-btn.btn.btn-outline-info.btn-rounded.btn-block.my-4.waves-effect.z-depth-0.disabled(type='submit') Create course
+                |                         
+                hr
+        // end of form div
+        .col-md-6
+          .img-container
+            img(src='../Images/professor4.jpg', alt='classroom', width='100%')
+        // end of image div
+      // footer goes here
+      hr
+      |          
+      footer
+        .row
+          .col-md-6
+            p Copyright &copy; 2021 QC First
+          |                
+          .col-md-6.text-md-right
+            a.text-dark(href='#') Terms of Use
+            |  
+            |                   
+            span.text-muted.mx-2 |
+            |  
+            |                   
+            a.text-dark(href='#') Privacy Policy
+    // End of container-fluid main content div

@@ -1,0 +1,112 @@
+doctype html
+// Project code by: Jonathan Yulan and David Acuqui
+//
+  Name: David Acuqui and Jonathan Yulan 
+  Date: 04.22.2021
+  Section: CS 355-54
+  *ADD CONTENT*
+  Photos taken from https://unsplash.com/ (search keywords: college, professor, student)
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    |       
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    |       
+    title Professor homepage
+    |       
+    script(src='../Javascript/jquery-3.0.0.min.js')
+    |       
+    script(src='../Javascript/bootstrap.min.js')
+    // <script src="../CSS/bootstrap.min.css"></script>
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    |       
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    |       
+    link(rel='stylesheet', type='text/css', href='../CSS/navbarstyles.css')
+    |       
+    link(rel='stylesheet', type='text/css', href='../CSS/profhomestyles.css')
+  |    
+  |    
+  body
+    nav.navbar.navbar-expand-md.fixed-top.myNav(role='navigation')
+      .container-fluid
+        a.navbar-brand(href='../HTML/instructorhomepage.html')
+          img.navlogo(src='../Images/QCFirstLogo.png', alt='qcfirstlogo')
+        |             
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse')
+          span.navbar-toggler-icon
+            i.fa.fa-bars
+        |             
+        #navbarCollapse.collapse.navbar-collapse
+          .navbar-nav.navLinks
+            a.nav-item.nav-link.active.disabled(href='../HTML/instructorhomepage.html') Home
+            |                   
+            a.nav-item.nav-link.disabled(href='../HTML/managecourse.html') Manage Courses
+          |                
+          form.form-inline.ml-auto.navSearchLink
+            input.form-control.mr-sm-2.disabled(type='text', placeholder='Search courses..')
+            |                   
+            button.btn.btn-outline-light.disabled(type='submit') Search
+          |                
+          .navbar-nav.ml-auto.navAcctLink
+            a.nav-item.nav-link(href='../HTML/loginpage.html') Logout
+    // End of nav bar
+    .jumbotron.text-center
+      h4.card-title.h4.pb-2.profattentionjumbo
+        strong QC First
+      |             
+      .view.overlay.my-4
+        img.img-fluid(src='/Images/campus.jpg', alt='collegecampus')
+        |                
+        a(href='#')
+          .mask.rgba-white-slight
+      |             
+      h5.indigo-text.h5.mb-4 Welcome to QC First Course Management
+      |          
+      p.card-text
+        | Create courses with ease.  View the rosters for your courses. Delete
+        | any course at any time!
+    |       
+    #prof-main-div.container-fluid
+      .row
+        .col-md-6
+          .card
+            img.card-img-top(src='/Images/professor.jpg', alt='professor1')
+            |                   
+            .card-body.text-center
+              h5.card-title Create course
+              |                      
+              p.card-text Fill out the information to create a new course.
+              |                      
+              a.disabled(href='../HTML/createcourse.html')
+                button#create-btn.btn.btn-primary.disabled(type='button') Create course
+        |             
+        .col-md-6
+          .card
+            img.card-img-top(src='/Images/professor2.jpg', alt='professor2')
+            |                   
+            .card-body.text-center
+              h5.card-title Delete course
+              |                      
+              p.card-text Select the course to be deleted.
+              |                      
+              a.disabled(href='../HTML/deletecourse.html')
+                button#delete-btn.btn.btn-danger.disabled(type='button') Delete course
+      // footer goes here
+      hr
+      |          
+      footer
+        .row
+          .col-md-6
+            p Copyright &copy; 2021 QC First
+          |                
+          .col-md-6.text-md-right
+            a.text-dark(href='#') Terms of Use
+            |  
+            |                   
+            span.text-muted.mx-2 |
+            |  
+            |                   
+            a.text-dark(href='#') Privacy Policy
+    // End of container-fluid main content div
+

@@ -1,0 +1,152 @@
+doctype html
+// Project code by: Jonathan Yulan and David Acuqui
+//
+  Name: David Acuqui and Jonathan Yulan 
+  Date: 04.22.2021
+  Section: CS 355-54
+  *ADD CONTENT*
+  Photos taken from https://unsplash.com/ (search keywords: college, professor, student)
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    |       
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    |       
+    title Add course - student
+    |       
+    script(src='../Javascript/jquery-3.0.0.min.js')
+    |       
+    script(src='../Javascript/bootstrap.min.js')
+    // <script src="../CSS/bootstrap.min.css"></script>
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    |       
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    |       
+    link(rel='stylesheet', href='../CSS/navbarstyles.css')
+    |       
+    link(rel='stylesheet', href='../CSS/addcoursestyles.css')
+  |    
+  |    
+  body
+    nav.navbar.navbar-expand-md.fixed-top.myNav(role='navigation')
+      .container-fluid
+        a.navbar-brand(href='../HTML/index.html')
+          img.navlogo(src='../Images/QCFirstLogo.png', alt='qcfirstlogo')
+        |             
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse')
+          span.navbar-toggler-icon
+            i.fa.fa-bars
+        |      
+        |             
+        #navbarCollapse.collapse.navbar-collapse
+          .navbar-nav.navLinks
+            a.nav-item.nav-link.active.disabled(href='../HTML/index.html') Home
+            |                   
+            a.nav-item.nav-link.disabled(href='../HTML/enrollment.html') Enrollment
+          |                
+          .navbar-nav.ml-auto.navAcctLink
+            a.nav-item.nav-link(href='../HTML/loginpage.html') Logout
+    // End of nav bar
+    .container-fluid
+      // main content goes here
+      .row
+        #course-form.col-md-6
+          .card
+            h5.card-header.info-color.white-text.text-center.py-4
+              strong Fill out the form to search for QC First courses
+            |                   
+            .card-body.px-lg-5
+              form.md-form.myForm
+                .text-center
+                  p Select the term:
+                |                         
+                select#term-selection.disabled(name='term-selection')
+                  option(value='current-term-option') Summer 2021
+                  |                            
+                  option(value='next-term-option') Fall 2021
+                |                         
+                label(for='input') Course name
+                |                         
+                input#input.form-control.disabled(type='text', placeholder='course name')
+                |                         
+                label(for='input') Course ID
+                |                         
+                input#input.form-control.disabled(type='text', placeholder='course id')
+                |                         
+                a.disabled(href='../HTML/searchresults.html')
+                  button#search-btn.btn.btn-primary.disabled(type='button') Search course
+                // The above button is just to navigate the site.  We will use the below when we need to pass on the values.
+                // <a href="../HTML/searchresults.html"><button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" id="search-btn" type="submit">Search</button></a>
+        |             
+        .col-md-6
+          .img-container
+            img(src='../Images/professor2.jpg', alt='classroom', width='100%')
+      // end of div row
+      .table-responsive
+        // main content goes here
+        table#stud-schedule-table.table.table-hover
+          thead
+          caption My Current schedule
+          |                   
+          tbody
+            tr
+              th Class
+              |                      
+              th Days
+              |                      
+              th Time
+              |                      
+              th Room
+          tbody
+            tr
+              td CSCI 370-34
+              |                      
+              td Mon/Wed
+              |                      
+              td 8:00PM-9:15PM
+              |                      
+              td SB-330
+            |                   
+            tr
+              td CSCI 355-54
+              |                      
+              td Tues
+              |                      
+              td 8:00PM-10:50PM
+              |                      
+              td SB-119
+            |                   
+            tr
+              td CSCI 381-03
+              |                      
+              td Tues/Fri
+              |                      
+              td 12:15PM-1:30PM
+              |                      
+              td SB-309
+            |                   
+            tr
+              td Mat 200-24
+              |                      
+              td Mon/Wed
+              |                      
+              td 10:05AM-11:55AM
+              |                      
+              td MB-115
+      // footer goes here
+      hr
+      |          
+      footer
+        .row
+          .col-md-6
+            p Copyright &copy; 2021 QC First
+          |                
+          .col-md-6.text-md-right
+            a.text-dark(href='#') Terms of Use
+            |  
+            |                   
+            span.text-muted.mx-2 |
+            |  
+            |                   
+            a.text-dark(href='#') Privacy Policy
+    // End of container-fluid main content div
