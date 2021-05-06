@@ -56,9 +56,10 @@ html(lang='en')
     .container-fluid
       .table-responsive
         // main content goes here
+        if course 
         table#drop-class-table.table.table-hover
           thead
-          caption My Current schedule
+          caption= schedule  
           |                   
           tbody
             tr
@@ -72,54 +73,55 @@ html(lang='en')
               |                      
               th Drop Course
           tbody
-            tr
-              td CS 370-34
-              |                      
-              td Mon/Wed
-              |                      
-              td 8:00PM-9:15PM
-              |                      
-              td SB-330
-              |                      
-              td
-                button.btn.btn-danger.disabled(type='button') Drop
-            |                   
-            tr
-              td CS 355-54
-              |                      
-              td Tues
-              |                      
-              td 8:00PM-10:50PM
-              |                      
-              td SB-119
-              |                      
-              td
-                button.btn.btn-danger.disabled(type='button') Drop
-            |                   
-            tr
-              td CS 381-03
-              |                      
-              td Tues/Fri
-              |                      
-              td 12:15PM-1:30PM
-              |                      
-              td SB-309
-              |                      
-              td
-                button.btn.btn-danger.disabled(type='button') Drop
-            |                   
-            tr
-              td Mat 200-24
-              |                      
-              td Mon/Wed
-              |                      
-              td 10:05AM-11:55AM
-              |                      
-              td MB-115
-              |                      
-              td
-                button.btn.btn-danger.disabled(type='button') Drop
-      // footer goes here
+            each course in courses ? values : ['There are no values']
+              tr
+                td= course.courseName
+                |                      
+                td= course.daysOfWeek 
+                |                      
+                td= course.classTime 
+                |                      
+                td= course.room 
+                |                      
+                td
+                  button.btn.btn-danger.disabled(type='button', onclick='dropCourse()') Drop
+              |                   
+              tr
+                td CS 355-54
+                |                      
+                td Tues
+                |                      
+                td 8:00PM-10:50PM
+                |                      
+                td SB-119
+                |                      
+                td
+                  button.btn.btn-danger.disabled(type='button', onclick='dropCourse()') Drop
+              |                   
+              tr
+                td CS 381-03
+                |                      
+                td Tues/Fri
+                |                      
+                td 12:15PM-1:30PM
+                |                      
+                td SB-309
+                |                      
+                td
+                  button.btn.btn-danger.disabled(type='button', onclick='dropCourse()') Drop
+              |                   
+              tr
+                td Mat 200-24
+                |                      
+                td Mon/Wed
+                |                      
+                td 10:05AM-11:55AM
+                |                      
+                td MB-115
+                |                      
+                td
+                  button.btn.btn-danger.disabled(type='button', onclick='dropCourse()') Drop
+        // footer goes here
       hr
       |          
       footer

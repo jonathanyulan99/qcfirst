@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const userSchema = require('../models/User').schema;
 
-
 const courseSchema = new Schema({
     courseID: Number,
     courseName: String,

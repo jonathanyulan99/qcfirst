@@ -14,8 +14,6 @@ router.get('/signup', (req, res) => {
 });
 
 
-
-
 // router.post('',
 //     // [
 //     //     check("firstname", "Please enter a first name"),
