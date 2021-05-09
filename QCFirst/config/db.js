@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
-
-const mongoURL = 'mongodb+srv://Admin:355project@cluster0.fkohz.mongodb.net/QCFirst?retryWrites=true&w=majority';
+const config = require('./properties');
 
 const InitiateMongoServer = async () => {
     try {
-      await mongoose.connect(mongoURL, {
+      await mongoose.connect(config.mongoURL, {
         useNewUrlParser: true,
         useFindAndModify: false,
         useUnifiedTopology: true
@@ -14,6 +13,6 @@ const InitiateMongoServer = async () => {
       console.log(err);
       throw err;
     }
-  };
+};
   
-  module.exports = InitiateMongoServer;
+module.exports = InitiateMongoServer;

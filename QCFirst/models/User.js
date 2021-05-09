@@ -1,17 +1,33 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const courseSchema = require('../models/Course').schema;
+const course = require('../models/Course').schema;
+const passportLocalMongoose = require('passport-local-mongoose');
 
-//server side checking for regex, and necessary attributes
-
-const userSchema = new Schema({
+const UserSchema = new Schema({
+    username: String,  //this will be the same as the user's email
+    password: String,
     email: String,
     firstname: String,
     lastname: String,
-    password: String,
     isInstructor: Boolean,
     course: []
 });
+
+UserSchema.plugin(passportLocalMongoose);
+
+module.exports = mongoose.model('User', UserSchema);
+
+//server side checking for regex, and necessary attributes
+
+// const userSchema = new Schema({
+//     username: String,  //this will be the same as the user's email
+//     password: String,
+//     email: String,
+//     firstname: String,
+//     lastname: String,
+//     isInstructor: Boolean,
+//     course: []
+// });
 
 // const userSchema = new Schema({
 //     password: {
@@ -58,4 +74,4 @@ const userSchema = new Schema({
 // }); // https://mongoosejs.com/docs/validation.html#async-custom-validators -- ASYNC CUSTOM VALIDATORS
 
 // module.exports = User = mongoose.model('User', userSchema);
-module.exports = mongoose.model('User', userSchema);
+// module.exports = mongoose.model('User', userSchema);

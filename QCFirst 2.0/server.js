@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 const { mainModule, allowedNodeEnvironmentFlags } = require('process');
 const Course = require('./models/Course');
 const signup = require('./routes/signup');
-const dropcourse = require('./routes/dropcourse')
-const InitiateMongoServer = require("../QCFirst/database");
+const dropcourse = require('./routes/dropcourse');
+const InitiateMongoServer = require("../QCFirst 2.0/database");
 
 InitiateMongoServer();
 

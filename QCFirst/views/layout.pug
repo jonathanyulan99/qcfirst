@@ -33,7 +33,10 @@ html(lang='en')
             input.form-control.mr-sm-2.disabled(type='text' placeholder='Search courses..')
             button.btn.btn-outline-light.disabled(type='submit') Search
           .navbar-nav.ml-auto.navAcctLink
-            a.nav-item.nav-link(href='signup') Register
-            a.nav-item.nav-link(href='../HTML/loginpage.html') Login
+            if(user)
+              a.nav-item.nav-link(href='/logout') Logout
+            else
+              a.nav-item.nav-link(href='signup') Register
+              a.nav-item.nav-link(href='login') Login
     // End of nav bar
     block content
