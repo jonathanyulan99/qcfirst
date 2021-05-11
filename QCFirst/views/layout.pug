@@ -1,3 +1,5 @@
+- const userName = user?.firstname;
+
 doctype html
 // Project code by: Jonathan Yulan and David Acuqui
 //
@@ -33,7 +35,7 @@ html(lang='en')
               a.nav-item.nav-link.active(href='index') Home
               a.nav-item.nav-link(href='enrollment') Enrollment
             form.form-inline.ml-auto.navSearchLink
-              input.form-control.mr-sm-2(type='text' placeholder='Search courses..')
+              input.form-control.mr-sm-2(type='text' placeholder='Search courses(Ex: 355)')
               button.btn.btn-outline-light(type='submit') Search
             .navbar-nav.ml-auto.navAcctLink
                 a.nav-item.nav-link(href='/logout') Logout

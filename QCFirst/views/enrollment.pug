@@ -1,5 +1,6 @@
 extends layout
 
+
 block append styles
   link(rel='stylesheet', type='text/css', href='../CSS/enrollmentstyles.css')
 
@@ -10,7 +11,8 @@ block content
                 img(src='../Images/student1.jpg', alt='student', style='width: 100%')
                 |                     
                 a(href='addcourse')
-                    button#reg-btn.btn.btn-primary(type='button') Register course, userName;
+                    button#reg-btn.btn.btn-primary(type='button') Register course 
+                        span= userName
                 |                 
             #right-panel-info.col-md-6
                 img(src='../Images/college3.jpg', alt='collegeroom', style='width:100%')

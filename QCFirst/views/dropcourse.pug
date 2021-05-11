@@ -1,11 +1,61 @@
-extends layout
-
-block append styles
-  link(rel='stylesheet', type='text/css', href='../CSS/enrollmentstyles.css')
-
-block content
+doctype html
+// Project code by: Jonathan Yulan and David Acuqui
+//
+  Name: David Acuqui and Jonathan Yulan 
+  Date: 04.22.2021
+  Section: CS 355-54
+  *ADD CONTENT*
+  Photos taken from https://unsplash.com/ (search keywords: college, professor, student)
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    |       
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    |       
+    title Drop Course - student
+    |       
+    script(src='../Javascript/jquery-3.0.0.min.js')
+    |       
+    script(src='../Javascript/bootstrap.min.js')
+    |       
+    script(src='../CSS/bootstrap.min.css')
+    |       
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    |       
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    |       
+    link(rel='stylesheet', type='text/css', href='../CSS/navbarstyles.css')
+    |       
+    link(rel='stylesheet', type='text/css', href='../CSS/dropcoursestyles.css')
+  |    
+  |    
+  body
+    nav.navbar.navbar-expand-md.fixed-top.myNav(role='navigation')
+      .container-fluid
+        a.navbar-brand(href='../HTML/index.html')
+          img.navlogo(src='../Images/QCFirstLogo.png', alt='qcfirstlogo')
+        |             
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse')
+          span.navbar-toggler-icon
+            i.fa.fa-bars
+        |             
+        #navbarCollapse.collapse.navbar-collapse
+          .navbar-nav.navLinks
+            a.nav-item.nav-link.active.disabled(href='../HTML/index.html') Home
+            |                   
+            a.nav-item.nav-link.disabled(href='../HTML/enrollment.html') Enrollment
+          |                
+          form.form-inline.ml-auto.navSearchLink
+            input.form-control.mr-sm-2.disabled(type='text', placeholder='Search courses..')
+            |                   
+            button.btn.btn-outline-light.disabled(type='submit') Search
+          |                
+          .navbar-nav.ml-auto.navAcctLink
+            a.nav-item.nav-link(href='../HTML/loginpage.html') Logout
+    // End of nav bar
     .container-fluid
       .table-responsive
+        // main content goes here
         if course 
         table#drop-class-table.table.table-hover
           thead

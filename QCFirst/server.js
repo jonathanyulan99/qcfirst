@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser= require('body-parser');
+const bodyParser = require('body-parser');
 const app = express();
 const path = require('path');
 const session = require('express-session');
@@ -14,7 +14,6 @@ const { mainModule } = require('process');
 const User = require('./models/User');
 const InitiateMongoServer = require("./config/db");
 InitiateMongoServer();
-
 
 app.set('views', path.join(__dirname, 'views')); 
 app.use(express.static(path.join(__dirname + '/public')));
@@ -174,15 +173,15 @@ app.get('/logout', function(req, res) {
     res.redirect('/');
 });
 
-app.post('/signup', passport.authenticate('local-signup', {
-    successRedirect: '/profile',
-    failureRedirect: '/error'
-}));
+// app.post('/signup', passport.authenticate('local-signup', {
+//     successRedirect: '/profile',
+//     failureRedirect: '/error'
+// }));
 
-app.post('/login', passport.authenticate('local-login',{
-    successRedirect : '/index',
-    failureRedirect : '/error'
-}));
+// app.post('/login', passport.authenticate('local-login',{
+//     successRedirect : '/index',
+//     failureRedirect : '/error'
+// }));
 
 function isLoggedIn(req, res, next){
     if (req.isAuthenticated())
