@@ -3,7 +3,7 @@ extends layout
 block content
   block content
     .signup-form.container-fluid
-      form#form.needs-validation(action='/register', method='post', novalidate='')
+      form#form.needs-validation(action='/signup', method='post', novalidate='')
         h2.border-bottom.border-primary.text-center
           | QCFIRST REGISTRATION
         .form-group
@@ -48,7 +48,7 @@ block content
                   <small>Error Message</small>
           .form-group.col-sm-12.col-md-12.col-lg-12
             label.form-label(for='validationCustom05') QC Email
-            input#validationCustom05.form-control(type='email', name='username', placeholder='@qmail.cuny.edu', required='')
+            input#validationCustom05.form-control(type='email', name='email', placeholder='@qcfirst.edu', required='')
             .valid-feedback  Looks Good!
             .invalid-feedback  Needs to Be Filled
             //

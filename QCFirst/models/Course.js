@@ -22,5 +22,4 @@ const courseSchema = new Schema({
     credits: Number
 });
 
-// module.exports = Course = mongoose.model('courses', courseSchema);
 module.exports = mongoose.model('courses', courseSchema);

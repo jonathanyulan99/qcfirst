@@ -1,0 +1,109 @@
+extends layout
+
+block append styles
+  link(rel='stylesheet', type='text/css', href='../CSS/searchresultsstyles.css')
+
+block content
+    .container-fluid.myContainer
+      .row
+        .col-md-4
+          .card
+            img.card-img-top(src='../Images/student3.jpg', alt='studentroom')
+            |                   
+            .card-body.text-center
+              h5.card-title Course description
+              |                       
+              p.card-text Web application &amp; website design.
+            |             
+        .col-md-4
+          .card
+            img.card-img-top(src='../Images/student4.jpg', alt='students')
+            |                   
+            .card-body.text-center
+              h5.card-title Course credits
+              |                       
+              p.card-text This course is 3 units.
+        |             
+        .col-md-4
+          .card
+            img.card-img-top(src='../Images/college6.jpg', alt='collegecampus')
+            |                   
+            .card-body.text-center
+              h5.card-title Course dates
+              |                       
+              p.card-text 7/3/2021 - 8/25/2021
+      |          
+      .table-responsive
+        // main content goes here
+        table#search-results-table.table.table-hover(class='.table-sm')
+          thead
+            tr
+              th Course
+              |                      
+              th Section
+              |                      
+              th Instructor
+              |                      
+              th Days
+              |                      
+              th Times
+              |                      
+              th Room
+              |                      
+              th Status
+              |                      
+              th Add Course
+          |                
+          tbody
+            tr
+              td 355
+              |                      
+              td 31
+              |                      
+              td Jake deGrom
+              |                      
+              td Mon/Wed
+              |                      
+              td 6:30PM-7:45PM
+              |                      
+              td SB-122
+              |                      
+              td Closed
+              |                      
+              td
+                button.btn.btn-primary(type='button') Add
+            |                   
+            tr
+              td 355
+              |                      
+              td 46
+              |                      
+              td Frankie Lindor
+              |                      
+              td Sat
+              |                      
+              td 9:10AM-11:50AM
+              |                      
+              td SB-230
+              |                      
+              td Open
+              |                      
+              td
+                button.btn.btn-primary(type='button') Add
+      // footer goes here
+      hr
+      |          
+      footer
+        .row
+          .col-md-6
+            p Copyright &copy; 2021 QC First
+          |               
+          .col-md-6.text-md-right
+            a.text-dark(href='#') Terms of Use
+            |  
+            |
+            span.text-muted.mx-2 |
+            |  
+            |                   
+            a.text-dark(href='#') Privacy Policy
+    // End of container-fluid main content div

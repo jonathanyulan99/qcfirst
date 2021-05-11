@@ -13,7 +13,8 @@ userController.register = function(req, res) {
 };
 
 userController.doRegister = function(req, res) {
-  User.register(new User({ username : req.body.email, name: req.body.firstname }), req.body.password, function(err, user) {
+  console.log("Helllllloooo")
+  User.register(new User({ username : req.body.username, name: req.body.firstname }), req.body.password, function(err, user) {
     if (err) {
       return res.render('signup', { user : user });
     }

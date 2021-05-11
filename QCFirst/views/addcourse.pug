@@ -1,0 +1,106 @@
+extends layout
+
+block append styles
+  link(rel='stylesheet', type='text/css', href='../CSS/addcoursestyles.css')
+
+block content
+    .container-fluid
+      // main content goes here
+      .row
+        #course-form.col-md-6
+          .card
+            h5.card-header.info-color.white-text.text-center.py-4
+              strong Fill out the form to search for QC First courses
+            |                   
+            .card-body.px-lg-5
+              form.md-form.myForm
+                .text-center
+                  p Select the term:
+                |                         
+                select#term-selection(name='term-selection')
+                  option(value='current-term-option') Summer 2021
+                  |                            
+                  option(value='next-term-option') Fall 2021
+                |                         
+                label(for='input') Course name
+                |                         
+                input#input.form-control(type='text', placeholder='coursename')
+                |                         
+                label(for='input') Course ID
+                |                         
+                input#input.form-control(type='text', placeholder='courseid')
+                |                         
+                a(href='searchresults')
+                  button#search-btn.btn.btn-primary(type='button') Search course
+        |             
+        .col-md-6
+          .img-container
+            img(src='../Images/professor2.jpg', alt='classroom', width='100%')
+      // end of div row
+      .table-responsive
+        table#stud-schedule-table.table.table-hover
+          thead
+          caption My Current schedule
+          |                   
+          tbody
+            tr
+              th Class
+              |                      
+              th Days
+              |                      
+              th Time
+              |                      
+              th Room
+          tbody
+            tr
+              td CSCI 370-34
+              |                      
+              td Mon/Wed
+              |                      
+              td 8:00PM-9:15PM
+              |                      
+              td SB-330
+            |                   
+            tr
+              td CSCI 355-54
+              |                      
+              td Tues
+              |                      
+              td 8:00PM-10:50PM
+              |                      
+              td SB-119
+            |                   
+            tr
+              td CSCI 381-03
+              |                      
+              td Tues/Fri
+              |                      
+              td 12:15PM-1:30PM
+              |                      
+              td SB-309
+            |                   
+            tr
+              td Mat 200-24
+              |                      
+              td Mon/Wed
+              |                      
+              td 10:05AM-11:55AM
+              |                      
+              td MB-115
+      // footer goes here
+      hr
+      |          
+      footer
+        .row
+          .col-md-6
+            p Copyright &copy; 2021 QC First
+          |                
+          .col-md-6.text-md-right
+            a.text-dark(href='#') Terms of Use
+            |  
+            |                   
+            span.text-muted.mx-2 |
+            |  
+            |                   
+            a.text-dark(href='#') Privacy Policy
+    // End of container-fluid main content div
