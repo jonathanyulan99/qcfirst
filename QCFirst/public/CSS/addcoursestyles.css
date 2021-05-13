@@ -41,7 +41,7 @@ input[type="text"]:focus {
   background-color: #ecd5bb;
 }
 
-#term-selection {
+#term-selection, #dept-selection{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

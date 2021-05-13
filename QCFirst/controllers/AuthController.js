@@ -4,6 +4,7 @@ const User = require("../models/User");
 
 const userController = {};
 
+
 userController.home = function(req, res) {
   res.render('index', { user : req.user });
 };

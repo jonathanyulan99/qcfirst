@@ -8,7 +8,7 @@ const userSchema = new Schema({
     password: String,
     firstname: String,
     lastname: String,
-    courses: [ course ],
+    courseid: [ { type: mongoose.Schema.Types.ObjectId, ref: 'Course' } ],
     isInstructor: Boolean
 })
 

@@ -34,13 +34,12 @@ block content
               p.card-text 7/3/2021 - 8/25/2021
       |          
       .table-responsive
-        // main content goes here
         table#search-results-table.table.table-hover(class='.table-sm')
           thead
             tr
               th Course
               |                      
-              th Section
+              th Name
               |                      
               th Instructor
               |                      
@@ -55,41 +54,24 @@ block content
               th Add Course
           |                
           tbody
-            tr
-              td 355
-              |                      
-              td 31
-              |                      
-              td Jake deGrom
-              |                      
-              td Mon/Wed
-              |                      
-              td 6:30PM-7:45PM
-              |                      
-              td SB-122
-              |                      
-              td Closed
-              |                      
-              td
-                button.btn.btn-primary(type='button') Add
-            |                   
-            tr
-              td 355
-              |                      
-              td 46
-              |                      
-              td Frankie Lindor
-              |                      
-              td Sat
-              |                      
-              td 9:10AM-11:50AM
-              |                      
-              td SB-230
-              |                      
-              td Open
-              |                      
-              td
-                button.btn.btn-primary(type='button') Add
+            each course in Courses
+              tr
+                td= course.get("courseid")
+                |                      
+                td= course.get("coursename")
+                |                      
+                td 
+                |                      
+                td 
+                |                      
+                td 
+                |                      
+                td 
+                |                      
+                td
+                |                      
+                td
+                  button.btn.btn-primary(type='submit') Add
       // footer goes here
       hr
       |          

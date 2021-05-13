@@ -1,11 +1,13 @@
 extends layout
 
+block append scripts
+  script(src='/Javascript/searchCourse.js')
+
 block append styles
   link(rel='stylesheet', type='text/css', href='../CSS/addcoursestyles.css')
 
 block content
     .container-fluid
-      // main content goes here
       .row
         #course-form.col-md-6
           .card
@@ -13,25 +15,33 @@ block content
               strong Fill out the form to search for QC First courses
             |                   
             .card-body.px-lg-5
-              form.md-form.myForm
+              form.md-form.myForm(action='/searchform', method='post')
                 .text-center
                   p Select the term:
                 |                         
-                select#term-selection(name='term-selection')
-                  option(value='current-term-option') Summer 2021
+                select#term-selection(name='termselection')
+                  option(value='current-term-option', name='currentTermoOtion') Summer 2021
                   |                            
-                  option(value='next-term-option') Fall 2021
+                  option(value='next-term-option', name='nextTermOption') Fall 2021
+                |       
+                .text-center
+                  p Select course department:
                 |                         
-                label(for='input') Course name
-                |                         
-                input#input.form-control(type='text', placeholder='coursename')
-                |                         
+                select#dept-selection(name='deptSelection')
+                  option(value='cs-dept', name='csDept') Computer Science
+                  |                            
+                  option(value='math-dept', name='mathDept') Math
+                  |                            
+                  option(value='english-dept', name='englishDept') English 
+                  |                            
+                  option(value='arts-dept', name='artsDept') Arts               
+                |                        
                 label(for='input') Course ID
                 |                         
-                input#input.form-control(type='text', placeholder='courseid')
+                input#input.form-control(type='text', placeholder='courseid', name='courseidform')
                 |                         
-                a(href='searchresults')
-                  button#search-btn.btn.btn-primary(type='button') Search course
+                //- a(href='searchresults')
+                button#search-btn.btn.btn-primary(type='submit') Search course
         |             
         .col-md-6
           .img-container
@@ -40,53 +50,32 @@ block content
       .table-responsive
         table#stud-schedule-table.table.table-hover
           thead
-          caption My Current schedule
+          caption #{ user.lastname }'s current schedule
           |                   
           tbody
             tr
-              th Class
-              |                      
+              th Class ID
+              |   
+              th Class Name
+              |                          
               th Days
               |                      
               th Time
               |                      
               th Room
           tbody
-            tr
-              td CSCI 370-34
-              |                      
-              td Mon/Wed
-              |                      
-              td 8:00PM-9:15PM
-              |                      
-              td SB-330
-            |                   
-            tr
-              td CSCI 355-54
-              |                      
-              td Tues
-              |                      
-              td 8:00PM-10:50PM
-              |                      
-              td SB-119
-            |                   
-            tr
-              td CSCI 381-03
-              |                      
-              td Tues/Fri
-              |                      
-              td 12:15PM-1:30PM
-              |                      
-              td SB-309
-            |                   
-            tr
-              td Mat 200-24
-              |                      
-              td Mon/Wed
-              |                      
-              td 10:05AM-11:55AM
-              |                      
-              td MB-115
+            each course in Courses
+              tr
+                td= course.get("courseid")
+                |  
+                td= course.get("coursename")
+                |                      
+                td 
+                |                      
+                td 
+                |                      
+                td
+                |
       // footer goes here
       hr
       |          
